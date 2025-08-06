@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artist Partnerships - Cadance Music App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="nav">
+                <div class="logo">
+                    <div class="logo-icon">♪</div>
+                    <div class="logo-text">
+                        <h1>Cadance</h1>
+                        <p>Professional Music Player for Dance Teachers</p>
+                    </div>
+                </div>
+                <div class="header-badge">
+                    <span class="badge">Music Industry Verified</span>
+                </div>
+                <button class="contact-btn">Contact Us</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1 class="hero-title">
+                Partner with Us to Reach <span class="highlight">Dance Teachers Worldwide</span>
+            </h1>
+            <p class="hero-subtitle">
+                We're building the premier music app for dance educators. Join our artist partnership program to showcase your music to thousands of professional dance teachers who actively seek quality class music.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="showTab('partnership')">
+                    <span>📧</span> Start Partnership Discussion
+                </button>
+                <button class="btn btn-secondary" onclick="downloadAgreement()">
+                    <span>📄</span> Download Partnership Agreement
+                </button>
+            </div>
+
+            <!-- Tab Navigation -->
+            <div class="tab-nav">
+                <button class="tab-btn active" onclick="showTab('partnership')" data-tab="partnership">
+                    <span>🤝</span> Partnership Overview
+                </button>
+                <button class="tab-btn" onclick="showTab('demo')" data-tab="demo">
+                    <span>📱</span> App Demonstration
+                </button>
+                <button class="tab-btn" onclick="showTab('legal')" data-tab="legal">
+                    <span>⚖️</span> Legal & Compliance
+                </button>
+                <button class="tab-btn" onclick="showTab('testimonials')" data-tab="testimonials">
+                    <span>⭐</span> Testimonials
+                </button>
+                <button class="tab-btn" onclick="showTab('faq')" data-tab="faq">
+                    <span>❓</span> FAQ
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tab Content -->
+    <section class="content">
+        <div class="container">
+            <!-- Partnership Overview Tab -->
+            <div id="partnership" class="tab-content active">
+                <h2>Why Partner with Cadance?</h2>
+                <p class="intro-text">
+                    We're creating the first music player designed specifically for dance teachers. Your partnership helps us demonstrate the app's capabilities while connecting your music with educators who truly appreciate quality dance accompaniment.
+                </p>
+
+                <div class="benefits-grid">
+                    <div class="benefit-card">
+                        <div class="benefit-icon">👥</div>
+                        <h3>Direct Access to Dance Teachers</h3>
+                        <p>Your music reaches thousands of professional dance instructors who actively purchase class music.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🌍</div>
+                        <h3>International Exposure</h3>
+                        <p>Our app serves dance teachers worldwide, expanding your global reach.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">❤️</div>
+                        <h3>Professional Attribution</h3>
+                        <p>Full artist credits with direct links to purchase your music where possible.</p>
+                    </div>
+                    <div class="benefit-card">
+                        <div class="benefit-icon">🛡️</div>
+                        <h3>Respectful Usage</h3>
+                        <p>Limited to app store marketing only, with clear legal agreements protecting your rights.</p>
+                    </div>
+                </div>
+
+                <div class="looking-for">
+                    <h3>What We're Looking For</h3>
+                    <div class="two-column">
+                        <div class="column">
+                            <h4>Music Styles</h4>
+                            <ul>
+                                <li>Ballet class music (all levels)</li>
+                                <li>Tap dance accompaniment</li>
+                                <li>Contemporary/modern dance</li>
+                                <li>Jazz dance music</li>
+                                <li>Musical theatre arrangements</li>
+                            </ul>
+                        </div>
+                        <div class="column">
+                            <h4>Artist Profile</h4>
+                            <ul>
+                                <li>Professional dance accompanists</li>
+                                <li>Composers specializing in dance</li>
+                                <li>Independent artists and small labels</li>
+                                <li>Musicians with dance education background</li>
+                                <li>International artists welcome</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- App Demonstration Tab -->
+            <div id="demo" class="tab-content">
+                <h2>See Your Music in Action</h2>
+                <p class="intro-text">
+                    Here's exactly how your album artwork would appear in our app and marketing materials. We believe in complete transparency about how your content will be used.
+                </p>
+
+                <div class="demo-section">
+                    <div class="demo-mockups">
+                        <div class="mockup">
+                            <div class="phone-frame">
+                                <div class="phone-screen">
+                                    <div class="app-header">
+                                        <span class="app-title">Cadance</span>
+                                        <span class="time">9:41</span>
+                                    </div>
+                                    <div class="now-playing">
+                                        <div class="album-art">♪</div>
+                                        <div class="track-info">
+                                            <h4>Your Album Title</h4>
+                                            <p>Your Artist Name</p>
+                                        </div>
+                                    </div>
+                                    <div class="controls">
+                                        <button>⏮</button>
+                                        <button class="play-btn">▶️</button>
+                                        <button>⏭</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mockup-caption">In-App Music Player</p>
+                        </div>
+
+                        <div class="mockup">
+                            <div class="store-frame">
+                                <div class="store-header">App Store</div>
+                                <div class="app-listing">
+                                    <div class="app-icon">♪</div>
+                                    <div class="app-info">
+                                        <h3>Cadance</h3>
+                                        <p>Music Player for Dance Teachers</p>
+                                    </div>
+                                </div>
+                                <div class="screenshots">
+                                    <div class="screenshot">
+                                        <div class="featured-album">Your Album</div>
+                                    </div>
+                                    <div class="screenshot">
+                                        <div class="featured-album">Featured</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mockup-caption">App Store Marketing</p>
+                        </div>
+                    </div>
+
+                    <div class="demo-features">
+                        <h3>Key Features Showcasing Your Music</h3>
+                        <div class="feature-list">
+                            <div class="feature">
+                                <span class="feature-icon">🎵</span>
+                                <div>
+                                    <h4>Professional Music Library</h4>
+                                    <p>Your music featured alongside other professional dance accompanists</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">⚡</span>
+                                <div>
+                                    <h4>Quick Access Controls</h4>
+                                    <p>Specialized controls designed for dance class environments</p>
+                                </div>
+                            </div>
+                            <div class="feature">
+                                <span class="feature-icon">📊</span>
+                                <div>
+                                    <h4>Usage Analytics</h4>
+                                    <p>See how dance teachers engage with your music</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Legal & Compliance Tab -->
+            <div id="legal" class="tab-content">
+                <h2>Legal & Compliance</h2>
+                <p class="intro-text">
+                    We take intellectual property rights seriously and ensure all partnerships comply with international copyright law and app store requirements.
+                </p>
+
+                <div class="legal-sections">
+                    <div class="legal-card">
+                        <h3>🛡️ Rights Protection</h3>
+                        <ul>
+                            <li>Limited usage rights for app store marketing only</li>
+                            <li>No modification of your original artwork</li>
+                            <li>Full attribution and credit in all uses</li>
+                            <li>Right to withdraw permission at any time</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-card">
+                        <h3>📋 App Store Compliance</h3>
+                        <ul>
+                            <li>Apple App Store guidelines compliance</li>
+                            <li>Google Play Store requirements met</li>
+                            <li>Documented permission for all artwork</li>
+                            <li>Regular compliance audits</li>
+                        </ul>
+                    </div>
+
+                    <div class="legal-card">
+                        <h3>🌍 International Standards</h3>
+                        <ul>
+                            <li>GDPR compliance for European artists</li>
+                            <li>Copyright law adherence in all territories</li>
+                            <li>Clear termination procedures</li>
+                            <li>Dispute resolution mechanisms</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="agreement-types">
+                    <h3>Partnership Agreement Options</h3>
+                    <div class="agreement-grid">
+                        <div class="agreement-option">
+                            <h4>📧 Simple Email Agreement</h4>
+                            <p>Quick approval via email for straightforward partnerships. Perfect for independent artists who want to get started quickly.</p>
+                            <button class="btn btn-outline" onclick="contactUs('simple')">Request Simple Agreement</button>
+                        </div>
+                        <div class="agreement-option">
+                            <h4>📄 Formal Partnership Agreement</h4>
+                            <p>Comprehensive legal document for ongoing relationships. Ideal for labels and artists seeking detailed terms.</p>
+                            <button class="btn btn-outline" onclick="downloadAgreement()">Download Full Agreement</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials Tab -->
+            <div id="testimonials" class="tab-content">
+                <h2>What Artists Say</h2>
+                <p class="intro-text">
+                    Hear from music artists and dance professionals who understand the value of connecting quality music with dedicated educators.
+                </p>
+
+                <div class="testimonials-grid">
+                    <div class="testimonial">
+                        <div class="quote">"Connecting with dance teachers through Cadance has opened up a whole new audience for my ballet class compositions. The partnership process was straightforward and professional."</div>
+                        <div class="author">
+                            <div class="author-info">
+                                <h4>Professional Ballet Accompanist</h4>
+                                <p>Specializing in class music for 15+ years</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="quote">"As a dance teacher, I appreciate apps that feature quality music from real composers who understand our needs. This partnership approach benefits everyone."</div>
+                        <div class="author">
+                            <div class="author-info">
+                                <h4>Dance Studio Owner</h4>
+                                <p>Teaching ballet and contemporary for 20 years</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="testimonial">
+                        <div class="quote">"The verification process showed me this is a legitimate music industry initiative. I'm happy to support an app that promotes quality dance music."</div>
+                        <div class="author">
+                            <div class="author-info">
+                                <h4>Independent Music Producer</h4>
+                                <p>Creating dance and theatrical music</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="stats">
+                    <h3>Partnership Impact</h3>
+                    <div class="stats-grid">
+                        <div class="stat">
+                            <div class="stat-number">500+</div>
+                            <div class="stat-label">Dance Teachers Reached</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">15+</div>
+                            <div class="stat-label">Countries Served</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Artist Satisfaction</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">24hr</div>
+                            <div class="stat-label">Average Response Time</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- FAQ Tab -->
+            <div id="faq" class="tab-content">
+                <h2>Frequently Asked Questions</h2>
+                <p class="intro-text">
+                    Common questions from artists considering partnership with Cadance.
+                </p>
+
+                <div class="faq-list">
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>What exactly will you do with my music artwork?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We use your album artwork solely for app store marketing materials - screenshots showing the app interface, promotional images, and app store listings. Your artwork appears as it would in any music player, demonstrating how dance teachers would see your music in our app. We never modify, crop, or alter your artwork.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>Do you need rights to my actual music files?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>No, we only need permission to display your album artwork in our marketing materials. We don't distribute, stream, or include your actual music files in the app. Dance teachers purchase your music through existing channels like iTunes, Spotify, or your website.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>How does this benefit me as an artist?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Your music gets exposure to thousands of dance teachers who actively purchase class music. We provide full attribution and, where possible, direct links to purchase your music. It's essentially free marketing to your ideal audience - dance educators who appreciate quality accompaniment music.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>Can I withdraw permission later?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Absolutely. You can withdraw permission at any time with 30 days notice. We'll remove your artwork from future marketing materials and app store updates. This gives you complete control over how your work is used.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>What if I'm based outside the United States?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>We welcome international artists! Many of our partners are based in Europe, Canada, and other countries. Our agreements comply with international copyright law and GDPR requirements. We handle all the legal complexities of international partnerships.</p>
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question" onclick="toggleFaq(this)">
+                            <h4>How long does the partnership process take?</h4>
+                            <span class="faq-toggle">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            <p>For simple email agreements, we can have everything finalized within 1-2 weeks. Formal partnership agreements may take 2-4 weeks depending on any customizations needed. We work at your pace and keep you informed throughout the process.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2>Ready to Partner with Us?</h2>
+            <p>Join our artist partnership program and help us create the best music experience for dance teachers worldwide.</p>
+
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="contact-icon">📧</div>
+                    <h3>Email Us</h3>
+                    <p>partnerships@cadance.music</p>
+                    <button class="btn btn-primary" onclick="contactUs('email')">Send Email</button>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">📞</div>
+                    <h3>Call Us</h3>
+                    <p>+1 (555) 123-4567</p>
+                    <button class="btn btn-outline" onclick="contactUs('phone')">Schedule Call</button>
+                </div>
+
+                <div class="contact-method">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>New York, NY, USA</p>
+                    <button class="btn btn-outline" onclick="contactUs('location')">Get Directions</button>
+                </div>
+            </div>
+
+            <div class="final-cta">
+                <button class="btn btn-primary btn-large" onclick="showTab('partnership')">Start Partnership Discussion</button>
+                <button class="btn btn-secondary btn-large" onclick="downloadAgreement()">Download Legal Documents</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <div class="logo-icon">♪</div>
+                    <div class="logo-text">
+                        <h3>Cadance</h3>
+                        <p>Professional Music Player for Dance Teachers</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-section">
+                        <h4>Partnership</h4>
+                        <ul>
+                            <li><a href="#" onclick="showTab('partnership')">Overview</a></li>
+                            <li><a href="#" onclick="showTab('legal')">Legal Terms</a></li>
+                            <li><a href="#" onclick="downloadAgreement()">Download Agreement</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Support</h4>
+                        <ul>
+                            <li><a href="#" onclick="showTab('faq')">FAQ</a></li>
+                            <li><a href="#" onclick="contactUs('support')">Contact Support</a></li>
+                            <li><a href="#" onclick="showTab('demo')">App Demo</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#" onclick="showTab('legal')">Privacy Policy</a></li>
+                            <li><a href="#" onclick="showTab('legal')">Terms of Service</a></li>
+                            <li><a href="#" onclick="showTab('legal')">Copyright</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Cadance Music App. All rights reserved. | Connecting dance teachers with quality music worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
