@@ -43,6 +43,16 @@ body {
     gap: 1rem;
 }
 
+.logo-icon-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    background: rgba(255,255,255,0.1);
+    padding: 0.5rem;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+}
+
 .logo-icon {
     font-size: 2.5rem;
     background: rgba(255,255,255,0.2);
@@ -1001,6 +1011,100 @@ body {
     
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+
+/* App Showcase Styles */
+.demo-showcase {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.app-showcase-img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+}
+
+.demo-highlights {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 3rem;
+    margin-bottom: 3rem;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    background: white;
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 1px solid #e2e8f0;
+}
+
+.feature-screenshot {
+    width: 200px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    flex-shrink: 0;
+}
+
+.highlight-content h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #1f2937;
+}
+
+.highlight-content p {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+/* Responsive adjustments for new layout */
+@media (max-width: 768px) {
+    .demo-highlights {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .highlight-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    
+    .feature-screenshot {
+        width: 150px;
+    }
+    
+    .logo-icon-img {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .logo-text h1 {
+        font-size: 1.5rem;
+    }
+    
+    .logo-text p {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .highlight-item {
+        padding: 1.5rem;
+    }
+    
+    .feature-screenshot {
+        width: 120px;
     }
 }
 
