@@ -56,10 +56,10 @@ function contactUs(method) {
             window.location.href = 'mailto:partnerships@cadance.music?subject=Artist Partnership Inquiry&body=Hello,%0D%0A%0D%0AI am interested in partnering with Cadance for artwork usage in your app store marketing materials.%0D%0A%0D%0APlease find my details below:%0D%0A%0D%0AArtist/Band Name: %0D%0AGenre: %0D%0AWebsite: %0D%0AiTunes/Spotify Link: %0D%0A%0D%0AThank you for your time.%0D%0A%0D%0ABest regards';
             break;
         case 'phone':
-            alert('Please call us at +1 (555) 123-4567 or email partnerships@cadance.music to schedule a call.');
+            alert('Please message us at +61 420 746 675 or email partnerships@cadance.music to schedule a call.');
             break;
         case 'location':
-            alert('We are based in New York, NY, USA. Please contact us via email for specific meeting arrangements.');
+            alert('We are based in Sydney Australia. Please contact us via email for specific meeting arrangements.');
             break;
         case 'support':
             window.location.href = 'mailto:support@cadance.music?subject=Support Inquiry';
