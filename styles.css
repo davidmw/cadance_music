@@ -46,11 +46,8 @@ body {
 .logo-icon-img {
     width: 60px;
     height: 60px;
-    object-fit: contain;
-    background: rgba(255,255,255,0.1);
     padding: 0.5rem;
     border-radius: 12px;
-    backdrop-filter: blur(10px);
 }
 
 .logo-icon {
