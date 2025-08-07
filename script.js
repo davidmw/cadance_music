@@ -98,7 +98,7 @@ ARTIST BENEFITS:
 
 CONTACT:
 partnerships@cadance.music
-+1 (555) 123-4567
++61 420 746 675
 
 For detailed legal terms, please contact us directly.
     `;
