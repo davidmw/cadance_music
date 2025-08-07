@@ -1085,8 +1085,8 @@ body {
     }
     
     .logo-icon-img {
-   /*     width: 50px; */
-        height: 50px;
+        width: 80px; 
+        height: 80px;
     }
     
     .logo-text h1 {
@@ -1096,6 +1096,10 @@ body {
     .logo-text p {
         font-size: 0.8rem;
     }
+
+    .logo-word-svg {
+        width: 300px;
+        height: auto;
 }
 
 @media (max-width: 480px) {
