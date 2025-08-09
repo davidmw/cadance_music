@@ -7,6 +7,7 @@
   --brand: #4FD1C5;
   --accent: #A78BFA;
   color-scheme: light dark;
+  --header-h: 64px;
   /* Type scale */
   --step--1: clamp(0.85rem, 0.8rem + 0.2vw, 0.95rem);
   --step-0: clamp(1rem, 0.95rem + 0.4vw, 1.125rem);
@@ -39,6 +40,7 @@ body {
   color: var(--text);
   line-height: 1.6;
   text-rendering: optimizeLegibility;
+  padding-top: calc(var(--header-h) + env(safe-area-inset-top));
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -102,9 +104,11 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 
 /* Header */
 .site-header {
-  position: sticky;
+  position: fixed;
   top: 0;
-  z-index: 50;
+  left: 0;
+  right: 0;
+  z-index: 100;
   background: var(--surface);
   border-bottom: 1px solid rgba(255,255,255,0.06);
   box-shadow: 0 8px 12px rgba(0,0,0,0.25);
@@ -139,6 +143,7 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 /* Sections */
 .section { padding-block: var(--space-2); }
 .section-hero { padding-block: var(--space-3); }
+section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 
 /* Hero */
 .hero-grid {
@@ -153,7 +158,6 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
   box-shadow: var(--shadow-2);
   width: 100%;
   height: auto;
-  aspect-ratio: 1392 / 752;
 }
 
 /* Benefits */
@@ -222,7 +226,7 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 /* Media queries */
 @media (min-width: 600px) {
   .hero-grid { grid-template-columns: 1fr; }
-  .section { padding-block: var(--space-8); }
+  .section { padding-block: var(--space-4); }
   .primary-nav ul { gap: var(--space-3); }
   .brand-wordmark { width: 200px; }
   .showcase-grid { grid-template-columns: repeat(2, 1fr); }
