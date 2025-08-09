@@ -137,8 +137,8 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 }
 
 /* Sections */
-.section { padding-block: var(--space-6); }
-.section-hero { padding-block: var(--space-8); }
+.section { padding-block: var(--space-4); }
+.section-hero { padding-block: var(--space-6); }
 
 /* Hero */
 .hero-grid {
@@ -175,7 +175,7 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 }
 
 /* Transparency and Process */
-#transparency p + p { margin-top: var(--space-1); }
+#transparency p + p { margin-top: var(--space-2); }
 .steps {
   margin: 0;
   padding-left: 1.25rem;
