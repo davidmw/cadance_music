@@ -137,8 +137,8 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
 }
 
 /* Sections */
-.section { padding-block: var(--space-4); }
-.section-hero { padding-block: var(--space-6); }
+.section { padding-block: var(--space-2); }
+.section-hero { padding-block: var(--space-3); }
 
 /* Hero */
 .hero-grid {
