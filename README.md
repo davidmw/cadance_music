@@ -1,87 +1,163 @@
-# Cadance for Publishers — Marketing Site
+# Cadance Marketing Site — Teachers, White Label, Publishers
 
-A fast, static, mobile‑first site for music industry partnerships. Purpose: obtain written permission from rights holders to feature album artwork on Cadance App Store/Play Store product pages and related promotional surfaces.
+A fast, static, mobile‑first site for the Cadance app. Purpose: 
+- Sell Cadance to dance teachers (homepage)
+- Offer a White Label option for organizations
+- Provide a transparent permissions flow for rights holders (Publishers)
 
 - Live domain: https://cadance.music/
-- Tech stack: Static HTML/CSS/JS (no build tools, no frameworks)
-- Hosting: GitHub Pages (root publishing)
+- Tech stack: Static HTML/CSS (no frameworks, no build tools), minimal/no JS
+- Hosting: GitHub Pages (root publishing), custom domain cadance.music
 
 ## Repository Structure
-- Site: [index.html](index.html), [styles.css](styles.css), [script.js](script.js)
+
+- Site entry: `index.html` (teacher‑focused homepage)
+- Secondary pages:
+  - `white-label.html` (organizations and institutions)
+  - `publishers/index.html` (rights‑holder permissions page)
+  - `publishers.html` (stub redirect to `/publishers/`)
+- Styles: `styles.css` (design tokens, layout, and components)
+- JavaScript: `script.js` (legacy features removed; not referenced by pages)
 - Assets: screenshots and brand images in repo root
-- GitHub Pages: [CNAME](CNAME), [.nojekyll](.nojekyll)
+  - `cadance_Icon.png` (favicon 32×32)
+  - `cadance_word_d.svg` (brand wordmark)
+  - App images: `iPhoneLockScreen.png`, `iPhoneFav.png`, `iPhoneDetails.png`, `iPhoneDetails2.png`, `iPadVerticalLibrary.png`
+- GitHub Pages: `CNAME`, `.nojekyll`
 
 ## Local Development
-No build step is required. Open [index.html](index.html) directly in a browser, or serve locally:
 
-Then visit http://localhost:8080
+No build step required. Open `index.html` directly in a browser, or serve locally with any static server.
 
-## Content and Accessibility
-- Single-page IA: Hero, Why Partner, Transparency, Process, Showcase, Contact, Footer
-- Semantic landmarks and a “Skip to content” link (to #main)
-- System font stack; no external fonts
-- Fluid type via [css.clamp()](styles.css:1), responsive layout via [css.@media(min-width: 600px)](styles.css:1) and [css.@media(min-width: 1024px)](styles.css:1)
-- Reduced motion respected via [css.@media(prefers-reduced-motion: reduce)](styles.css:1)
-- All images include width/height to prevent layout shift; non-hero images use loading="lazy" and decoding="async"
+Then visit http://localhost:8080 (or your chosen port).
 
-Copy lives in [index.html](index.html). Update section text there, keeping heading hierarchy (one h1, then h2).
+## Information Architecture
 
-## SEO, Social, Icons
-Head tags in [index.html](index.html) include:
-- Viewport and description via [html.meta](index.html:1)
-- Open Graph/Twitter tags via [html.meta](index.html:1) referencing cadance_app_showcase.png
-- Canonical and favicon via [html.link](index.html:1)
-- Theme color via [html.meta](index.html:1)
-- JS is loaded with [html.script defer](index.html:1)
+- Home — `index.html`
+  - Hero: clear value for teachers, single primary CTA (Join Waitlist)
+  - Features grid: speed, class control, reliability, organization, focus, heritage
+  - Who it’s for: freelancers, studio staff, company instructors, competition teams, online instructors
+  - Screenshots gallery: existing assets with proper alt, lazy loading, async decoding
+  - White Label teaser section linking to `white-label.html`
+  - Contact strip with mailto CTAs
+- White Label — `white-label.html`
+  - For studios, companies, training programs, universities, outreach
+  - Value pillars: brand consistency, simple rollout, priority coordination, built for teaching
+  - Process: email → scope proposal → confirm & coordinate
+  - Primary CTA: mailto
+- Publishers — `publishers/index.html`
+  - Rights‑holder permission flow with scope, process, and transparency
+  - Uses existing content, moved from the former homepage
+  - CTA: mailto
+- Optional redirect safety — `publishers.html`
+  - Meta refresh to `/publishers/` to preserve incoming links
 
-Favicons:
-- [cadance_Icon.png](cadance_Icon.png) (32×32)
-- [cadance_icon_symbol.png](cadance_icon_symbol.png) (optional alternative)
+## Navigation and Linking
 
-## Deploying on GitHub Pages
-Pages is configured for root publishing from the main branch with custom domain cadance.music.
+- Header on all pages
+  - Home (or logo), Features (anchor on home), White Label, Publishers, Contact (mailto)
+- Footer on all pages
+  - Brand text, © year, links to White Label and Publishers
+- Anchor offsets are handled via CSS `scroll-margin-top` for header height
+
+## Styles and Components
+
+- Tokens and layout in `styles.css`
+  - Colors, typography via `clamp()`, spacing, container
+  - Mobile‑first with media queries at 600px and 1024px
+  - Focus-visible styles, reduced motion support
+- Components added:
+  - `.features-grid` + `.feature-card`
+  - `.personas-grid`
+  - `.teaser-card`
+  - Existing `.showcase-grid` and section theming retained
+
+## Accessibility and Performance
+
+- Semantic landmarks and skip link to `#main`
+- Focus-visible outlines, keyboard navigable header and footer
+- Reduced motion respected
+- No external fonts or scripts
+- Images include width/height to prevent layout shift
+- Non‑hero images use `loading="lazy"` and `decoding="async"`
+- CSS smooth scrolling and safe‑area padding for mobile
+
+## SEO and Social
+
+Per‑page meta in each HTML head:
+
+- Home (`index.html`)
+  - Title: Cadance — The music app for dance teachers
+  - Description: Fast access, class‑friendly controls, rock‑solid playback. Keep the class moving.
+  - OG/Twitter image: `iPadVerticalLibrary.png`
+- Publishers (`publishers/index.html`)
+  - Title: Feature your album in Cadance — Product photography and store listings
+  - Description: Transparent, controlled, revocable permissions. Proper credit.
+  - OG/Twitter image: `iPhoneLockScreen.png`
+- White Label (`white-label.html`)
+  - Title: Cadance White Label — For studios and organizations
+  - Description: Consistent brand experience, simple rollout, and priority coordination.
+  - OG/Twitter image: `iPhoneDetails.png`
+
+## CTAs and Contacts
+
+- Join Waitlist (general): `hello@cadance.music`
+- White Label (enterprise): `enterprise@cadance.music`
+- Publishers (rights holders): `partnerships@cadance.music`
+
+All CTAs are mailto links with helpful subjects.
+
+## Deployment on GitHub Pages
+
+Pages is configured for root publishing from the `main` branch with custom domain `cadance.music`.
 
 Checklist:
-1) Ensure [CNAME](CNAME) contains exactly:
+1) Ensure `CNAME` contains exactly:
+   ```
    cadance.music
-2) Ensure [.nojekyll](.nojekyll) exists (empty file).
-3) In GitHub repo Settings → Pages, set:
+   ```
+2) Ensure `.nojekyll` exists (empty file).
+3) In GitHub repo Settings → Pages:
    - Source: Deploy from a branch
    - Branch: main / root
    - Custom domain: cadance.music
    - Enforce HTTPS: enabled
 
-Pushing to main will update the live site after GitHub Pages rebuilds.
-
-## DNS for cadance.music (Apex)
-Configure A records at your DNS provider:
-- 185.199.108.153
-- 185.199.109.153
-- 185.199.110.153
-- 185.199.111.153
-
-Notes:
-- If your provider supports ALIAS/ANAME, you may point the apex to the GitHub Pages host for automatic IP updates.
-- DNS propagation can take time; confirm with your provider and then verify in GitHub Pages Settings that HTTPS is active.
+Pushing to `main` updates the live site after GitHub Pages rebuilds.
 
 ## Maintenance Workflow
-- Update content: edit [index.html](index.html) (keep ids and headings intact).
-- Update styles/tokens: edit [styles.css](styles.css) (prefer token updates over ad‑hoc colors).
-- Update images: replace files or update src in [index.html](index.html). Keep width/height attributes.
-- Record decisions: update [memory.json](memory.json) and [MEMORY.md](MEMORY.md) with any durable changes (sections, copy, tokens, assets).
+
+- Update content:
+  - Teacher homepage copy in `index.html`
+  - White Label copy in `white-label.html`
+  - Publishers copy in `publishers/index.html`
+- Update styles/tokens: edit `styles.css` (prefer token updates and consistent components)
+- Update images: replace files or update `src`/`width`/`height` attributes in HTML
+- JavaScript: currently not referenced. Keep the site fully functional without JS.
 
 ## QA Checklist before commit
-- View at 320px, 768px, 1280px (no horizontal scroll, balanced layout)
-- Keyboard navigation: skip link (#main) and visible focus states via [css.:focus-visible](styles.css:1)
-- Motion off check: [css.@media(prefers-reduced-motion: reduce)](styles.css:1) has no unexpected animations
-- Images have width/height; non-hero images lazy-load
-- Meta/OG/Twitter present; canonical and favicons resolve
+
+- View at 320px, 768px, 1280px (no horizontal scroll; balanced layout)
+- Keyboard navigation: skip link to `#main`; visible focus states
+- Motion off check: `@media (prefers-reduced-motion: reduce)` produces no unexpected animations
+- Images have `width`/`height`; non‑hero images lazy‑load
+- Meta/OG/Twitter present and correct per page; favicons resolve
 - No external font/network requests
+- All mailto links open with correct address and subject
+- Cross‑links: header/footer links work among Home, White Label, and Publishers
 
 ## Troubleshooting
-- Custom domain not active: verify [CNAME](CNAME), DNS A records, and HTTPS enforcement in GitHub Pages Settings
-- Stale assets: CDN may cache; perform a hard refresh or bump asset filename if needed
-- 404 after deploy: confirm Pages branch/source and that [index.html](index.html) is at repo root
 
-## Contact
-For artwork permission inquiries: partnerships@cadance.music
+- Custom domain not active: verify `CNAME`, DNS A records, and HTTPS enforcement in GitHub Pages Settings
+- Stale assets: CDN may cache; perform a hard refresh or bump asset filename if needed
+- 404 after deploy: confirm Pages branch/source and that `index.html` is at repo root
+- Redirects: `publishers.html` should forward to `/publishers/`
+
+## Changelog
+
+- 2025‑08‑11
+  - Replaced single‑page rights‑holder site with teacher‑focused `index.html`
+  - Created `publishers/index.html` with migrated permissions content
+  - Added `white-label.html` for organizations and institutions
+  - Added `publishers.html` meta refresh to `/publishers/`
+  - Extended `styles.css` with features/personas/teaser components
+  - Removed legacy JS usage (pages no longer reference `script.js`)

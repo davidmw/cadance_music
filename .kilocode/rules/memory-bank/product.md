@@ -1,37 +1,89 @@
-# Product: Cadance for Publishers Marketing Site
+# Product: Cadance Marketing Site
 
 ## Why This Project Exists
-Cadance is a dance class music app that needs legal permission to display album artwork in their App Store and Google Play marketing materials. Without proper permissions, they risk copyright infringement and legal issues. This site serves as the professional interface to establish partnerships with music industry rights holders.
+Cadance is a dance class music app built to keep classes moving with fast access, class‑friendly controls, and reliable playback. The marketing site now serves three audiences:
+1) Dance teachers — the primary audience and homepage focus
+2) Organizations — studios, companies, programs via a White Label option
+3) Rights holders — clear, transparent permissions for using album artwork in App Store/Play and Cadance promotional materials
 
 ## Problems It Solves
-1. **Legal Compliance**: Ensures Cadance has written permission before using any album artwork
-2. **Trust Building**: Provides transparency about usage scope and artist benefits
-3. **Streamlined Process**: Makes it easy for rights holders to understand and grant permissions
-4. **Professional Credibility**: Establishes Cadance as a legitimate business partner
-5. **Scalable Partnerships**: Creates a repeatable process for onboarding new artists and labels
+1. For Teachers
+   - Speed and focus: less device fiddling, more time on students
+   - Reliability: predictable playback that matches class flow
+   - Organization: simple structure for sets/classes
+2. For Organizations (White Label)
+   - Consistent brand experience across static marketing surfaces
+   - Streamlined onboarding and coordination for large teaching teams
+   - Single contact path and clear timelines
+3. For Rights Holders (Publishers)
+   - Legal compliance with transparent usage scope
+   - Proper credit and revocable permissions
+   - Professional, repeatable process with stored records
 
 ## How It Should Work
-The site operates as a single-page marketing funnel:
+The site operates as a multi‑page marketing funnel:
 
-1. **Hero Section**: Immediately communicates the value proposition and permission process
-2. **Benefits Section**: Shows what's in it for the rights holders (exposure, controlled usage)
-3. **Transparency Section**: Details exactly how artwork will be used and legal protections
-4. **Process Section**: Step-by-step workflow for granting permissions
-5. **Showcase Section**: Visual examples of how artwork appears in context
-6. **Contact Section**: Clear call-to-action to start the permission process
+1) Home (Teacher‑focused)
+   - Hero: clear benefit (keep the class moving)
+   - Features: speed, class control, reliability, organization, focus, heritage
+   - Personas: freelancers, studio staff, company instructors, competition teams, online instructors
+   - Screenshots: in‑context visuals with correct dimensions, lazy loading, async decoding
+   - White Label teaser: highlight organizational option
+   - CTAs: Join waitlist (mailto), plus links to White Label and Publishers
+
+2) White Label (Organizations)
+   - Who it’s for: large studios, companies, programs, universities, outreach
+   - Value pillars: brand consistency, simple rollout, priority coordination, built for teaching
+   - Process: email → scope proposal → confirm & coordinate
+   - CTA: enterprise mailto
+
+3) Publishers (Rights Holders)
+   - Why partner: exposure to dance educators; controlled usage
+   - Transparency: scope, regions, revocation, no resale, no third‑party licensing
+   - Process: step‑by‑step email approval workflow
+   - Showcase: in‑context images
+   - CTA: partnerships mailto
 
 ## User Experience Goals
-- **Immediate Clarity**: Visitors understand the purpose within 5 seconds
-- **Trust Signals**: Professional design and clear legal language build confidence
-- **Mobile-First**: Works perfectly on phones (primary device for many artists)
-- **Fast Loading**: No barriers to engagement, loads in under 2 seconds
-- **Accessible**: Works for users with disabilities and assistive technologies
-- **No Friction**: Single email contact method, no complex forms
+- Immediate clarity (benefits for teachers within seconds)
+- Trust signals: professional language, clear scope for rights holders, BarreNotes heritage
+- Mobile‑first, responsive across 320/768/1280px
+- Fast loading on slow networks (sub‑2 second target)
+- Accessibility (WCAG AA), fully functional without JavaScript
+- No friction: use mailto CTAs, no forms or external dependencies
 
 ## Success Criteria
-- Rights holders can quickly understand what Cadance is asking for
-- Legal scope is crystal clear (no surprises or hidden usage)
-- Process feels professional and legitimate
-- Mobile experience is excellent
-- Site loads fast and works without JavaScript
-- Accessibility standards are met (WCAG AA)
+- Teachers initiate contact (join waitlist) from the homepage
+- Organizations initiate White Label inquiries via enterprise mailto
+- Rights holders understand scope and grant permissions via partnerships mailto
+- Site remains static, fast, and accessible with no external requests
+- OG/Twitter cards render correctly per page
+
+## Copy and Tone
+- Teacher-first language: practical benefits for running class smoothly
+- Confident but simple phrasing; minimal jargon
+- Transparent legal language for rights holders
+- Professional, partnership‑oriented tone for organizations
+
+## Content Sources and Maintenance
+- Copy lives in the HTML files per page
+- Styles consolidated in a single CSS file with design tokens and shared components
+- No JavaScript required; maintain progressive enhancement posture
+- Assets live at repo root; preserve width/height in markup to avoid layout shift
+
+## CTAs and Emails
+- General (waitlist): hello@cadance.music
+- White Label: enterprise@cadance.music
+- Publishers: partnerships@cadance.music
+
+## Constraints
+- Static site only (GitHub Pages)
+- No external dependencies or web fonts
+- Must operate without JavaScript; JS file retained only as a placeholder
+- WCAG AA accessibility baseline
+
+## Roadmap Notes
+- Replace mailto with App Store/Play links when available
+- Optional: JSON‑LD (Organization/App) as a static script tag
+- Optional: Press/Privacy pages as content grows
+- Optional: privacy‑first analytics after policy review

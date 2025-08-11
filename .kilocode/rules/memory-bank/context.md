@@ -1,33 +1,39 @@
-# Current Context: Cadance for Publishers
+# Current Context: Cadance Marketing Site
 
 ## Current State
-The project has been successfully transformed from a complex tab-based interface to a clean, mobile-first single-page marketing site. The site is now production-ready and configured for GitHub Pages deployment at cadance.music.
+The site has been restructured from a single rights-holder page into a multi-page marketing site:
+- Teacher-focused homepage at [index.html](index.html)
+- Publishers rights-holder page at [publishers/index.html](publishers/index.html)
+- White Label offering at [white-label.html](white-label.html)
+- Safety redirect at [publishers.html](publishers.html) → /publishers/
+
+Design system extended in [styles.css](styles.css) with feature cards, personas grid, and teaser card components. Legacy JavaScript was removed from page usage; [script.js](script.js) now contains only a placeholder header and is not referenced.
 
 ## Recent Changes
-- **Complete UI refactor**: Removed tab system, implemented single-page flow
-- **Mobile-first responsive design**: Breakpoints at 600px and 1024px
-- **Real asset integration**: Replaced all placeholder content with actual Cadance brand materials
-- **Accessibility implementation**: Skip links, semantic HTML, WCAG AA compliance
-- **GitHub Pages setup**: CNAME, .nojekyll, and deployment configuration complete
-- **SEO optimization**: Complete meta tags, Open Graph, Twitter Cards
-- **Performance optimization**: Lazy loading, proper image sizing, no external dependencies
-
-## Current Focus
-Memory bank initialization and documentation of the completed project architecture and decisions.
-
-## Technical Status
-- **HTML**: Clean semantic structure with proper landmarks
-- **CSS**: Mobile-first with design tokens and fluid typography
-- **JavaScript**: Legacy code present but not used by current implementation
-- **Assets**: All real Cadance brand materials properly integrated
-- **Deployment**: Ready for GitHub Pages with custom domain
+- New teacher-first homepage with:
+  - Hero, Features grid, Personas, Screenshot gallery, White Label teaser, Contact strip
+- Migrated original rights-holder content into /publishers/ preserving structure and improving OG meta image
+- Added a dedicated White Label page with value pillars and an enterprise CTA
+- Updated global header and footer links across pages
+- Extended CSS tokens/components and kept WCAG AA, smooth scrolling, reduced motion support
+- Updated repository documentation in [README.md](README.md)
 
 ## Next Steps
-1. Clean up unused JavaScript code from legacy tab system
-2. Final testing and validation
-3. DNS configuration for cadance.music domain
-4. Launch preparation
+- QA:
+  - Keyboard-only navigation and focus-visible states
+  - Responsive checks at 320/768/1280px (no horizontal scroll)
+  - Reduced motion behavior
+  - Validate OG/Twitter meta images for each page
+- Deployment:
+  - Commit and push to main
+  - Verify GitHub Pages build + HTTPS on cadance.music
+- Future enhancements:
+  - Replace waitlist mailto with App Store / Google Play links when available
+  - Optional JSON-LD structured data (Organization/App)
+  - Optional analytics (privacy-first) after policy review
+  - Consider Press/Privacy pages when needed
 
-## Issues Identified
-- **JavaScript cleanup needed**: script.js contains legacy tab functionality not used in current single-page design
-- **Performance opportunity**: Remove unused JavaScript to reduce bundle size
+## Technical Status
+- Static, GitHub Pages-compatible, no frameworks or external dependencies
+- Pages function without JavaScript; progressive enhancement reserved
+- All images sized; non-hero images lazy-loaded; no external fonts

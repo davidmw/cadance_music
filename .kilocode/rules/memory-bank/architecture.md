@@ -1,97 +1,124 @@
-# Architecture: Cadance for Publishers
+# Architecture: Cadance Marketing Site
 
 ## System Architecture
-Static single-page website with no backend dependencies, optimized for GitHub Pages hosting.
+Static multi-page website with no backend dependencies, optimized for GitHub Pages hosting.
 
 ## Source Code Structure
 ```
 /
-├── index.html              # Main HTML document with semantic structure
-├── styles.css              # Mobile-first CSS with design tokens
-├── script.js               # Legacy JavaScript (needs cleanup)
-├── README.md               # Documentation and setup guide
-├── CNAME                   # GitHub Pages custom domain config
-├── .nojekyll              # GitHub Pages Jekyll bypass
-└── assets/                # Brand and screenshot assets
-    ├── cadance_word.svg           # Primary logo wordmark
-    ├── cadance_Icon.png           # Favicon 32x32
-    ├── cadance_icon_symbol.png    # Alternative favicon
-    ├── cadance_app_showcase.png   # Hero and showcase image
-    ├── cadance_favorites_screen.png # App screenshot
-    └── cadance_tempo_control.png   # App screenshot
+├── index.html                 # Teacher‑focused homepage
+├── white-label.html           # White Label offering for orgs/institutions
+├── publishers/
+│   └── index.html             # Rights-holder permissions page
+├── publishers.html            # Meta-refresh safety redirect → /publishers/
+├── styles.css                 # Mobile‑first CSS with design tokens and components
+├── script.js                  # Placeholder only; not referenced by pages
+├── README.md                  # Documentation and maintenance guide
+├── CNAME                      # GitHub Pages custom domain config
+├── .nojekyll                  # GitHub Pages Jekyll bypass
+└── assets (repo root images)
+    ├── cadance_Icon.png
+    ├── cadance_word_d.svg
+    ├── iPhoneLockScreen.png
+    ├── iPhoneFav.png
+    ├── iPhoneDetails.png
+    ├── iPhoneDetails2.png
+    └── iPadVerticalLibrary.png
 ```
 
 ## Key Technical Decisions
 
 ### HTML Structure
-- **Semantic landmarks**: `<header>`, `<main>`, `<section>`, `<footer>`
-- **Accessibility-first**: Skip links, proper heading hierarchy, ARIA labels
-- **Single-page layout**: All content in one document with anchor navigation
-- **Performance optimized**: Proper image dimensions, lazy loading, async decoding
+- Semantic landmarks on every page: <header>, <main>, <section>, <footer>
+- Accessibility‑first: skip link to [#main](index.html:1), proper heading hierarchy, ARIA labels
+- Multi‑page layout: cross‑linked pages with consistent header/footer
+- Performance optimized: proper image dimensions, lazy loading for non‑hero images, async decoding
 
 ### CSS Architecture
-- **Mobile-first responsive design**: Base styles for mobile, progressive enhancement
-- **Design token system**: CSS custom properties for colors, typography, spacing
-- **Fluid typography**: `clamp()` functions for responsive text scaling
-- **Modern layout**: CSS Grid and Flexbox for responsive layouts
-- **Accessibility**: Focus-visible styles, reduced motion support, WCAG AA contrast
+- Mobile‑first responsive design; progressive enhancement via media queries
+- Design token system: CSS custom properties for colors, typography, spacing
+- Fluid typography via clamp()
+- Modern layout with CSS Grid/Flexbox
+- Accessibility: focus‑visible styles, reduced motion support, WCAG AA contrast
+- Components: features grid, feature cards, personas grid, teaser card, shared showcase grid
 
 ### Component Relationships
 ```
 Header (sticky)
-├── Brand logo (cadance_word.svg)
-└── Navigation (internal anchors)
+├── Brand logo (cadance_word_d.svg)
+└── Primary navigation:
+    • Home (logo) / Features (#features on homepage)
+    • White Label (white-label.html)
+    • Publishers (publishers/)
+    • Contact (mailto)
 
-Main Content
-├── Hero Section
-│   ├── Copy block (headline, subhead, CTA)
-│   └── Media block (app showcase image)
-├── Benefits Section (grid layout)
-├── Transparency Section (text content)
-├── Process Section (ordered list)
-├── Showcase Section (responsive image grid)
-└── Contact Section (CTA and note)
+Home (index.html)
+├── Hero (headline, subhead, CTA)
+├── Features grid (cards)
+├── Personas grid (who it’s for)
+├── Screenshots (showcase grid)
+├── White Label teaser (teaser card)
+└── Contact strip (mailto CTAs)
 
-Footer
+White Label (white-label.html)
+├── Hero (CTA)
+├── Who it’s for (personas grid)
+├── Value pillars (features grid)
+├── Process (ordered list)
+└── Contact (enterprise mailto)
+
+Publishers (publishers/index.html)
+├── Hero (CTA)
+├── Benefits
+├── Styles covered (disciplines)
+├── Transparency (scope/regions/revocation)
+├── Process (ordered list)
+├── Showcase (images)
+└── Contact (permissions mailto)
+
+Footer (all pages)
 ├── Brand text
-└── Links (Transparency, Contact)
+└── Links (Home anchors, White Label, Publishers)
 ```
 
 ## Critical Implementation Paths
 
 ### Responsive Breakpoints
-- **Base (0-599px)**: Single column, stacked layout
-- **Medium (600-1023px)**: Two-column showcase grid, larger navigation
-- **Large (1024px+)**: Hero becomes two-column, three-column showcase
+- Base (0–599px): single column, stacked layout
+- Medium (600–1023px): larger navigation, 2‑column showcase
+- Large (1024px+): hero 2‑column, 3‑column showcase
 
 ### Performance Strategy
-- **No external dependencies**: System fonts, no CDN requests
-- **Optimized images**: Proper dimensions, lazy loading for non-critical
-- **Minimal JavaScript**: Legacy code present but not required for functionality
-- **Static hosting**: GitHub Pages with custom domain and HTTPS
+- No external dependencies: system fonts, no CDN requests
+- Optimized images: correct dimensions; lazy load non‑hero visuals
+- Minimal JavaScript: pages work without JS; [script.js](script.js:1) is a placeholder only
+- Static hosting: GitHub Pages with custom domain and HTTPS
 
 ### Accessibility Implementation
-- **Skip navigation**: Direct link to main content
-- **Keyboard navigation**: All interactive elements accessible via keyboard
-- **Screen reader support**: Semantic HTML, proper alt text, ARIA labels
-- **Motion sensitivity**: Respects `prefers-reduced-motion` setting
-- **Color contrast**: WCAG AA compliant color combinations
+- Skip navigation: visible when focused, points to main content
+- Keyboard navigation: all interactive elements reachable and visible focus
+- Screen reader support: semantic HTML, alt text, ARIA where applicable
+- Motion sensitivity: respects prefers‑reduced‑motion
+- Color contrast: WCAG AA compliant combinations
 
 ## Design Patterns in Use
 
 ### CSS Patterns
-- **Design tokens**: Centralized color, typography, and spacing variables
-- **Fluid design**: Responsive without fixed breakpoints using `clamp()`
-- **Progressive enhancement**: Works without JavaScript
-- **Container queries**: Ready for future browser support
+- Design tokens: centralized via :root
+- Fluid design with clamp()
+- Progressive enhancement without JS
+- Grid/Flex layouts for cards and galleries
 
 ### HTML Patterns
-- **Semantic structure**: Meaningful element choices for accessibility
-- **Progressive enhancement**: Core functionality works without JavaScript
-- **Performance optimization**: Resource hints, proper loading attributes
+- Semantic structure across pages
+- Anchor navigation with scroll‑margin offsets
+- Per‑page metadata for SEO/OG
 
 ## Integration Points
-- **GitHub Pages**: Automatic deployment from main branch
-- **Custom domain**: cadance.music via CNAME configuration
-- **Email integration**: mailto links for contact functionality
-- **Social sharing**: Open Graph and Twitter Card meta tags
+- GitHub Pages: automatic deployment from main
+- Custom domain: cadance.music via CNAME configuration
+- Email integration: mailto links for CTAs
+  - General: hello@cadance.music
+  - White Label: enterprise@cadance.music
+  - Publishers: partnerships@cadance.music
+- Social sharing: per‑page Open Graph and Twitter Card meta tags
