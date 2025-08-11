@@ -318,10 +318,10 @@ style.textContent = `
     
     .scroll-to-top {
         position: fixed;
-        bottom: 20px;
-        right: 20px;
-        background: #3b82f6;
-        color: white;
+        bottom: calc(20px + env(safe-area-inset-bottom));
+        right: calc(20px + env(safe-area-inset-right));
+        background: var(--brand);
+        color: #00110f;
         border: none;
         border-radius: 50%;
         width: 50px;
@@ -333,7 +333,7 @@ style.textContent = `
     }
     
     .scroll-to-top:hover {
-        background: #1d4ed8;
+        background: #49c4b9;
         transform: translateY(-2px);
     }
 `;

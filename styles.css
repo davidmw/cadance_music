@@ -41,6 +41,8 @@ body {
   line-height: 1.6;
   text-rendering: optimizeLegibility;
   padding-top: calc(var(--header-h) + env(safe-area-inset-top));
+  /* Reserve space so the scroll-to-top button never masks content */
+  padding-bottom: calc(96px + env(safe-area-inset-bottom));
 }
 
 img { max-width: 100%; height: auto; display: block; }
@@ -120,19 +122,31 @@ a:hover, a:focus-visible { text-decoration-thickness: 2px; }
   gap: var(--space-2);
   padding-block: var(--space-2);
 }
-.brand-wordmark { height: auto; width: 180px; }
+.brand-wordmark { height: auto; width: clamp(120px, 36vw, 180px); }
+
+/* Make primary nav fit on small screens with horizontal scroll */
+.primary-nav {
+  flex: 1;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox hide scrollbar */
+}
+.primary-nav::-webkit-scrollbar { display: none; } /* WebKit hide scrollbar */
 
 .primary-nav ul {
   list-style: none;
   display: flex;
-  gap: var(--space-2);
+  flex-wrap: nowrap;
+  gap: var(--space-1);
   margin: 0;
   padding: 0;
+  white-space: nowrap;
 }
 .primary-nav a {
   color: var(--text);
   text-decoration: none;
-  padding: 0.5rem 0.25rem;
+  font-size: var(--step--1);
+  padding: 0.375rem 0.25rem;
   border-radius: 6px;
 }
 .primary-nav a:hover, .primary-nav a:focus-visible {
@@ -236,6 +250,18 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .footer-right nav { display: inline-flex; gap: var(--space-2); }
 .footer-right a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
 .footer-right a:hover, .footer-right a:focus-visible { color: var(--text); }
+
+/* Mobile footer layout to keep bottom-right corner free */
+@media (max-width: 599px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer-right {
+    align-self: flex-start;
+  }
+}
 
 /* Media queries */
 @media (min-width: 600px) {
