@@ -13,18 +13,19 @@
   <meta property="og:title" content="Cadance — The music app for dance teachers">
   <meta property="og:description" content="Fast access, class‑friendly controls, rock‑solid playback. Keep the class moving.">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="iPadVerticalLibrary.png">
+  <meta property="og:image" content="cadance_og_home_A.png">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cadance — The music app for dance teachers">
   <meta name="twitter:description" content="Fast access, class‑friendly controls, rock‑solid playback. Keep the class moving.">
-  <meta name="twitter:image" content="iPadVerticalLibrary.png">
+  <meta name="twitter:image" content="cadance_og_home_A.png">
 
   <!-- Favicons -->
   <link rel="icon" href="cadance_Icon.png" sizes="32x32">
-
+  
   <link rel="stylesheet" href="styles.css">
+  <script type="module" src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -41,7 +42,7 @@
             <li><a href="#personas">Who it's for</a></li>
             <li><a href="white-label.html">White Label</a></li>
             <li><a href="publishers/">Publishers</a></li>
-            <li><a href="mailto:hello@cadance.music">Contact</a></li>
+            <li><a href="mailto:info@cadance.music">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -49,20 +50,77 @@
   </header>
 
   <main id="main">
-    <section id="hero" class="section-hero">
-      <div class="container">
-        <div class="hero-grid">
+    <section id="hero" class="section-hero parallax-panel">
+      <div class="parallax-bg" aria-hidden="true">
+        <img src="cadance_hero_30_comp.webp" alt="" decoding="async" fetchpriority="high">
+      </div>
+      <div class="parallax-overlay" aria-hidden="true"></div>
+      <div class="parallax-fg">
+        <div class="container">
           <div class="hero-copy">
             <h1>Keep the class moving</h1>
             <p class="subhead">Fast access, class‑friendly controls, rock‑solid playback. Music that works the way you teach.</p>
             <div class="actions">
-              <a class="btn btn-primary" href="mailto:hello@cadance.music?subject=Join%20waitlist%20for%20Cadance">Join the waitlist</a>
+              <a class="btn btn-primary" href="https://testflight.apple.com/join/SuapC2X5" target="_blank" rel="noopener">Download the free beta</a>
             </div>
             <p class="trust-note">Built on 10+ years of BarreNotes heritage. Used by dance educators worldwide.</p>
           </div>
-          <div class="hero-media">
-            <img src="iPhoneLockScreen.png" alt="Cadance device preview" width="148" height="320" decoding="async">
-          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="section section-testimonials">
+      <div class="container">
+        <h2>What teachers say</h2>
+        <div class="testimonials-grid">
+          <figure class="testimonial-card">
+            <div class="rating" aria-hidden="true">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <span class="visually-hidden">Rated 5 out of 5</span>
+            <blockquote>
+              <p>Cadance keeps my class moving—no more fumbling mid‑combination.</p>
+            </blockquote>
+            <figcaption>
+              <cite>Alex M., Ballet Instructor</cite>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <div class="rating" aria-hidden="true">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <span class="visually-hidden">Rated 5 out of 5</span>
+            <blockquote>
+              <p>The controls match how I teach. My students stay focused.</p>
+            </blockquote>
+            <figcaption>
+              <cite>Jordan S., Jazz & Contemporary</cite>
+            </figcaption>
+          </figure>
+          <figure class="testimonial-card">
+            <div class="rating" aria-hidden="true">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+            <span class="visually-hidden">Rated 5 out of 5</span>
+            <blockquote>
+              <p>Reliable playback every time. Exactly what a busy studio needs.</p>
+            </blockquote>
+            <figcaption>
+              <cite>Priya K., Studio Director</cite>
+            </figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -77,6 +135,76 @@
           <div class="feature-card"><h3>Organization</h3><p>Keep classes tidy with simple, predictable structure.</p></div>
           <div class="feature-card"><h3>Attention on students</h3><p>Spend less time fiddling with the device.</p></div>
           <div class="feature-card"><h3>Built by teachers</h3><p>From the team behind BarreNotes, trusted since 2014.</p></div>
+        </div>
+      </div>
+    </section>
+    
+    <section id="dance-styles" class="section">
+      <div class="container">
+        <details class="folds-top">
+          <summary class="h2-like">Dance styles we support</summary>
+          <p>Broad categories we support across training and performance.</p>
+
+          <div class="folds">
+            <details>
+              <summary>Ballet</summary>
+              <p>Classical to contemporary ballet training and repertoire.</p>
+            </details>
+
+            <details>
+              <summary>Jazz</summary>
+              <p>Classic, contemporary, and commercial jazz for class and stage.</p>
+            </details>
+
+            <details>
+              <summary>Tap</summary>
+              <p>Broadway and rhythm tap for technique and combinations.</p>
+            </details>
+
+            <details>
+              <summary>Hip Hop & Street</summary>
+              <p>Old/new school, breaking, popping, locking, house, and more.</p>
+            </details>
+
+            <details>
+              <summary>Broadway / Musical Theatre</summary>
+              <p>Golden age to contemporary theatre choreography.</p>
+            </details>
+
+            <details>
+              <summary>Ballroom & Latin</summary>
+              <p>Standard, Latin, social, and club styles.</p>
+            </details>
+
+            <details>
+              <summary>Contemporary / Modern</summary>
+              <p>Contemporary and modern techniques, including floorwork.</p>
+            </details>
+
+            <details>
+              <summary>World & Cultural</summary>
+              <p>Cultural and regional forms for study and performance.</p>
+            </details>
+
+            <details>
+              <summary>Additional</summary>
+              <p>Heels, commercial, acro, drill/precision, cheer, dance team.</p>
+            </details>
+          </div>
+
+        </details>
+      </div>
+    </section>
+
+    <section class="parallax-panel parallax-panel--interlude" aria-labelledby="home-interlude-1">
+      <div class="parallax-bg" aria-hidden="true">
+        <img src="cadance_hero_13_comp.webp" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="parallax-overlay" aria-hidden="true"></div>
+      <div class="parallax-fg">
+        <div class="container">
+          <h2 id="home-interlude-1">Indespensible slow downer</h2>
+          <p class="subhead">Top of the line, pro-quality audio library lets you bend the beats to your needs.</p>
         </div>
       </div>
     </section>
@@ -96,17 +224,32 @@
 
     <section id="screenshots" class="section">
       <div class="container">
-        <h2>In action</h2>
-        <div class="showcase-grid">
-          <figure class="shot">
-            <img src="iPhoneFav.png" alt="Favorites view with class sets" loading="lazy" decoding="async">
-          </figure>
-          <figure class="shot">
-            <img src="iPhoneDetails.png" alt="Details view with class‑friendly controls" loading="lazy" decoding="async">
-          </figure>
-          <figure class="shot">
-            <img src="iPadVerticalLibrary.png" alt="Library view organized for classes" loading="lazy" decoding="async">
-          </figure>
+        <details class="folds-top">
+          <summary class="h2-like">Screenshots</summary>
+          <div class="showcase-grid">
+            <figure class="shot">
+              <img src="iPhoneFav.png" alt="Favorites view with class sets" loading="lazy" decoding="async">
+            </figure>
+            <figure class="shot">
+              <img src="iPhoneDetails.png" alt="Details view with class‑friendly controls" loading="lazy" decoding="async">
+            </figure>
+            <figure class="shot">
+              <img src="iPadVertDetails2.PNG" alt="iPad library view organized for classes" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </details>
+      </div>
+    </section>
+
+    <section class="parallax-panel parallax-panel--interlude" aria-labelledby="home-interlude-2">
+      <div class="parallax-bg" aria-hidden="true">
+        <img src="cadance_hero_15_comp.webp" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="parallax-overlay" aria-hidden="true"></div>
+      <div class="parallax-fg">
+        <div class="container">
+          <h2 id="home-interlude-2">Everything you need, nothing you don't</h2>
+          <p class="subhead">Oversized controls, simple navigation, easy repeats, brilliant tempo control. And now with much better access to your music. Still has zero fluff.</p>
         </div>
       </div>
     </section>
@@ -123,28 +266,11 @@
       </div>
     </section>
 
-    <section id="contact" class="section">
-      <div class="container">
-        <h2>Join the waitlist</h2>
-        <div class="actions">
-          <a class="btn btn-primary" href="mailto:hello@cadance.music?subject=Join%20waitlist%20for%20Cadance">Email hello@cadance.music</a>
-        </div>
-        <p class="note">For White Label: enterprise@cadance.music · For Publishers: partnerships@cadance.music</p>
-      </div>
-    </section>
   </main>
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-left">Cadance</div>
-      <div class="footer-right">
-        <small>© 2025 Cadance Music</small>
-        <nav aria-label="Footer">
-          <a href="#features">Features</a>
-          <a href="white-label.html">White Label</a>
-          <a href="publishers/">Publishers</a>
-        </nav>
-      </div>
+      <div class="footer-left"><small>© 2025 Cadance Music</small></div>
     </div>
   </footer>
 </body>

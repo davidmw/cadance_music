@@ -100,9 +100,9 @@ Per‑page meta in each HTML head:
 
 ## CTAs and Contacts
 
-- Join Waitlist (general): `hello@cadance.music`
-- White Label (enterprise): `enterprise@cadance.music`
-- Publishers (rights holders): `partnerships@cadance.music`
+- Join Waitlist (general): `info@cadance.music`
+- White Label (enterprise): `info@cadance.music`
+- Publishers (rights holders): `info@cadance.music`
 
 All CTAs are mailto links with helpful subjects.
 

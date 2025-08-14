@@ -3,7 +3,7 @@
 ## Core Technologies
 - HTML5: Semantic markup with accessibility features
 - CSS3: Modern layout with Grid, Flexbox, and custom properties (design tokens)
-- JavaScript: Not required for functionality; a placeholder file exists for progressive enhancement
+- JavaScript: Progressive enhancement only (parallax); site remains fully usable without JS
 - SVG/PNG: Vector logo and optimized raster screenshots
 
 ## Development Setup
@@ -15,7 +15,7 @@
 ## Technical Constraints
 - Static hosting only: No server-side processing, no dynamic routes
 - No external dependencies: Self-contained codebase, system fonts only
-- No JavaScript frameworks: Vanilla HTML/CSS; JS not referenced by pages
+- No JavaScript frameworks: Vanilla HTML/CSS; JS referenced by pages for progressive enhancement only
 - GitHub Pages: Jekyll disabled via .nojekyll
 - Mobile-first requirement: Works on all device sizes
 
@@ -47,10 +47,15 @@
 5. Commit and push to GitHub for deployment
 
 ### Asset Management
-- Images: PNG/SVG files in repository root
+- Images: PNG/SVG/WebP files in repository root
 - Optimization: Compress images before commit
 - Naming: Descriptive filenames (iPhone..., iPad..., cadance_)
 - Alt text: Required and descriptive
+- Photoreal pipeline:
+  - Prompts in midjourney-commands-batch-01-*.txt
+  - Annotate pins+radii at tools/screen-corner-annotator.html
+  - Define per-image YAML in processing-request.yml
+  - Compose via tools/process_images_v6.py (device-space rounding, backlit UI, adjustable gloss)
 
 ### CSS Architecture
 - Design tokens: CSS custom properties in :root
@@ -60,9 +65,10 @@
 - Smooth scrolling and anchor offset: CSS scroll-behavior + scroll-margin-top
 
 ### JavaScript Strategy
-- Progressive enhancement only (not currently used)
-- script.js retained as a placeholder, not referenced by any page
-- Future enhancements must preserve full functionality with JS disabled
+- Progressive enhancement: parallax scrolling for hero/interlude panels
+- script.js loaded as a module on all pages; effect disabled for prefers‑reduced‑motion
+- Pages remain fully usable with JS disabled; no hard dependencies
+- Future enhancements must preserve full no‑JS functionality
 
 ## Deployment Pipeline
 1. Source: GitHub repository main branch
@@ -74,6 +80,7 @@
 ## Monitoring and Analytics
 - Performance: Manual checks via browser dev tools
 - Accessibility: Manual checks and screen readers
+- Visual QA: debug/debug_{id}_detect.png and debug/debug_{id}_composited.png after each run
 - Analytics: None (privacy-first)
 - Error tracking: Browser console during QA
 
@@ -89,7 +96,7 @@
 - publishers/index.html — Rights-holder permissions
 - publishers.html — Meta-refresh redirect to /publishers/
 - styles.css — Tokens, layout, components
-- script.js — Placeholder only (not referenced)
+- script.js — Progressive enhancement (parallax); referenced by pages
 - README.md — Documentation and maintenance guide
 - .nojekyll — GitHub Pages Jekyll bypass
 - Assets — PNG/SVG images in repo root

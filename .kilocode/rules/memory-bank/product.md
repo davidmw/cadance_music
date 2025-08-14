@@ -27,9 +27,9 @@ The site operates as a multi‑page marketing funnel:
    - Hero: clear benefit (keep the class moving)
    - Features: speed, class control, reliability, organization, focus, heritage
    - Personas: freelancers, studio staff, company instructors, competition teams, online instructors
-   - Screenshots: in‑context visuals with correct dimensions, lazy loading, async decoding
-   - White Label teaser: highlight organizational option
-   - CTAs: Join waitlist (mailto), plus links to White Label and Publishers
+   - Screenshots: in‑context visuals with correct dimensions, lazy loading, async decoding; collapsible presentation
+   - White Label teaser: highlight organizational option (positioned after final interstitial)
+   - CTA: Download the free beta (TestFlight) → https://testflight.apple.com/join/SuapC2X5
 
 2) White Label (Organizations)
    - Who it’s for: large studios, companies, programs, universities, outreach
@@ -68,13 +68,11 @@ The site operates as a multi‑page marketing funnel:
 ## Content Sources and Maintenance
 - Copy lives in the HTML files per page
 - Styles consolidated in a single CSS file with design tokens and shared components
-- No JavaScript required; maintain progressive enhancement posture
+- JavaScript used for progressive enhancement (parallax) via script.js; pages remain fully usable without JS
 - Assets live at repo root; preserve width/height in markup to avoid layout shift
 
 ## CTAs and Emails
-- General (waitlist): hello@cadance.music
-- White Label: enterprise@cadance.music
-- Publishers: partnerships@cadance.music
+- Contact: info@cadance.music
 
 ## Constraints
 - Static site only (GitHub Pages)

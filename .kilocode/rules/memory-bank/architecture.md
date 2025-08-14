@@ -12,18 +12,22 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 │   └── index.html             # Rights-holder permissions page
 ├── publishers.html            # Meta-refresh safety redirect → /publishers/
 ├── styles.css                 # Mobile‑first CSS with design tokens and components
-├── script.js                  # Placeholder only; not referenced by pages
+├── script.js                  # Progressive enhancement (parallax); referenced by pages
 ├── README.md                  # Documentation and maintenance guide
 ├── CNAME                      # GitHub Pages custom domain config
 ├── .nojekyll                  # GitHub Pages Jekyll bypass
 └── assets (repo root images)
     ├── cadance_Icon.png
     ├── cadance_word_d.svg
-    ├── iPhoneLockScreen.png
-    ├── iPhoneFav.png
-    ├── iPhoneDetails.png
-    ├── iPhoneDetails2.png
-    └── iPadVerticalLibrary.png
+    ├── cadance_og_home_A.png
+    ├── cadance_hero_home_final.webp
+    ├── cadance_hero_*.png (MJ7 candidates)
+    ├── iPhoneDetails*.PNG (UI sources)
+    ├── iPhoneFav.PNG
+    ├── iPhoneLibrary*.PNG
+    ├── iPhoneVertLock*.PNG
+    ├── iPadHorzDetails*.PNG
+    └── iPadVertDetails*.PNG
 ```
 
 ## Key Technical Decisions
@@ -41,6 +45,10 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 - Modern layout with CSS Grid/Flexbox
 - Accessibility: focus‑visible styles, reduced motion support, WCAG AA contrast
 - Components: features grid, feature cards, personas grid, teaser card, shared showcase grid
+- In-situ hero compositing pipeline:
+  - screen-corner annotator with per‑corner radii
+  - YAML-driven processor (v6) with device-space rounding and optional gloss
+  - Review contact sheet at shots.html
 
 ### Component Relationships
 ```
@@ -77,8 +85,7 @@ Publishers (publishers/index.html)
 └── Contact (permissions mailto)
 
 Footer (all pages)
-├── Brand text
-└── Links (Home anchors, White Label, Publishers)
+└── Copyright only
 ```
 
 ## Critical Implementation Paths
@@ -118,7 +125,5 @@ Footer (all pages)
 - GitHub Pages: automatic deployment from main
 - Custom domain: cadance.music via CNAME configuration
 - Email integration: mailto links for CTAs
-  - General: hello@cadance.music
-  - White Label: enterprise@cadance.music
-  - Publishers: partnerships@cadance.music
+  - Contact: info@cadance.music
 - Social sharing: per‑page Open Graph and Twitter Card meta tags

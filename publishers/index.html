@@ -23,8 +23,9 @@
 
   <!-- Favicons -->
   <link rel="icon" href="../cadance_Icon.png" sizes="32x32">
-
+  
   <link rel="stylesheet" href="../styles.css">
+  <script type="module" src="../script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
@@ -52,19 +53,20 @@
   </header>
 
   <main id="main">
-    <section id="hero" class="section-hero">
-      <div class="container">
-        <div class="hero-grid">
+    <section id="hero" class="section-hero parallax-panel">
+      <div class="parallax-bg" aria-hidden="true">
+        <img src="../cadance_hero_23_comp.webp" alt="" decoding="async" fetchpriority="high">
+      </div>
+      <div class="parallax-overlay" aria-hidden="true"></div>
+      <div class="parallax-fg">
+        <div class="container">
           <div class="hero-copy">
             <h1>Feature your album in Cadance</h1>
             <p class="subhead">Showcase your album covers and dance‑ready tracks in our product photography and App Store/Google Play listings. Reach thousands of dance educators. Prominent placement. Proper credit.</p>
             <div class="actions">
-              <a class="btn btn-primary" href="mailto:partnerships@cadance.music?subject=Feature%20my%20album%20in%20Cadance">Feature my album</a>
+              <a class="btn btn-primary" href="mailto:info@cadance.music?subject=Feature%20my%20album%20in%20Cadance">Feature my album</a>
             </div>
             <p class="trust-note">Used by dance educators worldwide.</p>
-          </div>
-          <div class="hero-media">
-            <img src="../iPhoneLockScreen.png" alt="Cadance app listing preview with album artwork placements" width="148" height="320" decoding="async">
           </div>
         </div>
       </div>
@@ -93,87 +95,84 @@
 
     <section id="styles" class="section">
       <div class="container">
-        <h2>Dance styles and music we feature</h2>
-        <p>We welcome permission to showcase album artwork across a wide range of dance disciplines and related music. Examples include:</p>
+        <details class="folds-top">
+          <summary class="h2-like">Music we seek</summary>
+          <p>Cadance showcases music across categories that support dance instruction across levels and disciplines.</p>
 
-        <h3>Ballet</h3>
-        <ul>
-          <li>Classical, Neoclassical, Contemporary Ballet</li>
-          <li>Pointe, Variations, Barre, Adage, Allegro</li>
-          <li>Rehearsal, Technique, Combination class music</li>
-        </ul>
+          <div class="folds">
+            <details>
+              <summary>Classical & Orchestral</summary>
+              <ul>
+                <li>Solo piano, chamber, full orchestra, ballet repertoire</li>
+              </ul>
+            </details>
 
-        <h3>Jazz</h3>
-        <ul>
-          <li>Classic Jazz, Contemporary Jazz, Commercial Jazz</li>
-          <li>Funk, Latin Jazz, Street Jazz</li>
-          <li>Lyrical Jazz, Jazz Fusion</li>
-        </ul>
+            <details>
+              <summary>Jazz</summary>
+              <ul>
+                <li>Straight‑ahead, contemporary, big band, swing</li>
+              </ul>
+            </details>
 
-        <h3>Tap</h3>
-        <ul>
-          <li>Broadway Tap, Rhythm Tap, Hoofing, Classical Tap</li>
-          <li>Shim Sham, Improvisation, Technique drills</li>
-        </ul>
+            <details>
+              <summary>Hip Hop & R&B</summary>
+              <ul>
+                <li>Old school to modern, lo‑fi, soulful, instrumental edits</li>
+              </ul>
+            </details>
 
-        <h3>Hip Hop and Street Styles</h3>
-        <ul>
-          <li>Old School, New School, Breaking (B‑Boy/B‑Girl)</li>
-          <li>Popping, Locking, Krump, House</li>
-          <li>Waacking, Voguing, Dancehall, Afrobeats</li>
-          <li>Commercial Choreography, Urban/Street Fusion</li>
-        </ul>
+            <details>
+              <summary>Pop & Contemporary</summary>
+              <ul>
+                <li>Radio, indie pop, ballads, acoustic arrangements</li>
+              </ul>
+            </details>
 
-        <h3>Broadway / Musical Theatre</h3>
-        <ul>
-          <li>Golden Age, Contemporary Musicals, Show Tunes</li>
-          <li>Character, Fosse-inspired, Theatre Jazz</li>
-        </ul>
+            <details>
+              <summary>Electronic</summary>
+              <ul>
+                <li>House, techno, breaks, drum & bass, ambient electronica</li>
+              </ul>
+            </details>
 
-        <h3>Ballroom and Latin</h3>
-        <ul>
-          <li>International Standard: Waltz, Tango, Viennese Waltz, Foxtrot, Quickstep</li>
-          <li>International Latin: Cha‑Cha, Rumba, Samba, Paso Doble, Jive</li>
-          <li>American Smooth: Waltz, Tango, Foxtrot, Viennese Waltz</li>
-          <li>American Rhythm: Cha‑Cha, Rumba, Swing, Bolero, Mambo</li>
-          <li>Social/Club: Salsa, Bachata, Merengue, Kizomba, Zouk, Hustle</li>
-          <li>Swing family: West Coast Swing, East Coast Swing, Lindy Hop, Balboa, Charleston</li>
-          <li>Argentine Tango, Milonga, Vals</li>
-        </ul>
+            <details>
+              <summary>Latin & Afro‑Latin</summary>
+              <ul>
+                <li>Salsa, bachata, samba, bossa nova, reggaeton</li>
+              </ul>
+            </details>
 
-        <h3>Contemporary / Modern</h3>
-        <ul>
-          <li>Lyrical, Contemporary, Modern</li>
-          <li>Graham, Horton, Limón, Cunningham, Release</li>
-          <li>Contact Improvisation, Floorwork</li>
-        </ul>
+            <details>
+              <summary>World & Cultural Traditions</summary>
+              <ul>
+                <li>Folk and regional forms supporting cultural dance studies</li>
+              </ul>
+            </details>
 
-        <h3>Techno and Electronic Music</h3>
-        <ul>
-          <li>Melbourne Shuffle</li>
-          <li>Jumpstyle, Hardstyle</li>
-          <li>Tecktonik (TCK)</li>
-          <li>Liquid, Waving, Muzzing, Hakken</li>
-        </ul>
+            <details>
+              <summary>Musical Theatre & Show Tunes</summary>
+              <ul>
+                <li>Golden age to contemporary productions</li>
+              </ul>
+            </details>
 
-        <h3>World, Cultural, and Other Styles</h3>
-        <ul>
-          <li>Flamenco, Irish & Scottish Dance, Clogging</li>
-          <li>Bollywood, Bhangra, Kathak, Bharatanatyam, Odissi</li>
-          <li>Middle Eastern / Belly Dance (Raqs Sharqi), Turkish, Persian</li>
-          <li>African diasporic forms: Afro‑Cuban, Afro‑Brazilian, West African</li>
-          <li>Hula, Tahitian, Capoeira</li>
-          <li>Reggaeton, Latin Pop, K‑Pop choreography, J‑Pop choreography</li>
-        </ul>
+            <details>
+              <summary>Ballroom & Social Dance Music</summary>
+              <ul>
+                <li>Waltz, tango, foxtrot, quickstep; cha‑cha, rumba, jive, etc.</li>
+              </ul>
+            </details>
 
-        <h3>Additional</h3>
-        <ul>
-          <li>Heels, Commercial, Acro</li>
-          <li>Pom, Drill/Precision, Cheer, Dance Team</li>
-          <li>Country/Western: Two‑Step, Nightclub Two‑Step, Line Dance, Polka</li>
-        </ul>
+            <details>
+              <summary>Ambient, Instrumental & Percussion</summary>
+              <ul>
+                <li>Atmospheric beds, metered percussion, drills</li>
+              </ul>
+            </details>
+          </div>
 
-        <p>If your genre isn’t listed, we’re happy to include it—please email partnerships@cadance.music.</p>
+          <p>If your genre isn’t listed, we’re happy to include it—please email info@cadance.music.</p>
+        </details>
       </div>
     </section>
 
@@ -201,20 +200,35 @@
       </div>
     </section>
 
+    <section class="parallax-panel parallax-panel--interlude" aria-labelledby="pub-interlude-1">
+      <div class="parallax-bg" aria-hidden="true">
+        <img src="../cadance_hero_18_comp.webp" alt="" loading="lazy" decoding="async">
+      </div>
+      <div class="parallax-overlay" aria-hidden="true"></div>
+      <div class="parallax-fg">
+        <div class="container">
+          <h2 id="pub-interlude-1">Prominent, properly credited</h2>
+          <p class="subhead">Transparent scope and revocable permissions keep control in your hands.</p>
+        </div>
+      </div>
+    </section>
+
     <section id="showcase" class="section">
       <div class="container">
-        <h2>In context</h2>
-        <div class="showcase-grid">
-          <figure class="shot">
-            <img src="../iPhoneFav.png" alt="Cadance library view featuring album artwork" loading="lazy" decoding="async">
-          </figure>
-          <figure class="shot">
-            <img src="../iPhoneDetails.png" alt="Cadance favorites view with featured albums" loading="lazy" decoding="async">
-          </figure>
-          <figure class="shot">
-            <img src="../iPadVerticalLibrary.png" alt="Cadance recents view with album artwork in context" loading="lazy" decoding="async">
-          </figure>
-        </div>
+        <details class="folds-top">
+          <summary class="h2-like">Screenshots</summary>
+          <div class="showcase-grid">
+            <figure class="shot">
+              <img src="../iPhoneFav.png" alt="Favorites view with class sets" loading="lazy" decoding="async">
+            </figure>
+            <figure class="shot">
+              <img src="../iPhoneDetails.png" alt="Details view with class‑friendly controls" loading="lazy" decoding="async">
+            </figure>
+            <figure class="shot">
+              <img src="../iPadVertDetails2.PNG" alt="iPad library view organized for classes" loading="lazy" decoding="async">
+            </figure>
+          </div>
+        </details>
       </div>
     </section>
 
@@ -222,7 +236,7 @@
       <div class="container">
         <h2>Start featuring your album</h2>
         <div class="actions">
-          <a class="btn btn-primary" href="mailto:partnerships@cadance.music?subject=Feature%20my%20album%20in%20Cadance">Feature my album</a>
+          <a class="btn btn-primary" href="mailto:info@cadance.music?subject=Feature%20my%20album%20in%20Cadance">Feature my album</a>
         </div>
         <p>Do you need a specific credit line or usage note? Include it in your email.</p>
         <p class="caveat">Caveat: We don't have permission to feature any of the albums shown on the example screenshots above. They are real world examples of what you might see when the product is released to the stores. Apologies to the IP holders and please contact us if you need a modification.</p>
@@ -232,14 +246,7 @@
 
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div class="footer-left">Cadance</div>
-      <div class="footer-right">
-        <small>© 2025 Cadance Music</small>
-        <nav aria-label="Footer">
-          <a href="../index.html#hero">Home</a>
-          <a href="../white-label.html">White Label</a>
-        </nav>
-      </div>
+      <div class="footer-left"><small>© 2025 Cadance Music</small></div>
     </div>
   </footer>
 </body>
