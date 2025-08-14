@@ -176,7 +176,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   gap: var(--space-4);
 }
 .hero-copy .subhead { margin-bottom: var(--space-3); }
-.hero-copy .actions { margin-top: var(--space-2); margin-bottom: var(--space-2); }
+.hero-copy .actions { margin-top: var(--space-2); margin-bottom: var(--space-2); align-items: center; }
 .trust-note { color: var(--muted); font-size: var(--step--1); }
 .hero-media { display: flex; justify-content: center; }
 .hero-media img {
