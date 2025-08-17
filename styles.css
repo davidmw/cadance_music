@@ -6,6 +6,7 @@
   --muted: #B8BBC2;
   --brand: #4FD1C5;
   --accent: #A78BFA;
+  --brand-red: #E8131A;
   color-scheme: light dark;
   --header-h: 56px;
   /* Type scale */
@@ -318,11 +319,15 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   padding: 0;
 }
 .personas-grid li {
-  border: 1px dashed rgba(255,255,255,0.16);
+  background: var(--surface); /* tinted default */
+  border: 1px solid rgba(255,255,255,0.18); /* solid border */
   border-radius: var(--radius);
   padding: var(--space-2);
   text-align: center;
-  color: var(--muted);
+  color: var(--text);           /* near white text */
+  font-weight: 700;             /* heavier than default */
+  display: grid;                /* center label in control */
+  place-items: center;
 }
 
 /* Selectable personas: interactive toggle styles */
@@ -330,32 +335,31 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   cursor: pointer;
   position: relative;
   user-select: none;
-  padding-right: calc(var(--space-2) + 1.6rem); /* room for checkmark */
-  transition: color .15s ease, font-weight .15s ease;
+  transition: color .15s ease, font-weight .15s ease, background-color .15s ease, border-color .15s ease, transform .15s ease;
 }
 
 .personas-grid li[aria-checked="true"] {
-  color: var(--brand);
-  font-weight: 800;
+  background: var(--text);                /* near white bg when selected */
+  color: var(--bg);                       /* dark text to match page background */
+  border: 2px solid var(--brand-red);     /* brand red border */
+  font-weight: 800;                       /* selected is heaviest */
 }
 
 /* Right-side colorful checkmark overlay when selected */
 .personas-grid li::after {
   content: '✓';
   position: absolute;
-  right: 0.6rem;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 1.1rem;
+  right: -0.35rem;               /* overlap the control */
+  top: -0.6rem;                  /* stylish, corner overlap */
+  transform: rotate(-8deg);
+  font-size: 2.6rem;             /* much larger check */
   font-weight: 900;
   line-height: 1;
-  color: transparent; /* fill with gradient via background-clip */
-  background: linear-gradient(135deg, var(--brand), var(--accent));
-  -webkit-background-clip: text;
-  background-clip: text;
-  text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+  color: var(--brand-red);       /* brand red glyph */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
   display: none;
   pointer-events: none;
+  z-index: 1;
 }
 
 .personas-grid li[aria-checked="true"]::after {
@@ -841,4 +845,51 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   -webkit-line-clamp: 4;        /* show first ~4 lines */
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+
+/* CTA centering: hero and bottom interlude */
+.section-hero .hero-copy {
+  text-align: center;
+}
+
+.section-hero .hero-copy .actions {
+  display: flex;
+  justify-content: center;
+}
+
+.parallax-panel--interlude .parallax-fg .container {
+  text-align: center;
+}
+
+.parallax-panel--interlude .parallax-fg .container .actions {
+  display: flex;
+  justify-content: center;
+}
+
+/* Tighten spacing for "Dance styles we support" expanded items */
+#dance-styles .folds details {
+  padding-bottom: 0; /* eliminate extra space below content */
+}
+#dance-styles .folds details > p {
+  margin: 0.25rem 0 0; /* small space above description only */
+}
+#dance-styles .folds details > *:last-child {
+  margin-bottom: 0; /* no extra space after the last element */
+}
+
+/* Inset details text for Home and Publishers category lists; align spacing */
+#dance-styles .folds details > p,
+#styles .folds details > p {
+  padding-left: var(--space-2);
+  margin-top: 0.25rem;
+}
+
+/* Ensure no extra bottom gap after expanded items in both sections */
+#dance-styles .folds details,
+#styles .folds details {
+  padding-bottom: 0;
+}
+#dance-styles .folds details > *:last-child,
+#styles .folds details > *:last-child {
+  margin-bottom: 0;
 }

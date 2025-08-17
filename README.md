@@ -161,3 +161,19 @@ Pushing to `main` updates the live site after GitHub Pages rebuilds.
   - Added `publishers.html` meta refresh to `/publishers/`
   - Extended `styles.css` with features/personas/teaser components
   - Removed legacy JS usage (pages no longer reference `script.js`)
+- 2025‑08‑17
+  - Home
+    - Hero CTA label changed to “Try the BarreNotes sequel” (kept TestFlight URL).
+    - Duplicated the same CTA under the “Everything you need, nothing you don’t” interlude.
+    - Centered hero and bottom interlude headings/subheads and CTA buttons.
+  - Personas (Home → “Roles that can benefit from Cadance”)
+    - Heavier label weight in both states (default/selected), centered labels, solid rounded border.
+    - Default: tinted background, near‑white text.
+    - Selected: near‑white background, dark text to match page background, brand red border, large overlapping checkmark.
+    - Added CSS token --brand-red and updated .personas-grid styles using aria-checked="true" for selection styling.
+  - Dance styles (Home → “Dance styles we support”)
+    - Reduced excess vertical spacing after expanded categories.
+    - Inset details text; compact spacing while preserving readability.
+  - Publishers (“Music we will spotlight”)
+    - Converted one‑line bullet lists to paragraphs to match Home style.
+    - Applied matching inset and spacing rules for expanded categories.
