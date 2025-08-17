@@ -16,6 +16,7 @@ A fast, static, mobile‑first site for the Cadance app. Purpose:
   - `white-label.html` (organizations and institutions)
   - `publishers/index.html` (rights‑holder permissions page)
   - `publishers.html` (stub redirect to `/publishers/`)
+  - `tempo-notes.html` (Tempo Notes resources and feature guides)
 - Styles: `styles.css` (design tokens, layout, and components)
 - JavaScript: `script.js` (legacy features removed; not referenced by pages)
 - Assets: screenshots and brand images in repo root
@@ -54,7 +55,7 @@ Then visit http://localhost:8080 (or your chosen port).
 ## Navigation and Linking
 
 - Header on all pages
-  - Home (or logo), Features (anchor on home), White Label, Publishers, Contact (mailto)
+  - Home (or logo), Features (anchor on home), White Label, Publishers, Tempo Notes, Contact (mailto)
 - Footer on all pages
   - Brand text, © year, links to White Label and Publishers
 - Anchor offsets are handled via CSS `scroll-margin-top` for header height
@@ -97,6 +98,10 @@ Per‑page meta in each HTML head:
   - Title: Cadance White Label — For studios and organizations
   - Description: Consistent brand experience, simple rollout, and priority coordination.
   - OG/Twitter image: `iPhoneDetails.png`
+- Tempo Notes (`tempo-notes.html`)
+  - Title: Cadance Tempo Notes — Music resources and feature guides
+  - Description: Curated music education resources and Cadance feature notes.
+  - OG/Twitter image: `cadance_hero_33.webp`
 
 ## CTAs and Contacts
 
@@ -177,3 +182,6 @@ Pushing to `main` updates the live site after GitHub Pages rebuilds.
   - Publishers (“Music we will spotlight”)
     - Converted one‑line bullet lists to paragraphs to match Home style.
     - Applied matching inset and spacing rules for expanded categories.
+  - Tempo Notes
+    - Added `tempo-notes.html` with link‑only resource cards (open in new tab) and a “Coming soon” placeholder for “My tempo changing demonstration”.
+    - Wired hero image to `cadance_hero_33.webp` and added “Tempo Notes” to the header navigation on all pages.
