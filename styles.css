@@ -913,13 +913,14 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   border-radius: var(--radius);
   overflow: hidden;
   background: #000; /* fallback dark bg behind thumbnails */
+  aspect-ratio: 16 / 9;  /* consistent media area without cropping */
 }
 
-/* Thumbnails: fixed height with cover to remove black bars/letterboxing */
+/* Thumbnails: preserve full frame; no edge cropping */
 .resource-card .thumb {
   width: 100%;
-  height: 270px;         /* match card media height */
-  object-fit: cover;     /* crop letterboxing */
+  height: 100%;
+  object-fit: contain;    /* keep YouTube-published aspect ratio */
   display: block;
 }
 
@@ -928,7 +929,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   display: grid;
   place-items: center;
   background: #0B0B0C;  /* ensure white logo text has contrast */
-  height: 270px;        /* consistent media area */
+  aspect-ratio: 16 / 9; /* inherit consistent media area */
 }
 
 .resource-card--crt .thumb {
