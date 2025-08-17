@@ -58,10 +58,12 @@
   - Compose via tools/process_images_v6.py (device-space rounding, backlit UI, adjustable gloss)
 
 ### CSS Architecture
-- Design tokens: CSS custom properties in :root
+- Design tokens: CSS custom properties in :root (added --brand-red #E8131A for UI accents)
 - Mobile-first: Base styles with breakpoints at 600px and 1024px
 - Components: features-grid, feature-card, personas-grid, teaser-card, showcase-grid
 - Accessibility: :focus-visible styles, prefers-reduced-motion support
+- Personas selection styling: aria-checked="true"; default = tinted background with near-white text; selected = near-white background, dark text, brand-red border, large overlapping checkmark overlay
+- CTA centering: hero and bottom interlude headings/subheads and actions centered via CSS overrides
 - Smooth scrolling and anchor offset: CSS scroll-behavior + scroll-margin-top
 
 ### JavaScript Strategy

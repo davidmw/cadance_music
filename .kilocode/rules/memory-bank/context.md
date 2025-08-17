@@ -41,6 +41,14 @@ Design system and layout are implemented in [styles.css](styles.css) with mobile
 - Email unification:
   - All mailto references consolidated to info@cadance.music
 
+- 2025-08-17 — UI polish and content updates:
+  - Homepage CTAs: changed hero CTA label to “Try the BarreNotes sequel”; duplicated CTA under “Everything you need, nothing you don’t”; centered headings/subheads and CTA buttons on hero and bottom interlude.
+  - Personas visuals: heavier label weight in both default and selected states; centered labels; solid rounded borders. Default uses tinted background with near‑white text; selected uses near‑white background, dark text to match page background, brand red border, and a large overlapping checkmark. Introduced CSS token --brand-red (#E8131A).
+  - Dance styles (Home): reduced vertical spacing under expanded categories; inset details text.
+  - Publishers “Music we will spotlight”: converted one‑line bullets to paragraphs; matched inset and spacing to Home.
+  - Heading update: “Designed for every kind of dance teacher” → “Roles that can benefit from Cadance”.
+  - Mailto note: current addresses use info.rondo@cadance.music; unify to info@cadance.music in a future pass if required.
+
 ## Next Steps
 - Per‑page Open Graph images: update OG/Twitter meta to match final hero choices for each page
 - Copy polish:
