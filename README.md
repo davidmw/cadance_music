@@ -17,8 +17,12 @@ A fast, static, mobile‑first site for the Cadance app. Purpose:
   - `publishers/index.html` (rights‑holder permissions page)
   - `publishers.html` (stub redirect to `/publishers/`)
   - `tempo-notes.html` (Tempo Notes resources and feature guides)
-- Styles: `styles.css` (design tokens, layout, and components)
-- JavaScript: `script.js` (legacy features removed; not referenced by pages)
+- Styles: Split CSS:
+  - `styles.base.css` — tokens, reset, typography, utilities
+  - `styles.layout.css` — header, nav, sections, hero, footer, breakpoints
+  - `styles.components.css` — buttons, grids, cards, personas, folds, testimonials, modals, resource cards
+  - `styles.parallax.css` — parallax panels, overlay scrim, CTA centering
+- JavaScript: `script.js` (progressive enhancement: parallax panels and selectable personas; imported as type="module"; pages remain fully usable without JS)
 - Assets: screenshots and brand images in repo root
   - `cadance_Icon.png` (favicon 32×32)
   - `cadance_word_d.svg` (brand wordmark)
@@ -62,15 +66,13 @@ Then visit http://localhost:8080 (or your chosen port).
 
 ## Styles and Components
 
-- Tokens and layout in `styles.css`
-  - Colors, typography via `clamp()`, spacing, container
-  - Mobile‑first with media queries at 600px and 1024px
-  - Focus-visible styles, reduced motion support
-- Components added:
-  - `.features-grid` + `.feature-card`
-  - `.personas-grid`
-  - `.teaser-card`
-  - Existing `.showcase-grid` and section theming retained
+- CSS is modular:
+  - `styles.base.css`: design tokens, reset, container, typography, links, focus, skip link, section base, reduced motion
+  - `styles.layout.css`: header/navigation, section spacing, hero layout, footer, themed backgrounds, breakpoints, header/logo baseline tweaks
+  - `styles.components.css`: buttons, features/benefits grids, cards, personas (aria-checked selection visuals), folds (plus‑to‑X), testimonials + modal, resource cards
+  - `styles.parallax.css`: parallax panels (CSS variable amplitude), overlay scrim, card centering, CTA centering
+- Mobile‑first with media queries at 600px and 1024px
+- Focus‑visible styles and reduced‑motion support
 
 ## Accessibility and Performance
 
@@ -135,9 +137,9 @@ Pushing to `main` updates the live site after GitHub Pages rebuilds.
   - Teacher homepage copy in `index.html`
   - White Label copy in `white-label.html`
   - Publishers copy in `publishers/index.html`
-- Update styles/tokens: edit `styles.css` (prefer token updates and consistent components)
+- Update styles/tokens: edit `styles.base.css` (tokens), `styles.layout.css` (structure), `styles.components.css` (UI components), `styles.parallax.css` (effects)
 - Update images: replace files or update `src`/`width`/`height` attributes in HTML
-- JavaScript: currently not referenced. Keep the site fully functional without JS.
+- JavaScript: referenced for progressive enhancement (parallax, selectable personas). The site remains fully functional without JS.
 
 ## QA Checklist before commit
 
@@ -185,3 +187,17 @@ Pushing to `main` updates the live site after GitHub Pages rebuilds.
   - Tempo Notes
     - Added `tempo-notes.html` with link‑only resource cards (open in new tab) and a “Coming soon” placeholder for “My tempo changing demonstration”.
     - Wired hero image to `cadance_hero_33.webp` and added “Tempo Notes” to the header navigation on all pages.
+
+- 2025‑08‑17 — CSS modularization and Personas messaging (phase 2)
+  - Split monolithic CSS into modular files loaded in order:
+    1) styles.base.css — tokens, reset, typography, utilities
+    2) styles.layout.css — header/nav, sections, hero, footer, breakpoints, themed backgrounds
+    3) styles.components.css — buttons, grids/cards, personas, folds, testimonials, modals, resource cards
+    4) styles.parallax.css — parallax panels, overlay scrim, CTA centering
+  - Updated all pages to load the new stylesheets and deprecated styles.css
+  - Personas (Home → “Roles that can benefit from Cadance”):
+    - Header default “You should consider auditioning Cadance”; dynamic when selections > 0 → “You have X reasons to audition Cadance”
+    - Added subheader “This fidget toy provides you with a convenient count”
+    - Converted items to singular; appended additional items; primary CTA composes selected options in mail body followed by “One more thing I would love:”
+    - Added secondary CTA “Try Cadance”; increased spacing above CTAs; two‑button layout with responsive wrapping
+  - Documentation and Memory Bank updated to reflect CSS split and personas enhancements

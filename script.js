@@ -95,15 +95,19 @@ initParallax();
 // Named exports for potential future progressive enhancement usage
 export { initParallax, bindPanels, computeProgress };
 
-// Selectable personas/targets with per-section scoring (progressive enhancement)
+/**
+ * Selectable personas/targets (progressive enhancement)
+ * - Home (#personas): toggle items, update H2 title with count, and build mailto CTA body
+ * - Other sections (e.g., #who): toggle items only
+ */
 function initSelectablePersonas() {
   try {
     const sections = [
-      { id: 'personas', scoreLabel: 'Matches' }, // index.html
-      { id: 'who', scoreLabel: 'Selected' }      // white-label.html
+      { id: 'personas', mode: 'home' },
+      { id: 'who', mode: 'generic' }
     ];
 
-    sections.forEach(({ id, scoreLabel }) => {
+    sections.forEach(({ id, mode }) => {
       const section = document.getElementById(id);
       if (!section) return;
 
@@ -111,37 +115,24 @@ function initSelectablePersonas() {
       const h2 = section.querySelector('h2');
       if (!list || !h2) return;
 
-      // Inject a score badge to the right of the section label (hidden until > 0)
-      let badge = h2.querySelector('.score-badge');
-      if (!badge) {
-        badge = document.createElement('span');
-        badge.className = 'score-badge';
-        badge.setAttribute('aria-live', 'polite');
-        badge.setAttribute('role', 'status');
-
-        const labelSpan = document.createElement('span');
-        labelSpan.className = 'score-label';
-        labelSpan.textContent = scoreLabel + ': ';
-
-        const valueSpan = document.createElement('span');
-        valueSpan.className = 'score-value';
-        valueSpan.textContent = '0';
-
-        badge.append(labelSpan, valueSpan);
-        h2.append(' ', badge);
+      // Cache default title to restore when count == 0
+      if (!h2.dataset.defaultTitle) {
+        h2.dataset.defaultTitle = h2.textContent.trim();
       }
 
       // Make list items togglable (checkbox-like)
       const items = Array.from(list.querySelectorAll('li'));
       items.forEach((li) => {
         li.setAttribute('role', 'checkbox');
-        li.setAttribute('aria-checked', 'false');
+        if (!li.hasAttribute('aria-checked')) {
+          li.setAttribute('aria-checked', 'false');
+        }
         li.setAttribute('tabindex', '0');
 
         function toggle() {
           const checked = li.getAttribute('aria-checked') === 'true';
           li.setAttribute('aria-checked', checked ? 'false' : 'true');
-          updateScore();
+          updateUI();
         }
 
         li.addEventListener('click', toggle);
@@ -153,19 +144,47 @@ function initSelectablePersonas() {
         });
       });
 
-      function updateScore() {
-        const count = items.filter(li => li.getAttribute('aria-checked') === 'true').length;
-        const valueSpan = badge.querySelector('.score-value');
-        if (valueSpan) valueSpan.textContent = String(count);
+      const cta = document.getElementById('needs-cta');
+
+      function getSelected() {
+        return items
+          .filter(li => li.getAttribute('aria-checked') === 'true')
+          .map(li => li.textContent.trim())
+          .filter(Boolean);
+      }
+
+      function updateHeader(count) {
+        if (mode !== 'home') return;
+        const defaultTitle = h2.dataset.defaultTitle || 'You should consider auditioning Cadance';
         if (count > 0) {
-          badge.classList.add('is-visible');
+          h2.textContent = `You have ${count} reasons to audition Cadance`;
         } else {
-          badge.classList.remove('is-visible');
+          h2.textContent = defaultTitle;
         }
       }
 
-      // Initialize hidden state
-      badge.classList.remove('is-visible');
+      function updateCTA(selected) {
+        if (!cta) return;
+        const subject = 'Cadance — What I need';
+        let body = '';
+        if (selected.length) {
+          body += 'Selected options:\r\n';
+          body += selected.map(s => `- ${s}`).join('\r\n');
+          body += '\r\n\r\n';
+        }
+        body += 'One more thing I would love:';
+        const href = `mailto:info@cadance.music?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        cta.setAttribute('href', href);
+      }
+
+      function updateUI() {
+        const selected = getSelected();
+        updateHeader(selected.length);
+        updateCTA(selected);
+      }
+
+      // Initialize UI
+      updateUI();
     });
   } catch (_) {
     // Fail silently to preserve no-JS baseline

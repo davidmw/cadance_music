@@ -1,0 +1,135 @@
+/* styles.parallax.css — Parallax panels and interludes (progressive enhancement) */
+
+/* Panels */
+.parallax-panel {
+  --amp: 12px; /* mobile amplitude ±12px */
+  position: relative;
+  min-height: 100svh;
+  display: grid;
+  grid-template-rows: 1fr;
+  isolation: isolate; /* ensure overlay stacks correctly */
+  overflow: clip;
+  overflow: hidden;
+}
+
+.parallax-panel--interlude {
+  min-height: 70svh;
+}
+
+.parallax-bg,
+.parallax-overlay {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+}
+
+.parallax-bg {
+  z-index: 0;
+  transform: translateY(calc(var(--parallax, 0) * var(--amp)));
+  will-change: transform;
+}
+
+.parallax-bg > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.parallax-overlay {
+  z-index: 1;
+  pointer-events: none;
+  /* Stronger bottom scrim for legibility */
+  background: linear-gradient(
+    to top,
+    rgba(0,0,0,0.45) 0%,
+    rgba(0,0,0,0.08) 55%,
+    rgba(0,0,0,0) 100%
+  );
+}
+
+.parallax-fg {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-items: end;
+  padding-block: var(--space-2);
+}
+
+/* Give foreground content breathing room from bottom edge */
+.parallax-fg .container {
+  padding-bottom: max(var(--space-6), 12vh);
+}
+
+/* Tablet amplitude */
+@media (min-width: 600px) {
+  .parallax-panel { --amp: 30px; } /* tablet amplitude ±30px */
+}
+
+/* Desktop amplitude and interlude height tweak */
+@media (min-width: 1024px) {
+  .parallax-panel { --amp: 60px; } /* desktop amplitude ±60px */
+  .parallax-panel--interlude { min-height: 75svh; }
+}
+
+/* Respect reduced motion: no parallax movement */
+@media (prefers-reduced-motion: reduce) {
+  .parallax-panel { --amp: 0px; }
+}
+
+/* Tinted readability cards for hero and interludes */
+.section-hero.parallax-panel .hero-copy,
+.parallax-panel--interlude .parallax-fg .container {
+  background: rgba(12, 12, 14, 0.56);
+  -webkit-backdrop-filter: saturate(140%) blur(2px);
+  backdrop-filter: saturate(140%) blur(2px);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: var(--space-3);
+  box-shadow: var(--shadow-2);
+  max-width: min(var(--maxw), 48rem);
+}
+
+/* Keep interlude card compact and centered */
+.parallax-panel--interlude .parallax-fg {
+  display: grid;
+  align-items: end;
+}
+.parallax-panel--interlude .parallax-fg .container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Subtle heading shadow on imagery */
+.section-hero.parallax-panel h1,
+.parallax-panel--interlude h2 {
+  text-shadow: 0 1px 2px rgba(0,0,0,0.6);
+}
+
+/* Interlude placement modifiers */
+.parallax-panel--center .parallax-fg {
+  align-items: center;
+}
+.parallax-panel--center .parallax-fg .container {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: var(--space-3);
+  padding-bottom: var(--space-3);
+}
+
+/* CTA centering: hero and bottom interlude */
+.section-hero .hero-copy {
+  text-align: center;
+}
+.section-hero .hero-copy .actions {
+  display: flex;
+  justify-content: center;
+}
+
+.parallax-panel--interlude .parallax-fg .container {
+  text-align: center;
+}
+.parallax-panel--interlude .parallax-fg .container .actions {
+  display: flex;
+  justify-content: center;
+}

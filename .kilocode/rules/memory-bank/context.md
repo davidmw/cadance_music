@@ -7,7 +7,7 @@ The site is a static, multi‑page marketing site hosted on GitHub Pages:
 - White Label offering at [white-label.html](white-label.html)
 - Safety redirect at [publishers.html](publishers.html) → /publishers/
 
-Design system and layout are implemented in [styles.css](styles.css) with mobile‑first tokens, grids, and components. Progressive enhancement JavaScript now runs via [script.js](script.js), but all pages remain fully usable without JS.
+Design system split across [styles.base.css](styles.base.css), [styles.layout.css](styles.layout.css), [styles.components.css](styles.components.css), and [styles.parallax.css](styles.parallax.css). Progressive enhancement JavaScript runs via [script.js](script.js) for parallax and selectable personas; pages remain fully usable without JS.
 
 ## Recent Changes
 - Parallax architecture and interludes (progressive enhancement):
@@ -48,6 +48,17 @@ Design system and layout are implemented in [styles.css](styles.css) with mobile
   - Publishers “Music we will spotlight”: converted one‑line bullets to paragraphs; matched inset and spacing to Home.
   - Heading update: “Designed for every kind of dance teacher” → “Roles that can benefit from Cadance”.
   - Mailto note: current addresses use info.rondo@cadance.music; unify to info@cadance.music in a future pass if required.
+
+### 2025-08-17 — Personas messaging and CSS modularization
+- Home personas (“Roles that can benefit from Cadance”):
+  - Header default: “You should consider auditioning Cadance”; dynamic when selections > 0: “You have X reasons to audition Cadance” via [initSelectablePersonas()](script.js:98).
+  - Subheader added: “This fidget toy provides you with a convenient count”.
+  - Items switched to singular; appended additional items; CTA “Tell Cadance what I need” composes email body with selected options plus trailing “One more thing I would love:”; added secondary CTA “Try Cadance”.
+  - Increased spacing and two-button layout via [styles.components.css](styles.components.css:1) rule for #personas .actions.
+- CSS split:
+  - Created [styles.base.css](styles.base.css), [styles.layout.css](styles.layout.css), [styles.components.css](styles.components.css), [styles.parallax.css](styles.parallax.css).
+  - Updated pages to load in order: base → layout → components → parallax.
+  - Deprecated [styles.css](styles.css); removed from page references (file scheduled for deletion).
 
 ## Next Steps
 - Per‑page Open Graph images: update OG/Twitter meta to match final hero choices for each page

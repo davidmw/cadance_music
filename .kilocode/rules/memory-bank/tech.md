@@ -58,6 +58,7 @@
   - Compose via tools/process_images_v6.py (device-space rounding, backlit UI, adjustable gloss)
 
 ### CSS Architecture
+- Split CSS into modular files, loaded in order: styles.base.css → styles.layout.css → styles.components.css → styles.parallax.css
 - Design tokens: CSS custom properties in :root (added --brand-red #E8131A for UI accents)
 - Mobile-first: Base styles with breakpoints at 600px and 1024px
 - Components: features-grid, feature-card, personas-grid, teaser-card, showcase-grid
@@ -97,8 +98,11 @@
 - white-label.html — Organizations and institutions
 - publishers/index.html — Rights-holder permissions
 - publishers.html — Meta-refresh redirect to /publishers/
-- styles.css — Tokens, layout, components
-- script.js — Progressive enhancement (parallax); referenced by pages
+- styles.base.css — Tokens, reset, typography, utilities
+- styles.layout.css — Header/nav, sections, hero, footer, breakpoints, themed backgrounds
+- styles.components.css — Buttons, grids/cards, personas, folds, testimonials, modals, resource cards
+- styles.parallax.css — Parallax panels, overlay scrim, CTA centering
+- script.js — Progressive enhancement (parallax, selectable personas); referenced by pages
 - README.md — Documentation and maintenance guide
 - .nojekyll — GitHub Pages Jekyll bypass
 - Assets — PNG/SVG images in repo root

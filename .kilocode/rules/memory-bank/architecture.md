@@ -11,8 +11,11 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 ├── publishers/
 │   └── index.html             # Rights-holder permissions page
 ├── publishers.html            # Meta-refresh safety redirect → /publishers/
-├── styles.css                 # Mobile‑first CSS with design tokens and components
-├── script.js                  # Progressive enhancement (parallax); referenced by pages
+├── styles.base.css            # Tokens, reset, typography, utilities
+├── styles.layout.css          # Header/nav, sections, hero, footer, breakpoints
+├── styles.components.css      # Buttons, grids/cards, personas, folds, testimonials, modals, resource cards
+├── styles.parallax.css        # Parallax panels, overlay scrim, CTA centering
+├── script.js                  # Progressive enhancement (parallax, selectable personas); referenced by pages
 ├── README.md                  # Documentation and maintenance guide
 ├── CNAME                      # GitHub Pages custom domain config
 ├── .nojekyll                  # GitHub Pages Jekyll bypass

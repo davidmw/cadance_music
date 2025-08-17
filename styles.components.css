@@ -1,0 +1,428 @@
+/* styles.components.css — Buttons, grids, cards, personas, folds, testimonials, modals */
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  font-size: var(--step-0);
+  font-weight: 600;
+  padding: 0.75rem 1.1rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: var(--bg);
+  background: var(--brand);
+  text-decoration: none;
+  transition: background-color .2s ease, color .2s ease, transform .2s ease, box-shadow .2s ease;
+  box-shadow: var(--shadow-1);
+}
+.btn:hover, .btn:focus-visible { transform: translateY(-1px); box-shadow: var(--shadow-2); }
+.btn-primary { background: var(--brand); color: #00110f; }
+.btn-primary:hover { background: #49c4b9; }
+
+/* Features grid and cards */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-1);
+}
+.feature-card {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  color: var(--text);
+  box-shadow: var(--shadow-1);
+}
+.feature-card h3 { margin: 0 0 var(--space-1); }
+.feature-card p { margin: 0; color: var(--muted); }
+
+/* Benefits list */
+.benefits-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+}
+.benefits-list li {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: var(--radius);
+  padding: var(--space-3);
+  color: var(--text);
+  box-shadow: var(--shadow-1);
+}
+
+/* Ordered steps */
+.steps { margin: 0; padding-left: 1.25rem; }
+.steps li { margin-bottom: 0.75rem; }
+
+/* Showcase */
+.showcase-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-2);
+}
+.shot img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-2);
+}
+
+/* Contact notes */
+#contact .note { color: var(--muted); margin-top: var(--space-2); }
+#contact .caveat { color: yellow; font-weight: bold; margin-top: var(--space-2); }
+#contact .actions { margin-top: var(--space-2); }
+
+/* Personas grid */
+.personas-grid {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+}
+.personas-grid li {
+  background: var(--surface); /* tinted default */
+  border: 1px solid rgba(255,255,255,0.18); /* solid border */
+  border-radius: var(--radius);
+  padding: var(--space-2);
+  text-align: center;
+  color: var(--text);           /* near white text */
+  font-weight: 700;             /* heavier than default */
+  display: grid;                /* center label in control */
+  place-items: center;
+
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  transition: color .15s ease, font-weight .15s ease, background-color .15s ease, border-color .15s ease, transform .15s ease;
+}
+.personas-grid li[aria-checked="true"] {
+  background: var(--text);                /* near white bg when selected */
+  color: var(--bg);                       /* dark text to match page background */
+  border: 2px solid var(--brand-red);     /* brand red border */
+  font-weight: 800;                       /* selected is heaviest */
+}
+/* Right-side colorful checkmark overlay when selected */
+.personas-grid li::after {
+  content: '✓';
+  position: absolute;
+  right: -0.35rem;               /* overlap the control */
+  top: -0.6rem;                  /* stylish, corner overlap */
+  transform: rotate(-8deg);
+  font-size: 2.6rem;             /* much larger check */
+  font-weight: 900;
+  line-height: 1;
+  color: var(--brand-red);       /* brand red glyph */
+  text-shadow: 0 2px 6px rgba(0,0,0,0.4);
+  display: none;
+  pointer-events: none;
+  z-index: 1;
+}
+.personas-grid li[aria-checked="true"]::after { display: block; }
+
+/* (legacy) Score badge — kept for compatibility, hidden by default */
+.score-badge {
+  display: none;
+  margin-left: 0.5rem;
+  font-size: var(--step--1);
+  color: var(--muted);
+  vertical-align: middle;
+}
+.score-badge .score-value { color: var(--brand); font-weight: 800; }
+.score-badge.is-visible { display: inline; }
+
+/* Teaser card */
+.teaser-card {
+  background: linear-gradient(180deg, rgba(79,209,197,0.12), rgba(79,209,197,0.04));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: var(--space-3);
+  box-shadow: var(--shadow-2);
+}
+.teaser-card .actions { margin-top: var(--space-2); }
+
+/* Testimonials */
+.section-testimonials h2 { margin-bottom: var(--space-2); }
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-1);
+}
+@media (min-width: 600px) {
+  .testimonials-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 1024px) {
+  .testimonials-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
+.testimonial-card {
+  position: relative;
+  background: linear-gradient(180deg, rgba(167,139,250,0.12), rgba(79,209,197,0.06));
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: var(--space-3);
+  box-shadow: var(--shadow-2);
+}
+.testimonial-card::before {
+  content: "“";
+  position: absolute;
+  top: 0.35rem;
+  left: 0.65rem;
+  font-size: 4rem;
+  line-height: 1;
+  color: rgba(255,255,255,0.08);
+  pointer-events: none;
+}
+.testimonial-card blockquote { margin: 0; }
+.testimonial-card blockquote p { margin: 0 0 var(--space-2); }
+.testimonial-card figcaption { margin: 0; }
+.testimonial-card cite {
+  display: block;
+  color: var(--muted);
+  font-style: normal;
+  font-size: var(--step--1);
+}
+
+/* Testimonial star ratings */
+.testimonial-card .rating {
+  display: inline-flex;
+  gap: 4px;
+  margin-bottom: var(--space-2);
+}
+.testimonial-card .rating .star {
+  font-size: 1.1rem;
+  line-height: 1;
+  color: #FBBF24; /* accessible amber on dark */
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.35));
+}
+
+/* Testimonial link styles */
+.section-testimonials .more-link {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.section-testimonials .more-link:hover,
+.section-testimonials .more-link:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
+/* Clamp testimonial previews to a few lines in cards */
+.testimonial-card blockquote {
+  margin: 0; /* keep prior rule while extending */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;        /* show first ~4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* CSS-only modal for full testimonial via :target */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+.modal:target {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: block;
+}
+.modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(48rem, 92vw);
+  max-height: 85vh;
+  overflow: auto;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: var(--space-3);
+  box-shadow: var(--shadow-2);
+}
+.modal-dialog h3 { margin-top: 0; margin-bottom: var(--space-2); }
+.modal-dialog blockquote { margin: 0 0 var(--space-2); }
+.modal .rating { margin-bottom: var(--space-2); }
+.modal-actions { margin-top: var(--space-2); text-align: right; }
+.modal-actions .btn { text-decoration: none; }
+
+/* Override: apply line clamp to paragraph inside blockquote for better support */
+.section-testimonials .testimonial-card blockquote { display: block; overflow: visible; }
+.section-testimonials .testimonial-card blockquote p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Foldable lists (details/summary) */
+.folds details {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: var(--radius);
+  padding: var(--space-2);
+}
+.folds details + details { margin-top: var(--space-1); }
+.folds summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+.folds summary::-webkit-details-marker { display: none; }
+.folds details[open] { box-shadow: var(--shadow-1); }
+
+/* Top-level collapsible wrappers */
+.folds-top {
+  background: var(--surface);
+  border: 1px solid rgba(255,255,255,0.10);
+  border-radius: 16px;
+  padding: var(--space-3);
+  box-shadow: var(--shadow-1);
+}
+.folds-top[open] { box-shadow: var(--shadow-2); }
+
+/* Make summary look/act like an H2 while remaining collapsible */
+.folds-top > .h2-like {
+  font-size: var(--step-2);
+  line-height: 1.2;
+  margin: 0;
+  list-style: none;
+  cursor: pointer;
+  color: var(--text);
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  padding-right: 2rem; /* space for plus/X glyph */
+}
+.folds-top > .h2-like::-webkit-details-marker { display: none; }
+.folds-top .folds { margin-top: var(--space-2); }
+
+/* Collapsible indicator: brand plus → rotate to X; center pivot, no circle */
+.folds-top > .h2-like::after {
+  content: '+';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: 50% 50%;
+  font-size: 2.2rem;
+  font-weight: 900;
+  line-height: 1;
+  color: var(--brand);
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  width: auto;
+  height: auto;
+  display: inline-block;
+}
+.folds-top[open] > .h2-like::after {
+  content: '+';
+  transform: translateY(-50%) rotate(45deg);
+}
+/* Personas section CTA row (spacing and horizontal layout) */
+#personas .actions {
+  margin-top: var(--space-4);
+  display: flex;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+
+/* Tighten spacing for "Dance styles we support" expanded items */
+#dance-styles .folds details { padding-bottom: 0; }
+#dance-styles .folds details > p { margin: 0.25rem 0 0; }
+#dance-styles .folds details > *:last-child { margin-bottom: 0; }
+
+/* Inset details text for Home and Publishers category lists; align spacing */
+#dance-styles .folds details > p,
+#styles .folds details > p {
+  padding-left: var(--space-2);
+  margin-top: 0.25rem;
+}
+
+/* Ensure no extra bottom gap after expanded items in both sections */
+#dance-styles .folds details,
+#styles .folds details {
+  padding-bottom: 0;
+}
+#dance-styles .folds details > *:last-child,
+#styles .folds details > *:last-child {
+  margin-bottom: 0;
+}
+
+/* Tempo Notes: slightly smaller titles on resource cards */
+.resource-card .resource-title {
+  font-size: var(--step-0);
+  line-height: 1.25;
+  margin-top: 0.5em; /* add half a line space above title */
+}
+
+/* Tempo Notes: improve resource card visuals and crop letterboxing */
+.resource-card {
+  background: linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.06));
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* Thumbnail wrapper: rounded and clipped */
+.resource-card .thumb-link {
+  display: block;
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: #000; /* fallback dark bg behind thumbnails */
+  aspect-ratio: 16 / 9;  /* consistent media area without cropping */
+}
+
+/* Thumbnails: preserve full frame; no edge cropping */
+.resource-card .thumb {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;    /* keep YouTube-published aspect ratio */
+  display: block;
+}
+
+/* Special handling for Complete Rhythm Trainer (transparent logo on dark bg) */
+.resource-card--crt .thumb-link {
+  display: grid;
+  place-items: center;
+  background: transparent;
+  width: 100%;
+  height: auto;           /* allow full logo to fit; card grows as needed */
+  border-radius: var(--radius);
+  overflow: visible;      /* do not clip the logo */
+}
+
+.resource-card--crt .thumb {
+  width: 100%;
+  height: auto;          /* preserve natural aspect; no cropping */
+  max-width: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+/* Tempo Notes: CTR card should let artwork fill entire card area */
+.resource-card--crt.feature-card {
+  padding: 0; /* remove inner padding so artwork can occupy full card */
+}
+
+/* Ensure wrapper inherits rounding and fills width; keep perfect centering */
+.resource-card--crt .thumb-link {
+  width: 100%;
+  border-radius: inherit;
+  display: grid;
+  place-items: center;
+}

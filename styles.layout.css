@@ -1,0 +1,140 @@
+/* styles.layout.css — Layout: header, nav, sections, hero, footer, responsive */
+
+/* Header */
+.site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  background: var(--surface);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
+  box-shadow: 0 8px 12px rgba(0,0,0,0.25);
+}
+.header-inner {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-1);
+  padding-block: var(--space-1);
+}
+.brand-wordmark { height: auto; width: clamp(120px, 36vw, 180px); }
+
+/* Primary nav (small-screen horizontal scroll support) */
+.primary-nav {
+  flex: 1;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox: hide scrollbar */
+}
+.primary-nav::-webkit-scrollbar { display: none; } /* WebKit: hide scrollbar */
+
+.primary-nav ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: var(--space-1);
+  margin: 0;
+  padding: 0;
+  white-space: nowrap;
+}
+.primary-nav a {
+  color: var(--text);
+  text-decoration: none;
+  font-size: var(--step-0);
+  font-weight: 600;
+  padding: 0.375rem 0.25rem;
+  border-radius: 6px;
+}
+.primary-nav a:hover, .primary-nav a:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+/* Sections */
+.section { padding-block: var(--space-2); }
+.section + .section { border-top: 1px solid rgba(255,255,255,0.06); }
+
+/* Hero section */
+.section-hero {
+  padding-block: var(--space-2);
+  background:
+    radial-gradient(1200px 400px at 20% -10%, rgba(79,209,197,0.18), transparent 60%),
+    radial-gradient(800px 300px at 120% 10%, rgba(167,139,250,0.15), transparent 60%);
+}
+
+.hero-grid {
+  display: grid;
+  gap: var(--space-4);
+}
+.hero-copy .subhead { margin-bottom: var(--space-3); }
+.hero-copy .actions { margin-top: var(--space-2); margin-bottom: var(--space-2); align-items: center; }
+.trust-note { color: var(--muted); font-size: var(--step--1); }
+
+.hero-media { display: flex; justify-content: center; }
+.hero-media img {
+  border-radius: 16px;
+  box-shadow: var(--shadow-2);
+  /* 20% larger across breakpoints */
+  max-height: clamp(240px, 38.4vh, 456px);
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid rgba(255,255,255,0.06);
+  background: var(--surface);
+  padding-block: var(--space-3);
+}
+.footer-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  flex-wrap: wrap;
+}
+.footer-left { font-size: var(--step--1); color: var(--muted); }
+.footer-right { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
+.footer-right small { color: var(--muted); }
+.footer-right nav { display: inline-flex; gap: var(--space-2); }
+.footer-right a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
+.footer-right a:hover, .footer-right a:focus-visible { color: var(--text); }
+
+/* Mobile footer layout to keep bottom-right corner free */
+@media (max-width: 599px) {
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .footer-right {
+    align-self: flex-start;
+  }
+}
+
+/* Breakpoints */
+@media (min-width: 600px) {
+  .hero-grid { grid-template-columns: 1fr; }
+  .section { padding-block: var(--space-4); }
+  .primary-nav ul { gap: var(--space-3); }
+  .brand-wordmark { width: 200px; }
+}
+
+@media (min-width: 1024px) {
+  .hero-grid { grid-template-columns: 1.1fr 1fr; align-items: center; }
+}
+/* Themed section backgrounds */
+#legacy { background: linear-gradient(180deg, rgba(79,209,197,0.10), rgba(79,209,197,0.04)); }
+#benefits { background: linear-gradient(180deg, rgba(167,139,250,0.10), rgba(167,139,250,0.04)); }
+#styles { background: linear-gradient(180deg, rgba(99,102,241,0.10), rgba(99,102,241,0.04)); }
+#transparency { background: linear-gradient(180deg, rgba(56,189,248,0.10), rgba(56,189,248,0.04)); }
+#process { background: linear-gradient(180deg, rgba(216,180,254,0.10), rgba(216,180,254,0.04)); }
+#showcase { background: linear-gradient(180deg, rgba(34,197,94,0.10), rgba(34,197,94,0.04)); }
+#contact { background: linear-gradient(180deg, rgba(253,224,71,0.10), rgba(253,224,71,0.04)); }
+
+/* Header spacing + logo baseline tweaks (override/additive) */
+.header-inner { column-gap: var(--space-3); } /* more space between logo and nav */
+.primary-nav { margin-left: var(--space-3); }  /* additional separation from logo */
+.brand-wordmark { position: relative; top: 3px; } /* drop Cadance logo slightly */
