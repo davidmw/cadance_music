@@ -40,9 +40,8 @@
           <ul>
             <li><a href="#features">Features</a></li>
             <li><a href="#personas">Who it's for</a></li>
-            <li><a href="white-label.html">White Label</a></li>
             <li><a href="publishers/">Music Publishers</a></li>
-            <li><a href="mailto:info@cadance.music">Contact</a></li>
+            <li><a href="mailto:info.rondo@cadance.music">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -78,6 +77,7 @@
       <div class="container">
         <h2>What teachers say</h2>
         <div class="testimonials-grid">
+          <!-- Testimonial 1: Verbatim blurb with modal for full text -->
           <figure class="testimonial-card">
             <div class="rating" aria-hidden="true">
               <span class="star">★</span>
@@ -88,12 +88,15 @@
             </div>
             <span class="visually-hidden">Rated 5 out of 5</span>
             <blockquote>
-              <p>Cadance keeps my class moving—no more fumbling mid‑combination.</p>
+              <p>When you use a tool for over a decade and it's always there and reliable, you sometimes take it for granted, that's what I did with BarreNotes. I've had it on every music device that I've used over the past 10+ years and it went with me to teach class, run rehearsals, provide enrichment classes and facility community social dances.</p>
             </blockquote>
+            <p><a class="more-link" href="#t1" aria-haspopup="dialog" aria-controls="t1">Read full testimonial</a></p>
             <figcaption>
-              <cite>Alex M., Ballet Instructor</cite>
+              <cite>Longtime dance educator</cite>
             </figcaption>
           </figure>
+
+          <!-- Testimonial 2: Edited version (concise) with its own modal -->
           <figure class="testimonial-card">
             <div class="rating" aria-hidden="true">
               <span class="star">★</span>
@@ -104,12 +107,15 @@
             </div>
             <span class="visually-hidden">Rated 5 out of 5</span>
             <blockquote>
-              <p>The controls match how I teach. My students stay focused.</p>
+              <p>For more than a decade, BarreNotes was my reliable companion—from classes to rehearsals and community events. When I couldn’t reinstall it, alternatives slowed me down. Cadance brings back what I relied on, plus thoughtful new touches made for teaching.</p>
             </blockquote>
+            <p><a class="more-link" href="#t2" aria-haspopup="dialog" aria-controls="t2">Read full testimonial</a></p>
             <figcaption>
-              <cite>Jordan S., Jazz & Contemporary</cite>
+              <cite>Longtime dance educator</cite>
             </figcaption>
           </figure>
+
+          <!-- Testimonial 3: Existing short stand‑in kept as is -->
           <figure class="testimonial-card">
             <div class="rating" aria-hidden="true">
               <span class="star">★</span>
@@ -127,6 +133,48 @@
             </figcaption>
           </figure>
         </div>
+
+        <!-- CSS‑only modals via :target -->
+        <div class="modal" id="t1" role="dialog" aria-modal="true" aria-labelledby="t1-title">
+          <a href="#testimonials" class="modal-backdrop" aria-hidden="true"></a>
+          <div class="modal-dialog">
+            <h3 id="t1-title">Full testimonial</h3>
+            <div class="rating" aria-hidden="true" aria-label="5 out of 5 stars">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <blockquote>
+              <p>When you use a tool for over a decade and it's always there and reliable, you sometimes take it for granted, that's what I did with BarreNotes.</p>
+              <p>I've had it on every music device that I've used over the past 10+ years and it went with me to teach class, run rehearsals, provide enrichment classes and facility community social dances.</p>
+              <p>Always simple to use, never bloated with extras that just complicated things or ads.</p>
+              <p>When my phone died and I needed to get a new device, the first thing I wanted to add was BarreNotes, but it wasn't there.</p>
+              <p>For the past year I've been trying alternatives to fill the gap and got so frustrated with other players that would be harder to navigate making teaching classes less smooth or rehearsals not as time efficient.</p>
+              <p>Some would cut off the introductions of class tracks, others had no speed controls, many didn't have a clock displaying the actual time in the app, all little things that are really important to movement professionals trying to use it as an efficient tool.</p>
+              <p>I was so thrilled to find Cadance and in my time testing it have found it to have all of the pieces of their previous app that I've come to rely on in the studio as well as some new features that are proving to be really handy.</p>
+            </blockquote>
+            <div class="modal-actions">
+              <a class="btn btn-primary" href="#testimonials" aria-label="Close full testimonial">Close</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal" id="t2" role="dialog" aria-modal="true" aria-labelledby="t2-title">
+          <a href="#testimonials" class="modal-backdrop" aria-hidden="true"></a>
+          <div class="modal-dialog">
+            <h3 id="t2-title">Full testimonial (edited)</h3>
+            <div class="rating" aria-hidden="true" aria-label="5 out of 5 stars">
+              <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+            </div>
+            <blockquote>
+              <p>For more than a decade, BarreNotes was my reliable companion across every device and setting—from classes to rehearsals and community dance events. It was simple, fast, and free of bloat and ads.</p>
+              <p>When I couldn’t reinstall it on a new phone, alternatives slowed me down: clunky navigation, missing speed controls, chopped intros, and no clock.</p>
+              <p>Cadance has been a relief—everything I relied on from BarreNotes plus thoughtful new touches, tuned for how movement professionals teach.</p>
+            </blockquote>
+            <div class="modal-actions">
+              <a class="btn btn-primary" href="#testimonials" aria-label="Close full testimonial">Close</a>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
@@ -240,17 +288,7 @@
       </div>
     </section>
 
-    <section id="white-label-teaser" class="section">
-      <div class="container">
-        <div class="teaser-card">
-          <h2>For studios and organizations</h2>
-          <p>Provide a consistent brand experience and coordinated onboarding for large teaching teams.</p>
-          <div class="actions">
-            <a class="btn btn-primary" href="white-label.html">Learn about White Label</a>
-          </div>
-        </div>
-      </div>
-    </section>
+    <!-- White Label teaser removed -->
 
   </main>
 

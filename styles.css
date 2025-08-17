@@ -325,6 +325,60 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   color: var(--muted);
 }
 
+/* Selectable personas: interactive toggle styles */
+.personas-grid li {
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  padding-right: calc(var(--space-2) + 1.6rem); /* room for checkmark */
+  transition: color .15s ease, font-weight .15s ease;
+}
+
+.personas-grid li[aria-checked="true"] {
+  color: var(--brand);
+  font-weight: 800;
+}
+
+/* Right-side colorful checkmark overlay when selected */
+.personas-grid li::after {
+  content: '✓';
+  position: absolute;
+  right: 0.6rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.1rem;
+  font-weight: 900;
+  line-height: 1;
+  color: transparent; /* fill with gradient via background-clip */
+  background: linear-gradient(135deg, var(--brand), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-shadow: 0 1px 1px rgba(0,0,0,0.35);
+  display: none;
+  pointer-events: none;
+}
+
+.personas-grid li[aria-checked="true"]::after {
+  display: block;
+}
+
+/* Score badge next to section headings (hidden until score > 0) */
+.score-badge {
+  display: none;
+  margin-left: 0.5rem;
+  font-size: var(--step--1);
+  color: var(--muted);
+  vertical-align: middle;
+}
+
+.score-badge .score-value {
+  color: var(--brand);
+  font-weight: 800;
+}
+
+.score-badge.is-visible {
+  display: inline;
+}
 /* Teaser card */
 .teaser-card {
   background: linear-gradient(180deg, rgba(79,209,197,0.12), rgba(79,209,197,0.04));
@@ -713,3 +767,78 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .header-inner { column-gap: var(--space-3); } /* more space between logo and nav */
 .primary-nav { margin-left: var(--space-3); }  /* additional separation from logo */
 .brand-wordmark { position: relative; top: 3px; } /* drop Cadance logo slightly */
+
+/* Testimonial enhancements: truncated preview + CSS-only modals */
+.section-testimonials .more-link {
+  display: inline-block;
+  font-weight: 700;
+  color: var(--brand);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.section-testimonials .more-link:hover,
+.section-testimonials .more-link:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
+/* Clamp testimonial previews to a few lines in cards */
+.testimonial-card blockquote {
+  margin: 0; /* keep prior rule while extending */
+  display: -webkit-box;
+  -webkit-line-clamp: 4;        /* show first ~4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* CSS-only modal for full testimonial via :target */
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  z-index: 1000;
+}
+.modal:target {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.6);
+  display: block;
+}
+
+/* Dialog */
+.modal-dialog {
+  position: relative;
+  z-index: 1;
+  width: min(48rem, 92vw);
+  max-height: 85vh;
+  overflow: auto;
+  background: var(--surface);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 16px;
+  padding: var(--space-3);
+  box-shadow: var(--shadow-2);
+}
+.modal-dialog h3 { margin-top: 0; margin-bottom: var(--space-2); }
+.modal-dialog blockquote { margin: 0 0 var(--space-2); }
+.modal .rating { margin-bottom: var(--space-2); }
+
+.modal-actions {
+  margin-top: var(--space-2);
+  text-align: right;
+}
+.modal-actions .btn { text-decoration: none; }
+
+/* Override: apply line clamp to paragraph inside blockquote for better support */
+.section-testimonials .testimonial-card blockquote { display: block; overflow: visible; }
+.section-testimonials .testimonial-card blockquote p {
+  display: -webkit-box;
+  -webkit-line-clamp: 4;        /* show first ~4 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

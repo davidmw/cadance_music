@@ -94,3 +94,83 @@ initParallax();
 
 // Named exports for potential future progressive enhancement usage
 export { initParallax, bindPanels, computeProgress };
+
+// Selectable personas/targets with per-section scoring (progressive enhancement)
+function initSelectablePersonas() {
+  try {
+    const sections = [
+      { id: 'personas', scoreLabel: 'Matches' }, // index.html
+      { id: 'who', scoreLabel: 'Selected' }      // white-label.html
+    ];
+
+    sections.forEach(({ id, scoreLabel }) => {
+      const section = document.getElementById(id);
+      if (!section) return;
+
+      const list = section.querySelector('ul.personas-grid');
+      const h2 = section.querySelector('h2');
+      if (!list || !h2) return;
+
+      // Inject a score badge to the right of the section label (hidden until > 0)
+      let badge = h2.querySelector('.score-badge');
+      if (!badge) {
+        badge = document.createElement('span');
+        badge.className = 'score-badge';
+        badge.setAttribute('aria-live', 'polite');
+        badge.setAttribute('role', 'status');
+
+        const labelSpan = document.createElement('span');
+        labelSpan.className = 'score-label';
+        labelSpan.textContent = scoreLabel + ': ';
+
+        const valueSpan = document.createElement('span');
+        valueSpan.className = 'score-value';
+        valueSpan.textContent = '0';
+
+        badge.append(labelSpan, valueSpan);
+        h2.append(' ', badge);
+      }
+
+      // Make list items togglable (checkbox-like)
+      const items = Array.from(list.querySelectorAll('li'));
+      items.forEach((li) => {
+        li.setAttribute('role', 'checkbox');
+        li.setAttribute('aria-checked', 'false');
+        li.setAttribute('tabindex', '0');
+
+        function toggle() {
+          const checked = li.getAttribute('aria-checked') === 'true';
+          li.setAttribute('aria-checked', checked ? 'false' : 'true');
+          updateScore();
+        }
+
+        li.addEventListener('click', toggle);
+        li.addEventListener('keydown', (e) => {
+          if (e.key === ' ' || e.key === 'Enter') {
+            e.preventDefault();
+            toggle();
+          }
+        });
+      });
+
+      function updateScore() {
+        const count = items.filter(li => li.getAttribute('aria-checked') === 'true').length;
+        const valueSpan = badge.querySelector('.score-value');
+        if (valueSpan) valueSpan.textContent = String(count);
+        if (count > 0) {
+          badge.classList.add('is-visible');
+        } else {
+          badge.classList.remove('is-visible');
+        }
+      }
+
+      // Initialize hidden state
+      badge.classList.remove('is-visible');
+    });
+  } catch (_) {
+    // Fail silently to preserve no-JS baseline
+  }
+}
+
+// Auto-init selectable personas/groups
+initSelectablePersonas();
