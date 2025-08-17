@@ -928,7 +928,7 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 .resource-card--crt .thumb-link {
   display: grid;
   place-items: center;
-  background: #0B0B0C;  /* ensure white logo text has contrast */
+  background: transparent;  /* ensure white logo text has contrast */
   aspect-ratio: 16 / 9; /* inherit consistent media area */
 }
 
