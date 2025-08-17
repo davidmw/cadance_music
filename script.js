@@ -174,3 +174,39 @@ function initSelectablePersonas() {
 
 // Auto-init selectable personas/groups
 initSelectablePersonas();
+
+// Tempo Notes: fetch YouTube video titles via oEmbed (progressive enhancement; no API key)
+function initResourceTitles() {
+  try {
+    const cards = document.querySelectorAll('.resource-card[data-yt-id]');
+    if (!cards.length) return;
+
+    cards.forEach((card) => {
+      const id = card.getAttribute('data-yt-id');
+      if (!id) return;
+
+      const titleEl = card.querySelector('.resource-title');
+      const imgEl = card.querySelector('img.thumb');
+      const oembed = `https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=${encodeURIComponent(id)}&format=json`;
+
+      fetch(oembed, { mode: 'cors' })
+        .then((res) => (res.ok ? res.json() : Promise.reject(new Error('oEmbed fetch failed'))))
+        .then((data) => {
+          if (data && data.title) {
+            if (titleEl) titleEl.textContent = data.title;
+            if (imgEl) imgEl.setAttribute('alt', data.title);
+          }
+        })
+        .catch(() => {
+          if (titleEl && titleEl.textContent === 'Loading title…') {
+            titleEl.textContent = 'External video';
+          }
+        });
+    });
+  } catch (_) {
+    // Preserve no-JS baseline
+  }
+}
+
+// Auto-init resource titles
+initResourceTitles();
