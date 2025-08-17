@@ -893,3 +893,9 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
 #styles .folds details > *:last-child {
   margin-bottom: 0;
 }
+
+/* Tempo Notes: slightly smaller titles on resource cards */
+.resource-card .resource-title {
+  font-size: var(--step-0);
+  line-height: 1.25;
+}
