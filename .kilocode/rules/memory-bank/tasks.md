@@ -62,30 +62,30 @@ Legacy UI code from the original single-page/tabbed interface has been removed. 
 **Last performed:** 2025-08-17  
 **Status:** Completed  
 **Files to modify:**
-- [`index.html`](index.html:1) — Hero CTA label; duplicate CTA under bottom interlude; personas heading rename
-- [`styles.css`](styles.css:1) — CTA centering rules; personas-grid default/selected states; --brand-red token; folds spacing/inset for Home (#dance-styles) and Publishers (#styles); large overlapping checkmark
-- [`publishers/index.html`](publishers/index.html:1) — Replace UL/LI within “Music we will spotlight” with paragraphs
+- [index.html](index.html:1) — Hero CTA label; duplicate CTA under bottom interlude; personas heading rename
+- [styles.css](styles.css:1) — CTA centering rules; personas-grid default/selected states; --brand-red token; folds spacing/inset for Home (#dance-styles) and Publishers (#styles); large overlapping checkmark
+- [publishers/index.html](publishers/index.html:1) — Replace UL/LI within “Music we will spotlight” with paragraphs
 
 **Steps:**
-1. Update hero CTA label in [`index.html`](index.html:61) to “Try the BarreNotes sequel”; duplicate same CTA under the “Everything you need, nothing you don’t” interlude, inside the container, above the subhead.
-2. Center hero and bottom interlude headings/subheads and CTA buttons by adding rules in [`styles.css`](styles.css:1):
-   - `.section-hero .hero-copy { text-align: center; }`
-   - `.section-hero .hero-copy .actions { display: flex; justify-content: center; }`
-   - `.parallax-panel--interlude .parallax-fg .container { text-align: center; }`
-   - `.parallax-panel--interlude .parallax-fg .container .actions { display: flex; justify-content: center; }`
-3. Personas visuals in [`styles.css`](styles.css:311):
-   - Add token `--brand-red: #E8131A;` under `:root`.
-   - Default state `.personas-grid li`: solid border, tinted background (`var(--surface)`), centered label (`display: grid; place-items: center;`), near-white text (`var(--text)`), heavier weight (700).
-   - Selected state `.personas-grid li[aria-checked="true"]`: near-white background (`var(--text)`), dark text (`var(--bg)`), 2px solid `var(--brand-red)`, weight 800, large overlapping checkmark via `::after` positioned at top-right and colored `var(--brand-red)`.
+1. Update hero CTA label in [index.html](index.html:61) to “Try the BarreNotes sequel”; duplicate same CTA under the “Everything you need, nothing you don’t” interlude, inside the container, above the subhead.
+2. Center hero and bottom interlude headings/subheads and CTA buttons by adding rules in [styles.css](styles.css:1):
+   - .section-hero .hero-copy { text-align: center; }
+   - .section-hero .hero-copy .actions { display: flex; justify-content: center; }
+   - .parallax-panel--interlude .parallax-fg .container { text-align: center; }
+   - .parallax-panel--interlude .parallax-fg .container .actions { display: flex; justify-content: center; }
+3. Personas visuals in [styles.css](styles.css:311):
+   - Add token --brand-red: #E8131A; under :root.
+   - Default state .personas-grid li: solid border, tinted background (var(--surface)), centered label (display: grid; place-items: center;), near-white text (var(--text)), heavier weight (700).
+   - Selected state .personas-grid li[aria-checked="true"]: near-white background (var(--text)), dark text (var(--bg)), 2px solid var(--brand-red), weight 800, large overlapping checkmark via ::after positioned at top-right and colored var(--brand-red).
 4. Folds spacing and inset:
-   - Home: In [`styles.css`](styles.css:870), for `#dance-styles .folds details`: remove extra bottom padding and ensure last child has no bottom margin; inset description text with `padding-left: var(--space-2); margin-top: 0.25rem;`.
-   - Publishers: Mirror the same rules for `#styles .folds details` and `#styles .folds details > p`.
-5. Publishers spotlight bullets to paragraphs in [`publishers/index.html`](publishers/index.html:101):
-   - Replace one-line `<ul><li>…</li></ul>` under each category with a single `<p>…</p>` to match Home style.
+   - Home: In [styles.css](styles.css:870), for #dance-styles .folds details: remove extra bottom padding and ensure last child has no bottom margin; inset description text with padding-left: var(--space-2); margin-top: 0.25rem;.
+   - Publishers: Mirror the same rules for #styles .folds details and #styles .folds details > p.
+5. Publishers spotlight bullets to paragraphs in [publishers/index.html](publishers/index.html:101):
+   - Replace one-line <ul><li>…</li></ul> under each category with a single <p>…</p> to match Home style.
 
 **Important considerations:**
 - Accessibility: preserve semantic headings, focus-visible, and adequate contrast.
-- Progressive enhancement: personas selection is keyed off `aria-checked="true"`; optional JS can toggle state later without breaking no-JS.
+- Progressive enhancement: personas selection is keyed off aria-checked="true"; optional JS can toggle state later without breaking no-JS.
 - Consistency: shared inset/spacing for Home and Publishers; CTA alignment consistent across hero and interlude.
 
 **Expected outcome:**
