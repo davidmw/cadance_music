@@ -930,17 +930,18 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   display: grid;
   place-items: center;
   background: transparent;
-  aspect-ratio: 16 / 9;
-  overflow: hidden;      /* keep logo fully within the reserved thumb area */
-  padding: 0;            /* maximize available area; no artificial cropping */
+  width: 100%;
+  height: auto;           /* allow full logo to fit; card grows as needed */
+  border-radius: var(--radius);
+  overflow: visible;      /* do not clip the logo */
 }
 
 .resource-card--crt .thumb {
-  width: auto;
-  height: auto;
+  width: 100%;
+  height: auto;          /* preserve natural aspect; no cropping */
   max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;  /* fit entire logo; no cropping; keep natural aspect */
+  object-fit: contain;
+  display: block;
 }
 
 
