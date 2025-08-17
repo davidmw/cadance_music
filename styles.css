@@ -942,3 +942,17 @@ section[id] { scroll-margin-top: calc(var(--header-h) + 8px); }
   max-height: 100%;
   object-fit: contain;  /* fit entire logo; no cropping; keep natural aspect */
 }
+
+
+/* Tempo Notes: CTR card should let artwork fill entire card area */
+.resource-card--crt.feature-card {
+  padding: 0; /* remove inner padding so artwork can occupy full card */
+}
+
+/* Ensure wrapper inherits rounding and fills width; keep perfect centering */
+.resource-card--crt .thumb-link {
+  width: 100%;
+  border-radius: inherit;
+  display: grid;
+  place-items: center;
+}
