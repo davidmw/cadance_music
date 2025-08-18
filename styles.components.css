@@ -343,6 +343,17 @@
   flex-wrap: wrap;
 }
 
+/* Tighten ONLY the spacing between the H2 and the subhead in the personas section */
+#personas h2 {
+  margin-bottom: 0.2em;  /* fallback for browsers without lh unit */
+  margin-bottom: 0.2lh;  /* tighter space below heading for this section only */
+}
+
+/* Subhead should not add extra gap; rely on h2 margin only */
+#personas .subhead {
+  margin-top: 0;        /* neutralize paragraph/subhead default top margin */
+}
+
 /* Tighten spacing for "Dance styles we support" expanded items */
 #dance-styles .folds details { padding-bottom: 0; }
 #dance-styles .folds details > p { margin: 0.25rem 0 0; }
