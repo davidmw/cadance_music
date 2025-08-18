@@ -66,6 +66,8 @@
 - Personas selection styling: aria-checked="true"; default = tinted background with near-white text; selected = near-white background, dark text, brand-red border, large overlapping checkmark overlay
 - CTA centering: hero and bottom interlude headings/subheads and actions centered via CSS overrides
 - Smooth scrolling and anchor offset: CSS scroll-behavior + scroll-margin-top
+- Header stabilization (mobile): lock header height to var(--header-h); .primary-nav min-width: 0 with overflow-y: hidden and overscroll-behavior: contain; touch-action: pan-y to prevent horizontal drift; .header-inner overflow-x: hidden; tighter mobile gaps and reduced link padding/font-size.
+- Footer navigation: consistent footer nav across all pages ordered Home → Publishers → Tempo Notes → White Label → FAQ → Privacy.
 
 ### JavaScript Strategy
 - Progressive enhancement: parallax scrolling for hero/interlude panels
@@ -95,9 +97,12 @@
 
 ## Source Layout (current)
 - index.html — Teacher-focused homepage
+- tempo-notes.html — Music resources and Cadance features guide (includes interlude hero cadance_hero_34.webp)
 - white-label.html — Organizations and institutions
 - publishers/index.html — Rights-holder permissions
 - publishers.html — Meta-refresh redirect to /publishers/
+- privacy.html — Privacy policy
+- faq.html — Frequently asked questions
 - styles.base.css — Tokens, reset, typography, utilities
 - styles.layout.css — Header/nav, sections, hero, footer, breakpoints, themed backgrounds
 - styles.components.css — Buttons, grids/cards, personas, folds, testimonials, modals, resource cards

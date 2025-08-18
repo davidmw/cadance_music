@@ -7,7 +7,10 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 ```
 /
 ├── index.html                 # Teacher‑focused homepage
+├── tempo-notes.html           # Tempo Notes: resources and Cadance features guide
 ├── white-label.html           # White Label offering for orgs/institutions
+├── privacy.html               # Privacy policy
+├── faq.html                   # Frequently asked questions
 ├── publishers/
 │   └── index.html             # Rights-holder permissions page
 ├── publishers.html            # Meta-refresh safety redirect → /publishers/
@@ -23,9 +26,8 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
     ├── cadance_Icon.png
     ├── cadance_word_d.svg
     ├── cadance_og_home_A.png
-    ├── cadance_hero_home_final.webp
-    ├── cadance_hero_*.png (MJ7 candidates)
-    ├── iPhoneDetails*.PNG (UI sources)
+    ├── cadance_hero_*.webp/.png
+    ├── iPhoneDetails*.PNG
     ├── iPhoneFav.PNG
     ├── iPhoneLibrary*.PNG
     ├── iPhoneVertLock*.PNG
@@ -59,22 +61,29 @@ Header (sticky)
 ├── Brand logo (cadance_word_d.svg)
 └── Primary navigation:
     • Home (logo) / Features (#features on homepage)
-    • White Label (white-label.html)
     • Publishers (publishers/)
+    • Tempo Notes (tempo-notes.html)
+    • White Label (white-label.html)
     • Contact (mailto)
 
 Home (index.html)
 ├── Hero (headline, subhead, CTA)
 ├── Features grid (cards)
 ├── Personas grid (who it’s for)
-├── Screenshots (showcase grid)
-├── White Label teaser (teaser card)
-└── Contact strip (mailto CTAs)
+├── Interludes (parallax panels)
+└── Contact CTAs
+
+Tempo Notes (tempo-notes.html)
+├── Hero (parallax)
+├── Resources (cards, external links)
+├── Interlude hero (cadance_hero_34.webp)
+└── Cadance features guide (cards: Tempo changing demonstration, Importing music, How favorites work, Mastering repeats)
 
 White Label (white-label.html)
 ├── Hero (CTA)
 ├── Who it’s for (personas grid)
 ├── Value pillars (features grid)
+├── Interlude (parallax)
 ├── Process (ordered list)
 └── Contact (enterprise mailto)
 
@@ -88,7 +97,7 @@ Publishers (publishers/index.html)
 └── Contact (permissions mailto)
 
 Footer (all pages)
-└── Copyright only
+└── Footer navigation (Home → Publishers → Tempo Notes → White Label → FAQ → Privacy) + copyright
 ```
 
 ## Critical Implementation Paths

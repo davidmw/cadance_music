@@ -93,3 +93,88 @@ Legacy UI code from the original single-page/tabbed interface has been removed. 
 - Personas controls: heavier labels, centered text, solid rounded borders; clear default/selected visuals with brand-red checkmark.
 - Folds in Home and Publishers: compact spacing, inset descriptions with no trailing whitespace.
 - Publishers “Music we will spotlight” uses paragraphs instead of bullets, visually matching Home.
+## Header/Nav Stabilization (Mobile)
+**Last performed:** 2025-08-18  
+**Status:** Completed  
+**Files to modify:**
+- [styles.layout.css](styles.layout.css:1) — header fixed height, nav stability on mobile
+
+**Steps:**
+1. In [.primary-nav](styles.layout.css:23), add min-width: 0; overflow-y: hidden; overscroll-behavior: contain; touch-action: pan-y; keep overflow-x: auto.
+2. In mobile media query (max-width: 599px), set [.site-header](styles.layout.css:108) and [.header-inner](styles.layout.css:112) height/min-height to var(--header-h), align-items: center, padding-block: 0, and column-gap: var(--space-1); reset [.brand-wordmark](styles.layout.css:120) top to 0.
+3. Remove margin-left from [.primary-nav](styles.layout.css:122) at mobile, ensure min-width: 0; reduce [.primary-nav a](styles.layout.css:132) vertical padding and font-size.
+4. Add overflow-x: hidden to [.header-inner](styles.layout.css:14) and overscroll-behavior: contain to [.site-header](styles.layout.css:4); disable momentum scrolling for mobile nav (-webkit-overflow-scrolling: auto).
+
+**Important considerations:**
+- Prevent vertical and horizontal movement under finger on touch devices.
+- Preserve keyboard navigation and focus-visible states.
+- Keep header height consistent with var(--header-h).
+
+**Expected outcome:**
+- Header/nav remain stationary on mobile; whitespace after logo collapses appropriately.
+
+---
+
+## Footer Navigation + Privacy/FAQ Pages
+**Last performed:** 2025-08-18  
+**Status:** Completed  
+**Files to modify:**
+- [index.html](index.html:1)
+- [tempo-notes.html](tempo-notes.html:1)
+- [white-label.html](white-label.html:1)
+- [publishers/index.html](publishers/index.html:1)
+- [privacy.html](privacy.html:1)
+- [faq.html](faq.html:1)
+
+**Steps:**
+1. Add footer nav region (before copyright) with links ordered: Home → Publishers → Tempo Notes → White Label → FAQ → Privacy; mark current page with aria-current.
+2. Create [privacy.html](privacy.html:1) with clear, static policy; reuse site header/footer.
+3. Create [faq.html](faq.html:1) with collapsible details and links to relevant pages.
+4. Ensure relative paths are correct in subdirectory pages (e.g., Publishers uses ../).
+
+**Important considerations:**
+- Use <nav aria-label="Footer"> for accessibility.
+- Reuse existing footer styles (no new CSS required).
+- Keep link order consistent across all pages.
+
+**Expected outcome:**
+- Footer provides consistent cross-site navigation; Privacy and FAQ pages available and linked.
+
+---
+
+## Tempo Notes — Features Guide Section
+**Last performed:** 2025-08-18  
+**Status:** Completed  
+**Files to modify:**
+- [tempo-notes.html](tempo-notes.html:1)
+
+**Steps:**
+1. Add interlude/hero panel using [cadance_hero_34.webp](cadance_hero_34.webp:1) titled “Cadance features guide”.
+2. Move and rename “My tempo changing demonstration” to “Tempo changing demonstration.” within the new Features Guide section.
+3. Add placeholders: “Importing music”, “How favorites work,” and “Mastering repeats”.
+
+**Important considerations:**
+- Keep interlude image lazy-loaded with decoding="async".
+- Maintain semantic heading levels and parallax structure consistency.
+
+**Expected outcome:**
+- Dedicated Cadance features guide with initial placeholders and the tempo demonstration.
+
+---
+
+## Personas Additions and CTA Mailto Update
+**Last performed:** 2025-08-18  
+**Status:** Completed  
+**Files to modify:**
+- [index.html](index.html:253)
+
+**Steps:**
+1. Insert “Wedding / first dance tutor” and “Ballroom / social dance” after “Rehearsal director” in the personas list.
+2. Update “Tell Cadance what I need” CTA mailto to info.rondo@cadance.music.
+
+**Important considerations:**
+- Preserve list order and spacing rules in personas.
+- Ensure mailto subject/body remain URL-encoded.
+
+**Expected outcome:**
+- Expanded personas coverage and updated contact alias for the needs CTA.

@@ -5,6 +5,9 @@ The site is a static, multi‑page marketing site hosted on GitHub Pages:
 - Teacher‑focused homepage at [index.html](index.html)
 - Publishers rights‑holder page at [publishers/index.html](publishers/index.html)
 - White Label offering at [white-label.html](white-label.html)
+- Tempo Notes at [tempo-notes.html](tempo-notes.html)
+- Privacy policy at [privacy.html](privacy.html)
+- FAQ at [faq.html](faq.html)
 - Safety redirect at [publishers.html](publishers.html) → /publishers/
 
 Design system split across [styles.base.css](styles.base.css), [styles.layout.css](styles.layout.css), [styles.components.css](styles.components.css), and [styles.parallax.css](styles.parallax.css). Progressive enhancement JavaScript runs via [script.js](script.js) for parallax and selectable personas; pages remain fully usable without JS.
@@ -37,9 +40,9 @@ Design system split across [styles.base.css](styles.base.css), [styles.layout.cs
   - Heavier, larger nav text; baseline aligned with logo; reduced header height/whitespace
   - Increased spacing between wordmark and navigation; slight wordmark drop for visual alignment
 - Footers (all pages):
-  - Simplified to left‑aligned copyright only
-- Email unification:
-  - All mailto references consolidated to info@cadance.music
+  - Footer navigation added (Home → Publishers → Tempo Notes → White Label → FAQ → Privacy) with left‑aligned copyright
+- Email:
+  - Current mailto references use info.rondo@cadance.music; unification to info@cadance.music may be done in a future pass
 
 - 2025-08-17 — UI polish and content updates:
   - Homepage CTAs: changed hero CTA label to “Try the BarreNotes sequel”; duplicated CTA under “Everything you need, nothing you don’t”; centered headings/subheads and CTA buttons on hero and bottom interlude.
@@ -59,6 +62,22 @@ Design system split across [styles.base.css](styles.base.css), [styles.layout.cs
   - Created [styles.base.css](styles.base.css), [styles.layout.css](styles.layout.css), [styles.components.css](styles.components.css), [styles.parallax.css](styles.parallax.css).
   - Updated pages to load in order: base → layout → components → parallax.
   - Deprecated [styles.css](styles.css); removed from page references (file scheduled for deletion).
+
+### 2025-08-18 — Tempo Notes features guide, footer nav, header stability
+- Tempo Notes:
+  - Added second interlude hero using cadance_hero_34.webp
+  - Introduced “Cadance features guide” section with placeholders: “Importing music”, “How favorites work,” “Mastering repeats”
+  - Moved “My tempo changing demonstration” into the features guide and renamed to “Tempo changing demonstration.”
+- Footer:
+  - Added footer navigation across all pages and created new pages [privacy.html](privacy.html) and [faq.html](faq.html)
+  - Reordered footer nav: Home, Publishers, Tempo Notes, White Label, FAQ, Privacy
+- Header/nav (mobile):
+  - Stabilized header height and prevented vertical/horizontal movement under touch via CSS changes in [styles.layout.css](styles.layout.css)
+    (min-width: 0 on .primary-nav; overflow-y: hidden; overscroll-behavior: contain; touch-action: pan-y; tightened spacing; removed extra margin-left on mobile)
+- Personas:
+  - Inserted “Wedding / first dance tutor” and “Ballroom / social dance” after “Rehearsal director” on [index.html](index.html)
+- Email CTA:
+  - “Tell Cadance what I need” now uses mailto:info.rondo@cadance.music
 
 ## Next Steps
 - Per‑page Open Graph images: update OG/Twitter meta to match final hero choices for each page

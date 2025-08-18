@@ -10,6 +10,7 @@
   background: var(--surface);
   border-bottom: 1px solid rgba(255,255,255,0.06);
   box-shadow: 0 8px 12px rgba(0,0,0,0.25);
+  overscroll-behavior: contain; /* prevent scroll chaining on header */
 }
 .header-inner {
   display: flex;
@@ -17,17 +18,27 @@
   justify-content: space-between;
   gap: var(--space-1);
   padding-block: var(--space-1);
+  overflow-x: hidden; /* prevent horizontal shift of header container */
 }
 .brand-wordmark { height: auto; width: clamp(120px, 36vw, 180px); }
 
 /* Primary nav (small-screen horizontal scroll support) */
 .primary-nav {
   flex: 1;
+  min-width: 0; /* allow flex item to shrink so header height stays fixed */
   overflow-x: auto;
+  overflow-y: hidden; /* prevent vertical jiggle on touch */
+  overscroll-behavior-x: contain; /* avoid horizontal bounce/chain */
+  overscroll-behavior: contain;   /* contain both axes */
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox: hide scrollbar */
+  touch-action: pan-y; /* disable horizontal panning on touch */
 }
 .primary-nav::-webkit-scrollbar { display: none; } /* WebKit: hide scrollbar */
+
+/* Prevent horizontal panning on touch to avoid nav sliding under finger */
+.primary-nav ul,
+.primary-nav a { touch-action: pan-y; }
 
 .primary-nav ul {
   list-style: none;
@@ -103,7 +114,39 @@
 .footer-right a:hover, .footer-right a:focus-visible { color: var(--text); }
 
 /* Mobile footer layout to keep bottom-right corner free */
+/* Also: stabilize header on small devices and tighten spacing next to logo */
 @media (max-width: 599px) {
+  /* Keep header from moving vertically */
+  .site-header { height: var(--header-h); min-height: var(--header-h); }
+  .header-inner {
+    height: var(--header-h);
+    min-height: var(--header-h);
+    align-items: center;   /* center-align to avoid baseline jitter */
+    padding-block: 0;      /* remove extra vertical padding */
+    column-gap: var(--space-1); /* allow whitespace after logo to shrink */
+  }
+  .brand-wordmark { position: relative; top: 0; } /* remove small logo drop on mobile */
+
+  .primary-nav {
+    margin-left: 0;         /* reduce whitespace after wordmark */
+    min-width: 0;           /* ensure nav can shrink within header width */
+    overflow-x: auto;       /* allow horizontal scroll for long labels */
+    overflow-y: hidden;     /* prevent vertical movement under finger */
+    overscroll-behavior-x: contain; /* avoid horizontal bounce/chain */
+    -webkit-overflow-scrolling: auto; /* disable momentum scrolling to reduce jiggle */
+  }
+  .primary-nav ul {
+    gap: 0.25rem; /* tighter spacing to fit within viewport */
+  }
+  .primary-nav a {
+    font-size: var(--step--1);  /* slightly smaller for mobile fit */
+    padding-top: 0.25rem;       /* maintain fixed header height */
+    padding-bottom: 0.25rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+  }
+
+  /* Existing mobile footer layout */
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
@@ -120,6 +163,11 @@
   .section { padding-block: var(--space-4); }
   .primary-nav ul { gap: var(--space-3); }
   .brand-wordmark { width: 200px; }
+
+  /* Header spacing + logo baseline tweaks (applied on medium+ screens only) */
+  .header-inner { column-gap: var(--space-3); } /* more space between logo and nav */
+  .primary-nav { margin-left: var(--space-3); }  /* additional separation from logo */
+  .brand-wordmark { position: relative; top: 3px; } /* drop Cadance logo slightly */
 }
 
 @media (min-width: 1024px) {
@@ -134,7 +182,4 @@
 #showcase { background: linear-gradient(180deg, rgba(34,197,94,0.10), rgba(34,197,94,0.04)); }
 #contact { background: linear-gradient(180deg, rgba(253,224,71,0.10), rgba(253,224,71,0.04)); }
 
-/* Header spacing + logo baseline tweaks (override/additive) */
-.header-inner { column-gap: var(--space-3); } /* more space between logo and nav */
-.primary-nav { margin-left: var(--space-3); }  /* additional separation from logo */
-.brand-wordmark { position: relative; top: 3px; } /* drop Cadance logo slightly */
+/* Header spacing overrides migrated into the 600px+ media query above */
