@@ -173,7 +173,7 @@ function initSelectablePersonas() {
           body += '\r\n\r\n';
         }
         body += 'One more thing I would love:';
-        const href = `mailto:info@cadance.music?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        const href = `mailto:info.rondo@cadance.music?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
         cta.setAttribute('href', href);
       }
 
