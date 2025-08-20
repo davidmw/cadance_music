@@ -50,8 +50,8 @@ body {
   /* Reserve space so the scroll-to-top button never masks content */
   padding-bottom: calc(96px + env(safe-area-inset-bottom));
   overflow-x: hidden;              /* prevent page from panning horizontally */
-  touch-action: pan-y;             /* restrict touch to vertical panning */
-  overscroll-behavior-x: none;     /* no horizontal overscroll glow/bounce */
+  /* allow nested horizontal scrollers like the top nav */
+  overscroll-behavior-x: contain;  /* keep root from bouncing while permitting inner scrollers */
 }
 
 img { max-width: 100%; height: auto; display: block; }

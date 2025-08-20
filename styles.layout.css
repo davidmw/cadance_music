@@ -32,13 +32,13 @@
   overscroll-behavior: contain;   /* contain both axes */
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none; /* Firefox: hide scrollbar */
-  touch-action: pan-y; /* disable horizontal panning on touch */
+  touch-action: pan-x; /* allow horizontal pan to scroll the nav */
 }
 .primary-nav::-webkit-scrollbar { display: none; } /* WebKit: hide scrollbar */
 
 /* Prevent horizontal panning on touch to avoid nav sliding under finger */
 .primary-nav ul,
-.primary-nav a { touch-action: pan-y; }
+.primary-nav a { touch-action: pan-x; }
 
 .primary-nav ul {
   list-style: none;
@@ -109,7 +109,7 @@
 .footer-left { font-size: var(--step--1); color: var(--muted); }
 .footer-right { display: flex; align-items: center; gap: var(--space-2); flex-wrap: wrap; }
 .footer-right small { color: var(--muted); }
-.footer-right nav { display: inline-flex; gap: var(--space-2); }
+.footer-right nav { display: flex; gap: var(--space-2); flex-wrap: wrap; }
 .footer-right a { color: var(--muted); text-decoration: underline; text-underline-offset: 2px; }
 .footer-right a:hover, .footer-right a:focus-visible { color: var(--text); }
 
@@ -133,7 +133,7 @@
     overflow-x: auto;       /* allow horizontal scroll for long labels */
     overflow-y: hidden;     /* prevent vertical movement under finger */
     overscroll-behavior-x: contain; /* avoid horizontal bounce/chain */
-    -webkit-overflow-scrolling: auto; /* disable momentum scrolling to reduce jiggle */
+    -webkit-overflow-scrolling: touch; /* enable momentum scrolling for horizontal nav */
   }
   .primary-nav ul {
     gap: 0.25rem; /* tighter spacing to fit within viewport */
@@ -155,6 +155,9 @@
   .footer-right {
     align-self: flex-start;
   }
+  /* Footer nav: tighter spacing and wrap on small screens */
+  .footer-right nav { gap: 0.4rem 0.6rem; width: 100%; justify-content: flex-start; }
+  .footer-right a { font-size: clamp(0.78rem, 0.74rem + 0.6vw, 0.9rem); }
 }
 
 /* Breakpoints */
