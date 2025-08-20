@@ -33,7 +33,12 @@
 /* Base reset */
 *, *::before, *::after { box-sizing: border-box; }
 html, body { height: 100%; }
-html { scroll-behavior: smooth; }
+html {
+  scroll-behavior: smooth;
+  background: var(--bg);           /* match body to avoid white flash on overscroll */
+  overflow-x: hidden;              /* prevent horizontal scrolling at root */
+  overscroll-behavior-x: none;     /* disable horizontal overscroll/bounce */
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", sans-serif;
@@ -44,6 +49,9 @@ body {
   padding-top: calc(var(--header-h) + env(safe-area-inset-top));
   /* Reserve space so the scroll-to-top button never masks content */
   padding-bottom: calc(96px + env(safe-area-inset-bottom));
+  overflow-x: hidden;              /* prevent page from panning horizontally */
+  touch-action: pan-y;             /* restrict touch to vertical panning */
+  overscroll-behavior-x: none;     /* no horizontal overscroll glow/bounce */
 }
 
 img { max-width: 100%; height: auto; display: block; }
