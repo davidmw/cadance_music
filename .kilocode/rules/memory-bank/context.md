@@ -97,3 +97,26 @@ Design system split across [styles.base.css](styles.base.css), [styles.layout.cs
 - Static, GitHub Pages‑compatible, no frameworks or external dependencies
 - Progressive enhancement JS now in use via [script.js](script.js) for parallax; site remains usable with JS disabled
 - All images sized; non‑hero images lazy‑loaded; no external fonts
+
+### 2025-08-20 — Social previews (.webp) and testimonial refinements
+- Social previews: Per-page Open Graph/Twitter meta updated to absolute 1200×630 WebP assets on production domain:
+  - Home / FAQ / Privacy → https://cadance.music/og_home_1200x630.webp
+  - Publishers → https://cadance.music/og_publishers_1200x630.webp
+  - White Label → https://cadance.music/og_white_label_1200x630.webp
+  - Tempo Notes → https://cadance.music/og_tempo_1200x630.webp
+- Targeted social preview assets present at repo root: og_home_1200x630.webp, og_publishers_1200x630.webp, og_white_label_1200x630.webp, og_tempo_1200x630.webp
+- Testimonials (Home):
+  - Cards: key phrases link to full view (Anneliese: “always there and reliable”; Rosemary: “having a pianist”); removed “Read full testimonial”; author line simplified to name only.
+  - Modals: titles set to those phrases and colored teal; stars gold to match cards; footers show name + role/URL stacked, no dash, tight spacing.
+- CSS: styles.components.css updated with .testimonial-title color (teal), modal star color (gold), and compact modal footer spacing.
+### 2025-08-20 — Social previews (.webp) and testimonial refinements
+- Social previews: Per-page Open Graph/Twitter meta updated to absolute 1200×630 WebP assets on production domain:
+  - Home / FAQ / Privacy → https://cadance.music/og_home_1200x630.webp
+  - Publishers → https://cadance.music/og_publishers_1200x630.webp
+  - White Label → https://cadance.music/og_white_label_1200x630.webp
+  - Tempo Notes → https://cadance.music/og_tempo_1200x630.webp
+- New social assets added at repo root: og_home_1200x630.webp, og_publishers_1200x630.webp, og_white_label_1200x630.webp, og_tempo_1200x630.webp
+- Testimonial updates (Home):
+  - Cards: key phrases link to full view (Anneliese: “always there and reliable”; Rosemary: “having a pianist”); removed “Read full testimonial”; author line shows name only.
+  - Modals: titles set to those phrases and colored teal; stars gold to match cards; footers show “Name” then role/URL on next line, no dash, tightened spacing.
+- CSS: styles.components.css updated for modal title teal (.testimonial-title), modal star color gold, and compact modal footer spacing.

@@ -178,3 +178,64 @@ Legacy UI code from the original single-page/tabbed interface has been removed. 
 
 **Expected outcome:**
 - Expanded personas coverage and updated contact alias for the needs CTA.
+
+## Social Previews (.webp) Update
+**Last performed:** 2025-08-20
+**Status:** Completed
+**Files to modify:**
+- [index.html](index.html)
+- [white-label.html](white-label.html)
+- [publishers/index.html](publishers/index.html)
+- [tempo-notes.html](tempo-notes.html)
+- [faq.html](faq.html)
+- [privacy.html](privacy.html)
+
+**Steps:**
+1. Ensure 1200×630 WebP assets exist at repo root with these names:
+   - og_home_1200x630.webp
+   - og_publishers_1200x630.webp
+   - og_white_label_1200x630.webp
+   - og_tempo_1200x630.webp
+2. Update each page’s meta to absolute URLs on the production domain (CNAME: cadance.music):
+   - og:image and twitter:image → https://cadance.music/og_…_1200x630.webp
+3. Verify with social debuggers (Open Graph/Twitter validators) and re-scrape after deploy.
+
+**Important considerations:**
+- Keep assets exactly 1200×630 for best card rendering.
+- Prefer WebP for small file size and quality.
+- Place assets at repo root so absolute URLs resolve predictably.
+
+**Expected outcome:**
+- Consistent, lightweight social previews across all pages using absolute WebP URLs.
+
+---
+
+## Testimonial Refinements (Cards + Modals)
+**Last performed:** 2025-08-20
+**Status:** Completed
+**Files to modify:**
+- [index.html](index.html)
+- [styles.components.css](styles.components.css)
+
+**Steps:**
+1. Cards: Turn key phrases into links that open full modals via :target:
+   - Anneliese → “always there and reliable” → href="#t1"
+   - Rosemary → “having a pianist” → href="#t2"
+2. Remove inline “Read full testimonial” links under blurbs to tighten layout.
+3. Card figcaptions: show only the author’s name (remove role/URL/company).
+4. Modals:
+   - Title (h3) set to the same key phrase; add class testimonial-title.
+   - Stars in modal match card color (gold/yellow).
+   - Footer shows name on first line and role/URL on second line, no dash, left-aligned, tight spacing.
+5. CSS in [styles.components.css](styles.components.css):
+   - .modal-dialog h3.testimonial-title { color: var(--brand); }
+   - .modal .rating .star { color: #FBBF24; filter: drop-shadow(0 1px 1px rgba(0,0,0,0.35)); }
+   - .modal blockquote footer { margin: 0; }
+
+**Important considerations:**
+- Preserve accessibility: visible focus, correct aria roles on modal containers, :target close link to backdrop.
+- Keep visual consistency: card and modal star colors match; titles use brand teal.
+
+**Expected outcome:**
+- Cleaner cards that link from the key phrase to the modal.
+- Modals with teal titles, gold stars, and compact author footers (name + role/URL).

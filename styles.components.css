@@ -437,3 +437,14 @@
   display: grid;
   place-items: center;
 }
+/* Modal testimonial title and star color adjustments */
+.modal-dialog h3.testimonial-title {
+  color: var(--brand); /* teal */
+}
+
+.modal .rating .star {
+  color: #FBBF24; /* match card gold/yellow */
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.35));
+}
+/* Tighten modal footer spacing between name and role */
+.modal blockquote footer { margin: 0; }

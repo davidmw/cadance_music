@@ -51,6 +51,7 @@
 - Optimization: Compress images before commit
 - Naming: Descriptive filenames (iPhone..., iPad..., cadance_)
 - Alt text: Required and descriptive
+- Social previews: 1200×630 WebP assets at repo root (og_home_1200x630.webp, og_publishers_1200x630.webp, og_white_label_1200x630.webp, og_tempo_1200x630.webp); reference via absolute URLs under https://cadance.music/ in per‑page og:image and twitter:image.
 - Photoreal pipeline:
   - Prompts in midjourney-commands-batch-01-*.txt
   - Annotate pins+radii at tools/screen-corner-annotator.html
@@ -68,6 +69,7 @@
 - Smooth scrolling and anchor offset: CSS scroll-behavior + scroll-margin-top
 - Header stabilization (mobile): lock header height to var(--header-h); .primary-nav min-width: 0 with overflow-y: hidden and overscroll-behavior: contain; touch-action: pan-y to prevent horizontal drift; .header-inner overflow-x: hidden; tighter mobile gaps and reduced link padding/font-size.
 - Footer navigation: consistent footer nav across all pages ordered Home → Publishers → Tempo Notes → White Label → FAQ → Privacy.
+- Testimonials: modal title class .testimonial-title uses var(--brand) teal; modal star color matches cards (#FBBF24).
 
 ### JavaScript Strategy
 - Progressive enhancement: parallax scrolling for hero/interlude panels

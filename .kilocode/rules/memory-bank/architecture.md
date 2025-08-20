@@ -25,7 +25,10 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 └── assets (repo root images)
     ├── cadance_Icon.png
     ├── cadance_word_d.svg
-    ├── cadance_og_home_A.png
+    ├── og_home_1200x630.webp
+    ├── og_publishers_1200x630.webp
+    ├── og_white_label_1200x630.webp
+    ├── og_tempo_1200x630.webp
     ├── cadance_hero_*.webp/.png
     ├── iPhoneDetails*.PNG
     ├── iPhoneFav.PNG
