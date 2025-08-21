@@ -120,3 +120,9 @@ Design system split across [styles.base.css](styles.base.css), [styles.layout.cs
   - Cards: key phrases link to full view (Anneliese: “always there and reliable”; Rosemary: “having a pianist”); removed “Read full testimonial”; author line shows name only.
   - Modals: titles set to those phrases and colored teal; stars gold to match cards; footers show “Name” then role/URL on next line, no dash, tightened spacing.
 - CSS: styles.components.css updated for modal title teal (.testimonial-title), modal star color gold, and compact modal footer spacing.
+
+### 2025-08-21 — Navigation simplification
+- Top navigation simplified to page links only; identical on all pages: Home, Music Makers, Tempo Notes, Contact.
+- Brand wordmark now links to the page URL (no in‑page anchors).
+- Footer navigation unchanged structurally but “Publishers” label renamed to “Music Makers” across all pages: Home → Music Makers → Tempo Notes → White Label → FAQ → Privacy.
+- aria-current applied on the appropriate link per page (Home/Index, Music Makers/Publishers, Tempo Notes, White Label, FAQ, Privacy).

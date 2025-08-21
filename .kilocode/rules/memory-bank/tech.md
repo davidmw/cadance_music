@@ -68,7 +68,8 @@
 - CTA centering: hero and bottom interlude headings/subheads and actions centered via CSS overrides
 - Smooth scrolling and anchor offset: CSS scroll-behavior + scroll-margin-top
 - Header stabilization (mobile): lock header height to var(--header-h); .primary-nav min-width: 0 with overflow-y: hidden and overscroll-behavior: contain; touch-action: pan-y to prevent horizontal drift; .header-inner overflow-x: hidden; tighter mobile gaps and reduced link padding/font-size.
-- Footer navigation: consistent footer nav across all pages ordered Home → Publishers → Tempo Notes → White Label → FAQ → Privacy.
+- Footer navigation: consistent footer nav across all pages ordered Home → Music Makers → Tempo Notes → White Label → FAQ → Privacy.
+- Top navigation: pages only (no in‑page anchors); identical across pages — Home, Music Makers, Tempo Notes, Contact; brand wordmark links to the page URL.
 - Testimonials: modal title class .testimonial-title uses var(--brand) teal; modal star color matches cards (#FBBF24).
 
 ### JavaScript Strategy

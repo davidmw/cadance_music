@@ -62,11 +62,10 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 ```
 Header (sticky)
 ├── Brand logo (cadance_word_d.svg)
-└── Primary navigation:
-    • Home (logo) / Features (#features on homepage)
-    • Publishers (publishers/)
+└── Primary navigation (pages only; consistent across pages):
+    • Home (index.html)
+    • Music Makers (publishers/)
     • Tempo Notes (tempo-notes.html)
-    • White Label (white-label.html)
     • Contact (mailto)
 
 Home (index.html)
@@ -100,7 +99,7 @@ Publishers (publishers/index.html)
 └── Contact (permissions mailto)
 
 Footer (all pages)
-└── Footer navigation (Home → Publishers → Tempo Notes → White Label → FAQ → Privacy) + copyright
+└── Footer navigation (Home → Music Makers → Tempo Notes → White Label → FAQ → Privacy) + copyright
 ```
 
 ## Critical Implementation Paths
