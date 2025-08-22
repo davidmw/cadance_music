@@ -239,3 +239,49 @@ Legacy UI code from the original single-page/tabbed interface has been removed. 
 **Expected outcome:**
 - Cleaner cards that link from the key phrase to the modal.
 - Modals with teal titles, gold stars, and compact author footers (name + role/URL).
+
+## SEO Improvements: Meta Keywords and Favicon Implementation
+**Last performed:** 2025-08-22
+**Status:** Completed
+**Files to modify:**
+- All HTML pages: [index.html](index.html), [publishers/index.html](publishers/index.html), [white-label.html](white-label.html), [tempo-notes.html](tempo-notes.html), [privacy.html](privacy.html), [faq.html](faq.html)
+- New favicon files: favicon-16x16.png, favicon-32x32.png, apple-touch-icon.png, android-chrome-192x192.png, android-chrome-512x512.png
+- New manifest: [site.webmanifest](site.webmanifest)
+
+**Description:**
+Comprehensive SEO improvements including targeted meta keywords for each page's audience and complete favicon implementation across all device types and sizes.
+
+**Steps:**
+1. Create multiple favicon sizes from cadance_Icon.png using sips command:
+   - `sips -z 16 16 cadance_Icon.png --out favicon-16x16.png`
+   - `sips -z 32 32 cadance_Icon.png --out favicon-32x32.png`
+   - `sips -z 180 180 cadance_Icon.png --out apple-touch-icon.png`
+   - `sips -z 192 192 cadance_Icon.png --out android-chrome-192x192.png`
+   - `sips -z 512 512 cadance_Icon.png --out android-chrome-512x512.png`
+2. Create site.webmanifest with PWA configuration and theme colors.
+3. Add targeted meta keywords to each page:
+   - Home: Dance teacher keywords (dance music app, tempo control, ballet music app, etc.)
+   - Publishers: Rights holder keywords (music licensing, album artwork permissions, etc.)
+   - White Label: Organization keywords (white label dance app, custom branded music app, etc.)
+   - Tempo Notes: Resource keywords (dance music resources, tempo control tutorial, etc.)
+   - Privacy: Privacy keywords (privacy policy, data protection, no tracking, etc.)
+   - FAQ: Support keywords (Cadance FAQ, dance app questions, etc.)
+4. Update all HTML pages with comprehensive favicon links:
+   - Replace single cadance_Icon.png reference with multiple sizes
+   - Add proper relative paths for subdirectory pages (publishers/ uses ../)
+   - Include manifest link for PWA support
+5. Test favicon display in browser tabs and verify meta keywords presence.
+
+**Important considerations:**
+- Keywords should be relevant and targeted to each page's specific audience
+- Favicon files must be optimized and properly sized for different contexts
+- Maintain proper relative paths for subdirectory pages
+- Preserve existing meta tag structure and order
+- Test across different browsers and devices
+
+**Expected outcome:**
+- Improved SEO with targeted keywords for search engines
+- Professional favicon display across all devices and contexts
+- Enhanced discoverability for each audience segment
+- PWA-ready manifest configuration
+- Consistent branding in browser tabs and bookmarks
