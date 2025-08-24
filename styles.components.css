@@ -279,7 +279,8 @@
 .folds details + details { margin-top: var(--space-1); }
 .folds summary {
   cursor: pointer;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: var(--step-0);
   list-style: none;
 }
 .folds summary::-webkit-details-marker { display: none; }
@@ -361,18 +362,21 @@
 
 /* Inset details text for Home and Publishers category lists; align spacing */
 #dance-styles .folds details > p,
-#styles .folds details > p {
+#styles .folds details > p,
+#music-styles .folds details > p {
   padding-left: var(--space-2);
   margin-top: 0.25rem;
 }
 
 /* Ensure no extra bottom gap after expanded items in both sections */
 #dance-styles .folds details,
-#styles .folds details {
+#styles .folds details,
+#music-styles .folds details {
   padding-bottom: 0;
 }
 #dance-styles .folds details > *:last-child,
-#styles .folds details > *:last-child {
+#styles .folds details > *:last-child,
+#music-styles .folds details > *:last-child {
   margin-bottom: 0;
 }
 
