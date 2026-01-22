@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Cadance — Pricing & Plans</title>
-  <meta name="description" content="Cadance subscription pricing and plans. Spark $4.99/month, Artist $12.99/month, Patron $24.99/month (USD). All tiers include the same features; choose what fits your usage and value.">
+  <meta name="description" content="Cadance pricing and plans. Free tier (BarreNotes compatible), Spark $4.99/month, Artist $12.99/month, Patron $24.99/month (USD). Features unlock by tier, including Apple Music support on higher plans.">
   <meta name="robots" content="index,follow">
   <meta name="color-scheme" content="dark light">
   <meta name="theme-color" content="#0B0B0C">
@@ -13,7 +13,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Cadance — Pricing & Plans">
-  <meta property="og:description" content="Spark $4.99/month, Artist $12.99/month, Patron $24.99/month (USD). All tiers include the same features; choose what fits your usage and value.">
+  <meta property="og:description" content="Free tier + Spark $4.99/month, Artist $12.99/month, Patron $24.99/month (USD). Features unlock by tier, including Apple Music support on higher plans.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://cadance.music/pricing/">
   <meta property="og:site_name" content="Cadance Music">
@@ -26,7 +26,7 @@
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Cadance — Pricing & Plans">
-  <meta name="twitter:description" content="Spark $4.99/month, Artist $12.99/month, Patron $24.99/month (USD). All tiers include the same features; choose what fits your usage and value.">
+  <meta name="twitter:description" content="Free tier + Spark $4.99/month, Artist $12.99/month, Patron $24.99/month (USD). Features unlock by tier, including Apple Music support on higher plans.">
   <meta name="twitter:image" content="https://cadance.music/og_home_1200x630.webp">
 
   <!-- Favicons -->
@@ -68,6 +68,7 @@
         <nav class="primary-nav" aria-label="Primary">
           <ul>
             <li><a href="../index.html">For Teachers</a></li>
+            <li><a href="../features.html">Features</a></li>
             <li><a href="../barrenotes/">BarreNotes → Cadance</a></li>
             <li><a href="../publishers/">For Musicians</a></li>
             <li><a href="../how-to.html">How To</a></li>
@@ -92,7 +93,10 @@
         <div class="container">
           <div class="hero-copy">
             <h1>Pricing &amp; plans</h1>
-            <p class="subhead">Same Cadance features in every tier.<br>Choose the plan and benefits that align with your business goals.</p>
+            <p class="subhead">Start free, then upgrade to unlock advanced teaching tools and Apple Music features.<br>Choose the plan that matches how you teach.</p>
+            <div class="badge-row badge-row--tight" aria-label="Release note">
+              <span class="tier-pill tier-pill--v3">Coming with v3</span>
+            </div>
           </div>
         </div>
       </div>
@@ -100,24 +104,43 @@
 
     <section id="plans" class="section">
       <div class="container">
-        <div class="features-grid">
+        <div class="badge-row" aria-label="Release note">
+          <span class="tier-pill tier-pill--v3">Coming with v3</span>
+        </div>
+        <div class="features-grid" id="tiers">
+          <a class="feature-card pricing-tier pricing-tier--popular pricing-tier-link" href="https://apps.apple.com/us/app/cadance/id6748429968" target="_blank" rel="noopener" aria-label="Get Cadance on the App Store — Free tier">
+            <div class="pricing-tier__head">
+              <h3>Free</h3>
+              <span class="tier-pill tier-pill--free">BarreNotes compatible</span>
+            </div>
+            <p class="pricing-tier__price"><strong>$0</strong></p>
+            <p class="pricing-tier__desc">High quality tempo control and core class tools for the music in your device library.</p>
+          </a>
+
           <a class="feature-card pricing-tier pricing-tier--spark pricing-tier-link" href="https://apps.apple.com/us/app/cadance/id6748429968" target="_blank" rel="noopener" aria-label="Get Cadance on the App Store — The Spark plan">
             <div class="pricing-tier__head">
               <h3>The Spark</h3>
             </div>
-            <p class="pricing-tier__price"><strong>$4.99/month</strong> <span class="pricing-tier__sep">or</span><br><strong>$49.99/year (2 Months Free)</strong></p>
-            <p class="pricing-tier__desc">For occasional teaching, or getting started with Cadance.</p>
+            <p class="pricing-tier__price"><strong>$4.99/month</strong> <span class="pricing-tier__sep">or</span><br><strong>$49.99/year</strong></p>
+            <p class="pricing-tier__desc">For occasional teaching.</p>
+            <ul class="pricing-tier__perks">
+              <li><strong>Adds:</strong> Local file import &amp; play</li>
+              <li><strong>Adds:</strong> Metronome</li>
+              <li><strong>Adds:</strong> Delay Start</li>
+              <li><strong>Adds:</strong> Apple Watch support</li>
+            </ul>
           </a>
 
-          <a class="feature-card pricing-tier pricing-tier--artist pricing-tier--popular pricing-tier-link" href="https://apps.apple.com/us/app/cadance/id6748429968" target="_blank" rel="noopener" aria-label="Get Cadance on the App Store — The Artist plan (Most Popular)">
+          <a class="feature-card pricing-tier  pricing-tier--popular pricing-tier-link" href="https://apps.apple.com/us/app/cadance/id6748429968" target="_blank" rel="noopener" aria-label="Get Cadance on the App Store — The Artist plan (Most Popular)">
             <div class="pricing-tier__head">
               <h3>The Artist</h3>
               <span class="tier-pill tier-pill--popular">Most Popular</span>
             </div>
-            <p class="pricing-tier__price"><strong>$12.99/month</strong> <span class="pricing-tier__sep">or</span><br><strong>$129.99/year (2 Months Free)</strong></p>
-            <p class="pricing-tier__desc">For regular weekly teaching where Cadance is part of your routine. Includes the exclusive benefit:</p>
+            <p class="pricing-tier__price"><strong>$12.99/month</strong> <span class="pricing-tier__sep">or</span><br><strong>$129.99/year</strong></p>
+            <p class="pricing-tier__desc">For regular weekly teaching where Cadance is part of your routine.</p>
             <ul class="pricing-tier__perks">
-              <li>Early access to new features via our beta program.</li>
+              <li><strong>Adds:</strong> DRM‑protected music support</li>
+              <li><strong>Adds:</strong> Playback of downloaded Apple Music tracks</li>
             </ul>
           </a>
 
@@ -126,27 +149,24 @@
               <h3>The Patron</h3>
               <span class="tier-pill tier-pill--patron">Supporter</span>
             </div>
-            <p class="pricing-tier__price"><strong>$24.99/month</strong> <span class="pricing-tier__sep">or</span><br><strong>$249.99/year (2 Months Free)</strong></p>
-            <p class="pricing-tier__desc">For pro company teachers, rehearsal directors, mentors and all others wishing to support our mission. Includes exclusive benefits:</p>
+            <p class="pricing-tier__price"><strong>$24.99/month</strong> <span class="pricing-tier__sep">or</span><br><strong>$249.99/year</strong></p>
+            <p class="pricing-tier__desc">For pro company teachers, rehearsal directors, and those wishing to support our mission.</p>
             <ul class="pricing-tier__perks">
-              <li>Early access to new features via our beta program.</li>
-              <li>Exclusive development updates announcements via email.</li>
-              <li>A listing in our public Patron Directory (optional).</li>
+              <li><strong>Adds:</strong> Stream Apple Music albums &amp; playlists without downloading</li>
+              <li><strong>Includes:</strong> Patron Directory listing (optional)</li>
             </ul>
           </a>
         </div>
         <p class="secondary-cta-row"><a class="secondary-cta" href="../patrons/">See the Patron Directory →</a></p>
         <p></p>
-        <p class="app-store-note">Includes a 1‑month free trial. Cancel anytime in Cadance settings or your Apple ID subscription settings.</p>
-        <p class="benefits-note" id="honor_system">Your local price and currency may vary; the App Store always shows the final price before you subscribe.</p>
+        <p class="app-store-note">Free to download. Paid plans are available monthly or annually, with discounted pricing for the first two months. Cancel anytime in Cadance settings or your Apple ID subscription settings.</p>
+        <p class="benefits-note">Your local price and currency may vary; the App Store always shows the final price before you subscribe.</p>
 
         <div class="highlight-box" style="text-align:left;">
-          <h3>All features included</h3>
-          <p>Every plan includes the full set of Cadance app features: professional tempo control, short intros start delays, easy song repeats, speedy search for songs, offline reliability, class timers, ongoing updates and professional support.</p>
-          <h3>The tiers are an honor system</h3> 
-          <p>Pick a tier to match your situation and to support product development. We'll never require you to establish a teaching 
-            schedule in the app. We won't track your usage, violate your privacy, interupt class with ads, charge for support or nag in any way.</p>
-            <p>In exchange, <strong>we ask that you treat us fairly</strong>. Give us a chance to fix any problems you encounter (by emailing us), use reviews constructively, and support the product if you are so inclined.</p>
+          <h3>How the tiers work</h3>
+          <p>Cadance is free to download and includes a Free (fully BarreNotes compatible) tier. Paid tiers unlock advanced tools designed for professional teaching — including Apple Music features on supported plans.</p>
+          <h3>Bring your own music</h3>
+          <p>Cadance isn’t bundled with music and doesn’t sell music. Use the music in your device library, import local files (Spark+), and use Apple Music subscription features on supported tiers.</p>
         </div>
 
         <div class="highlight-box" style="text-align:left;">
@@ -167,15 +187,19 @@
         <div class="folds">
           <details open>
             <summary>Do higher tiers unlock more features?</summary>
-            <p>No — all tiers include the same Cadance features. Choose the tier that matches how much value you’re getting from Cadance in your teaching and business.</p>
+            <p>Yes. Each tier unlocks additional tools and Apple Music capabilities. Start on Free, then upgrade when you need more.</p>
           </details>
           <details>
-            <summary>Is there a free trial?</summary>
-            <p>Yes. Cadance offers a 1‑month free trial. Just cancel 24 hours before the end of the trial to avoid being charged. No matter how many classes you teach each week, this should provide ample time to audition Cadance.</p>
+            <summary>Is there a free tier?</summary>
+            <p>Yes. Cadance is free to download and includes a Free tier that’s fully BarreNotes compatible.</p>
+          </details>
+          <details>
+            <summary>Is there discounted introductory pricing?</summary>
+            <p>Yes. Paid plans have discounted pricing for the first two months. Monthly and annual options are available.</p>
           </details>
           <details>
             <summary>Will pricing be different in my country?</summary>
-            <p>Often, yes. Apple sets local prices and currencies. The App Store always shows the final price before you start a trial or subscribe.</p>
+            <p>Often, yes. Apple sets local prices and currencies. The App Store always shows the final price before you subscribe.</p>
           </details>
           <details>
             <summary>Can I switch or cancel later?</summary>
@@ -199,6 +223,7 @@
       <div class="footer-right">
         <nav aria-label="Footer">
           <a href="../index.html">For Teachers</a>
+          <a href="../features.html">Features</a>
           <a href="../barrenotes/">BarreNotes → Cadance</a>
           <a href="../publishers/">For Musicians</a>
           <a href="../how-to.html">How To</a>

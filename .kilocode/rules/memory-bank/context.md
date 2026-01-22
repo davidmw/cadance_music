@@ -1,6 +1,6 @@
 # Current Context: Cadance Marketing Site
 
-## Current State (Frozen)
+## Current State
 Static, multi-page marketing site (GitHub Pages) with shared design system and progressive enhancement JavaScript.
 
 Primary pages:
@@ -19,9 +19,12 @@ Primary pages:
 - **Pricing cards** are consistent across the pricing page and both landing pages (Spark / Artist / Patron).
   - Artist remains the hero tier ("Most Popular"), Patron reads as premium, and cards size to content (no forced equal heights).
   - Styling lives in [`styles.components.css`](styles.components.css:1511) and markup in [`pricing/index.html`](pricing/index.html:102), [`reddit/index.html`](reddit/index.html:244), [`barrenotes/index.html`](barrenotes/index.html:260).
+- **v3 release messaging**: v3-related pages include a visible “Coming with v3” badge to avoid confusion when publishing early while the site references the upcoming free tier and tier-gated features.
+  - Badge styles: [`styles.components.css`](styles.components.css:2064)
+  - Inserted on: [`pricing/index.html`](pricing/index.html:95), [`features.html`](features.html:94), [`reddit/index.html`](reddit/index.html:76), [`barrenotes/index.html`](barrenotes/index.html:76)
 - **Testimonials**: cards are tappable (CSS-only modal via `:target`) and include an always-visible “Click/Tap to read more” affordance.
   - Styles: [`styles.components.css`](styles.components.css:190)
 - **JavaScript is not a placeholder**: [`script.js`](script.js:1) provides progressive enhancement (parallax + mobile menu toggle). Microsoft Clarity is installed site-wide.
 
 ## Next Steps
-- None. Content + styling are intentionally frozen at this state.
+- None.

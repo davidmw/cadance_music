@@ -1410,6 +1410,16 @@
   }
 }
 
+/* Reddit landing: pin the “Barrenotes compatible” pill to the top-right */
+.reddit-landing #plans .pricing-tier--free .tier-pill--free,
+.barrenotes-landing #plans .pricing-tier--free .tier-pill--free {
+  position: absolute;
+  top: -4.20rem; /* overlap the card edge */
+  right: 0.9rem;
+  z-index: 2;
+  transform: rotate(-3deg);
+}
+
 /* Reddit landing: pin the “Most Popular” pill to the top-right */
 .reddit-landing #plans .pricing-tier--popular .tier-pill,
 .barrenotes-landing #plans .pricing-tier--popular .tier-pill {
@@ -1819,6 +1829,7 @@ a.secondary-cta:focus-visible {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: var(--space-2);
   margin-bottom: var(--space-1);
 }
@@ -1828,8 +1839,24 @@ a.secondary-cta:focus-visible {
   display: flex;
   justify-content: flex-start;
   align-items: baseline;
+  flex-wrap: wrap;
   gap: var(--space-2);
   margin-bottom: var(--space-1);
+}
+
+/* Free tier: keep the “BarreNotes compatible” pill compact so it doesn't crowd the title */
+.pricing-tier--free .tier-pill--free {
+  font-size: var(--step--2);
+  letter-spacing: 0.03em;
+  padding: 0.4rem 0.75rem;
+}
+
+/* Free tier: slightly understated accent */
+.pricing-page #plans.pricing-tier--free,
+.reddit-landing #plans .pricing-tier--free,
+.barrenotes-landing #plans .pricing-tier--free {
+  --tier-accent: rgba(255,255,255,0.34);
+  --tier-glow: rgba(255,255,255,0.05);
 }
 
 .pricing-page .pricing-tier__head h3 {
@@ -1897,7 +1924,7 @@ a.secondary-cta:focus-visible {
 
 .pricing-page #plans .pricing-tier--popular .tier-pill {
   position: absolute;
-  top: -3.0rem; /* overlap the card edge */
+  top: -4.0rem; /* overlap the card edge */
   right: 0.9rem;
   z-index: 3;
   transform: rotate(3deg);
@@ -2032,6 +2059,28 @@ a.secondary-cta:focus-visible {
   line-height: 1.2;
   box-shadow: var(--shadow-1);
   flex: none;
+}
+
+/* Lightweight, reusable badge rows (used for release messaging like “Coming with v3”) */
+.badge-row {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-1);
+  flex-wrap: wrap;
+  margin: var(--space-2) 0 0;
+}
+
+.badge-row--tight {
+  margin-top: var(--space-1);
+}
+
+.tier-pill--v3 {
+  background: rgba(255, 255, 255, 0.06);
+  border-color: rgba(232, 19, 26, 0.65);
+  box-shadow:
+    0 0 0 1px rgba(232, 19, 26, 0.16),
+    var(--shadow-1);
+  letter-spacing: 0.03em;
 }
 
 .tier-pill--popular {
