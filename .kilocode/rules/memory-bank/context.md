@@ -15,6 +15,9 @@ Primary pages:
 - Blog: [`blog/index.html`](blog/index.html:1)
 - Support: [`faq.html`](faq.html:1), [`privacy.html`](privacy.html:1)
 
+Private / internal pages (no links in):
+- BarreNotes social proof screenshots: [`barrenotes/BarreNotesPosts/index.html`](barrenotes/BarreNotesPosts/index.html:1)
+
 ## Current Implementation Notes
 - **Pricing cards** are consistent across the pricing page and both landing pages (Spark / Artist / Patron).
   - Artist remains the hero tier ("Most Popular"), Patron reads as premium, and cards size to content (no forced equal heights).
@@ -25,6 +28,11 @@ Primary pages:
 - **Testimonials**: cards are tappable (CSS-only modal via `:target`) and include an always-visible “Click/Tap to read more” affordance.
   - Styles: [`styles.components.css`](styles.components.css:190)
 - **JavaScript is not a placeholder**: [`script.js`](script.js:1) provides progressive enhancement (parallax + mobile menu toggle). Microsoft Clarity is installed site-wide.
+
+- **Private screenshots gallery**: [`barrenotes/BarreNotesPosts/index.html`](barrenotes/BarreNotesPosts/index.html:1)
+  - `noindex,nofollow` meta.
+  - Cards are sorted by `data-post-date` newest→oldest and laid out in two columns (fill left column first, then right).
+  - Crawlers discouraged via `Disallow: /barrenotes/BarreNotesPosts/` in [`robots.txt`](robots.txt:1).
 
 ## Next Steps
 - None.

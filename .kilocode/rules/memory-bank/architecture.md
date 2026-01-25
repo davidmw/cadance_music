@@ -22,6 +22,8 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 │   └── index.html             # Reddit campaign landing page (App Store CTA)
 ├── barrenotes/
 │   └── index.html             # BarreNotes → Cadance redirect/landing
+│   └── BarreNotesPosts/
+│       └── index.html         # Private: BarreNotes social proof screenshots gallery
 ├── blog/
 │   ├── index.html             # Blog index
 │   └── why-cadance-is-a-subscription/
@@ -167,3 +169,9 @@ Footer (all pages)
 - Email integration: mailto links for CTAs
   - Contact: info@cadance.music
 - Social sharing: per‑page Open Graph and Twitter Card meta tags
+
+## Private / Internal Pages
+- [`barrenotes/BarreNotesPosts/index.html`](barrenotes/BarreNotesPosts/index.html:1)
+  - Not linked from the public site navigation.
+  - `noindex,nofollow` meta.
+  - Crawlers discouraged via `Disallow: /barrenotes/BarreNotesPosts/` in [`robots.txt`](robots.txt:1).

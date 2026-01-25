@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex,nofollow">
+    <title>BarreNotes Posts (Private)</title>
+
+    <link rel="stylesheet" href="../../styles.base.css">
+    <link rel="stylesheet" href="../../styles.layout.css">
+    <link rel="stylesheet" href="../../styles.components.css">
+
+    <style>
+      /* Private page: keep layout self-contained and show images at natural size. */
+      .private-wrap {
+        padding-block: clamp(24px, 4vw, 56px);
+      }
+
+      .private-header {
+        display: grid;
+        gap: 10px;
+        margin-bottom: clamp(18px, 3vw, 28px);
+      }
+
+      .private-header h1 {
+        margin: 0;
+      }
+
+      .private-header p {
+        margin: 0;
+        max-width: 70ch;
+        opacity: 0.9;
+      }
+
+      /* Two-column layout:
+         - Fill down the left column first, then the right (implemented via JS splitting into 2 lists).
+         - No row alignment required.
+         Images are scaled to 33% by default, then constrained to the column width (no horizontal scrolling). */
+      .post-columns {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: clamp(14px, 2.2vw, 22px);
+      }
+
+      @media (min-width: 900px) {
+        .post-columns {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+
+      .post-col {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: clamp(14px, 2.2vw, 22px);
+      }
+
+      .post-card {
+        width: 100%;
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 16px;
+        padding: 12px;
+        background: rgba(255, 255, 255, 0.04);
+        box-shadow: 0 18px 40px rgba(0, 0, 0, 0.22);
+        max-width: min(100%, 1200px);
+        overflow: hidden;
+      }
+
+      .post-card img {
+        display: block;
+        /* Default: let the image pick its own size.
+           JS below sets explicit width/height to 33% of intrinsic size for a consistent layout. */
+        width: auto;
+        height: auto;
+        max-width: 100%;
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        .post-card {
+          scroll-behavior: auto;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <main id="main" class="container private-wrap">
+      <header class="private-header">
+        <h1>BarreNotes social posts (private)</h1>
+      </header>
+
+      <div class="post-columns" aria-label="BarreNotes post screenshots">
+        <ul class="post-col post-col--left">
+        <li class="post-card" data-post-date="2025-10-08">
+          <img src="./Screenshot%202026-01-24%20at%2012.39.13%20AM.png" alt="Screenshot 2026-01-24 at 12.39.13 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2025-07-08">
+          <img src="./Screenshot%202026-01-24%20at%2012.40.19%20AM.png" alt="Screenshot 2026-01-24 at 12.40.19 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2025-07-12" data-post-date-source="relative-28w">
+          <img src="./Screenshot%202026-01-24%20at%2012.40.34%20AM.png" alt="Screenshot 2026-01-24 at 12.40.34 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2025-06-05">
+          <img src="./Screenshot%202026-01-24%20at%2012.40.57%20AM.png" alt="Screenshot 2026-01-24 at 12.40.57 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2018-10-18">
+          <img src="./Screenshot%202026-01-24%20at%2012.41.37%20AM.png" alt="Screenshot 2026-01-24 at 12.41.37 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2025-11-11">
+          <img src="./Screenshot%202026-01-24%20at%2012.45.27%20AM.png" alt="Screenshot 2026-01-24 at 12.45.27 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2022-09-09">
+          <img src="./Screenshot%202026-01-24%20at%2012.48.00%20AM.png" alt="Screenshot 2026-01-24 at 12.48.00 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2023-01-25" data-post-date-source="relative-3y">
+          <img src="./Screenshot%202026-01-24%20at%2012.48.11%20AM.png" alt="Screenshot 2026-01-24 at 12.48.11 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2025-01-13">
+          <img src="./Screenshot%202026-01-24%20at%2012.48.39%20AM.png" alt="Screenshot 2026-01-24 at 12.48.39 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2025-01-24" data-post-date-source="relative-1y">
+          <img src="./Screenshot%202026-01-24%20at%2012.48.56%20AM.png" alt="Screenshot 2026-01-24 at 12.48.56 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2025-01-24" data-post-date-source="relative-1y">
+          <img src="./Screenshot%202026-01-24%20at%2012.49.31%20AM.png" alt="Screenshot 2026-01-24 at 12.49.31 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2019-08-08">
+          <img src="./Screenshot%202026-01-24%20at%2012.51.30%20AM.png" alt="Screenshot 2026-01-24 at 12.51.30 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2021-01-25" data-post-date-source="relative-5y">
+          <img src="./Screenshot%202026-01-24%20at%2012.52.24%20AM.png" alt="Screenshot 2026-01-24 at 12.52.24 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2020-01-26" data-post-date-source="relative-6y">
+          <img src="./Screenshot%202026-01-24%20at%2012.52.45%20AM.png" alt="Screenshot 2026-01-24 at 12.52.45 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2020-01-26" data-post-date-source="relative-6y">
+          <img src="./Screenshot%202026-01-24%20at%2012.52.57%20AM.png" alt="Screenshot 2026-01-24 at 12.52.57 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2024-11-28">
+          <img src="./Screenshot%202026-01-24%20at%2012.53.14%20AM.png" alt="Screenshot 2026-01-24 at 12.53.14 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2023-01-11">
+          <img src="./Screenshot%202026-01-24%20at%2012.53.56%20AM.png" alt="Screenshot 2026-01-24 at 12.53.56 AM" loading="lazy" decoding="async">
+        </li>
+        <li class="post-card" data-post-date="2023-05-20">
+          <img src="./Screenshot%202026-01-24%20at%2012.54.47%20AM.png" alt="Screenshot 2026-01-24 at 12.54.47 AM" loading="lazy" decoding="async">
+        </li>
+        </ul>
+        <ul class="post-col post-col--right"></ul>
+      </div>
+    </main>
+
+    <script>
+      // Scale screenshots to 33% of their intrinsic size.
+      // Images are also constrained to their column width via CSS (max-width: 100%), preventing horizontal scrolling.
+      (function () {
+        const SCALE = 0.33;
+
+        function applyScale(img) {
+          if (!img.naturalWidth || !img.naturalHeight) return;
+          img.width = Math.max(1, Math.round(img.naturalWidth * SCALE));
+          img.height = Math.max(1, Math.round(img.naturalHeight * SCALE));
+        }
+
+        document.querySelectorAll('.post-card img').forEach((img) => {
+          if (img.complete) {
+            applyScale(img);
+          } else {
+            img.addEventListener('load', () => applyScale(img), { once: true });
+          }
+        });
+
+        // Sort tiles by post date (newest → oldest). Dates are extracted from the screenshot content
+        // and stored in each <li data-post-date="YYYY-MM-DD">.
+        // Then: split into two columns by count (fill down left column first, then right).
+        const leftCol = document.querySelector('.post-col--left');
+        const rightCol = document.querySelector('.post-col--right');
+
+        if (leftCol && rightCol) {
+          const items = Array.from(document.querySelectorAll('.post-card'));
+          const toScore = (el) => {
+            const s = (el.dataset.postDate || '').trim();
+            // Date.parse("YYYY-MM-DD") is broadly supported.
+            const t = Date.parse(s);
+            return Number.isFinite(t) ? t : -Infinity;
+          };
+
+          items.sort((a, b) => toScore(b) - toScore(a));
+
+          const splitIndex = Math.ceil(items.length / 2);
+          items.forEach((el, idx) => {
+            (idx < splitIndex ? leftCol : rightCol).appendChild(el);
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

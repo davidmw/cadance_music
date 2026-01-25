@@ -6,6 +6,9 @@ Disallow: /debug/
 Disallow: /.kilocode/
 Disallow: /*.md$
 
+# Disallow private/internal pages
+Disallow: /barrenotes/BarreNotesPosts/
+
 # Allow important files
 Allow: /sitemap.xml
 Allow: /favicon*.png
