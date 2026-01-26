@@ -2061,7 +2061,7 @@ a.secondary-cta:focus-visible {
   flex: none;
 }
 
-/* Lightweight, reusable badge rows (used for release messaging like “Coming with v3”) */
+/* Lightweight, reusable badge rows */
 .badge-row {
   display: flex;
   justify-content: center;
@@ -2072,15 +2072,6 @@ a.secondary-cta:focus-visible {
 
 .badge-row--tight {
   margin-top: var(--space-1);
-}
-
-.tier-pill--v3 {
-  background: rgba(255, 255, 255, 0.06);
-  border-color: rgba(232, 19, 26, 0.65);
-  box-shadow:
-    0 0 0 1px rgba(232, 19, 26, 0.16),
-    var(--shadow-1);
-  letter-spacing: 0.03em;
 }
 
 .tier-pill--popular {

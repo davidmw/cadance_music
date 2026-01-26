@@ -63,7 +63,7 @@
 - Design tokens: CSS custom properties in :root (added --brand-red #E8131A for UI accents)
 - Mobile-first: Base styles with breakpoints at 600px and 1024px
 - Components: features-grid, feature-card, personas-grid, teaser-card, showcase-grid
-- Release messaging badges: `.badge-row` + `.tier-pill--v3` for “Coming with v3” (used on v3-related pages). Styles live in [`styles.components.css`](styles.components.css:2064).
+- Badge rows + tier pills: `.badge-row` + `.tier-pill` for small labels (e.g., tier labels). Styles live in [`styles.components.css`](styles.components.css:2047).
 - Accessibility: :focus-visible styles, prefers-reduced-motion support
 - Personas selection styling: aria-checked="true"; default = tinted background with near-white text; selected = near-white background, dark text, brand-red border, large overlapping checkmark overlay
 - CTA centering: hero and bottom interlude headings/subheads and actions centered via CSS overrides
