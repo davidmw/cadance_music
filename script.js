@@ -166,16 +166,10 @@ function initSelectablePersonas() {
 
       function updateCTA(selected) {
         if (!cta) return;
-        const subject = 'Cadance — What I need';
-        let body = '';
-        if (selected.length) {
-          body += 'Selected options:\r\n';
-          body += selected.map(s => `- ${s}`).join('\r\n');
-          body += '\r\n\r\n';
-        }
-        body += 'One more thing I would love:';
-        const href = `mailto:info.rondo@cadance.music?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-        cta.setAttribute('href', href);
+        // Primary CTA remains the App Store; this secondary CTA routes to a guided interview.
+        cta.setAttribute('href', 'https://heyjuno.co/chat/vau4ae');
+        cta.setAttribute('target', '_blank');
+        cta.setAttribute('rel', 'noopener');
       }
 
       function updateUI() {

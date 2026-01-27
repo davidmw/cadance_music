@@ -1044,37 +1044,15 @@
 /* Reddit landing: single high-contrast CTA button (replaces App Store badge) */
 .reddit-landing .claim-cta,
 .barrenotes-landing .claim-cta {
+  /* Use the same look as the home page `.btn.btn-primary`,
+     but keep landing-page-specific sizing and centering here. */
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
   width: min(100%, 22rem);
   margin: var(--space-3) auto var(--space-2);
-  padding: 0.95rem 1.35rem;
-  border-radius: 999px;
-  text-decoration: none;
   text-align: center;
-
-  background: linear-gradient(180deg, rgba(79,209,197,1), rgba(63,196,184,1));
-  color: #00110f;
-  border: 1px solid rgba(79,209,197,0.95);
-  box-shadow:
-    0 0 0 1px rgba(79,209,197,0.25),
-    0 16px 48px rgba(79,209,197,0.20),
-    var(--shadow-2);
-
-  font-weight: 950;
-  font-size: clamp(1.05rem, 0.9rem + 0.9vw, 1.25rem);
-  letter-spacing: -0.01em;
-}
-
-.reddit-landing .claim-cta:hover,
-.barrenotes-landing .claim-cta:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    0 0 0 1px rgba(79,209,197,0.30),
-    0 20px 60px rgba(79,209,197,0.24),
-    var(--shadow-2);
 }
 
 .reddit-landing .claim-cta:focus-visible,
@@ -1555,6 +1533,56 @@
   line-height: 1.35;
   text-wrap: balance;
 }
+
+/* Home: keep the secondary CTA subtext visually attached to its button */
+.actions--teacher-ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  /* Keep the CTA module centered and not full-bleed */
+  width: 100%;
+  max-width: 26rem;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Breathing room around the CTA block */
+  margin-top: var(--space-5);
+  margin-bottom: var(--space-4);
+  padding-block: var(--space-4);
+
+  gap: var(--space-3);
+}
+
+/* Home: space after the CTA module before the supporting links */
+.cta-followup {
+  margin: var(--space-4) 0 0;
+  text-align: center;
+  color: var(--text);
+}
+
+.actions--teacher-ctas .cta-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Make these CTAs feel like a deliberate centered module (esp. on mobile) */
+.actions--teacher-ctas .btn {
+  display: inline-flex;
+  justify-content: center;
+  width: min(100%, 22rem);
+}
+
+.actions--teacher-ctas .cta-subtext {
+  margin: var(--space-1) 0 0;
+  text-align: center;
+  color: var(--muted);
+  max-width: 22rem;
+}
+
+.actions--teacher-ctas .cta-subtext small { font-size: var(--step--2); }
 
 /* CTA microcopy often wraps in <small>; don't shrink it further */
 .app-store-note small,

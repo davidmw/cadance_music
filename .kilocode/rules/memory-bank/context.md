@@ -23,7 +23,11 @@ Private / internal pages (no links in):
   - Artist remains the hero tier ("Most Popular"), Patron reads as premium, and cards size to content (no forced equal heights).
   - Styling lives in [`styles.components.css`](styles.components.css:1511) and markup in [`pricing/index.html`](pricing/index.html:102), [`reddit/index.html`](reddit/index.html:244), [`barrenotes/index.html`](barrenotes/index.html:260).
 - **v3 shipped**: removed the “Coming with v3” release badge from the site (pricing + landing pages) and removed `.tier-pill--v3` styling.
-- **Testimonials**: cards are tappable (CSS-only modal via `:target`) and include an always-visible “Click/Tap to read more” affordance.
+- **Landing-page App Store CTA**: primary CTA text now matches the home page (“Get Cadance Free - Start Now”), and the landing CTA uses the same base button styling as home via `.btn.btn-primary`.
+  - Markup: [`reddit/index.html`](reddit/index.html:79), [`barrenotes/index.html`](barrenotes/index.html:79)
+  - Styling/sizing: landing-specific centering + width lives in [`styles.components.css`](styles.components.css:1044)
+- **Pricing hero**: removed the Pricing page hero image; Pricing now uses a text-only hero section.
+  - **Testimonials**: cards are tappable (CSS-only modal via `:target`) and include an always-visible “Click/Tap to read more” affordance.
   - Styles: [`styles.components.css`](styles.components.css:190)
 - **JavaScript is not a placeholder**: [`script.js`](script.js:1) provides progressive enhancement (parallax + mobile menu toggle). Microsoft Clarity is installed site-wide.
 
