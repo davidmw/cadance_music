@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "revision": "2026-04-02-a",
+  "updatedAt": "2026-04-02T04:00:00Z",
+  "ttlSeconds": 21600,
+  "items": [
+    {
+      "type": "playlist",
+      "slug": "parkinsons",
+      "provider": "appleMusic",
+      "cloudGlobalId": "pl.u-JPAZZN3TlkeeNkL",
+      "referenceName": "Parkinson's",
+      "expectedCloudName": "Parkinson's"
+    }
+  ]
+}
