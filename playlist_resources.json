@@ -2,56 +2,48 @@
   "items" : [
     {
       "addedAt" : "2026-04-03T05:00:00Z",
-      "body" : "**Hello teachers**\n\nCadance Resources now supports hosted promo messages in Favorites.",
+      "body" : "***Welcome teachers*** keep an eye out for Cadance Resources to be highlighted here",
       "ctaLabel" : "Learn more",
-      "ctaUrl" : "https://cadance.music/promotions/april",
+      "ctaUrl" : "https://cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
       "eligibleUntil" : "2026-04-30T23:59:59Z",
       "id" : "april-hello",
       "priority" : 10,
-      "title" : "Welcome",
+      "title" : "Hello!",
       "type" : "message"
     },
     {
       "addedAt" : "2026-04-02T10:00:00Z",
-      "cloudGlobalId" : "pl.u-NEWBALLETCLASS",
+      "cloudGlobalId" : "pl.6be6015d6aa641feb548995ad8cdcdb9",
       "provider" : "appleMusic",
-      "referenceName" : "New Ballet Class",
-      "slug" : "new-ballet-class",
+      "referenceName" : "First",
+      "slug" : "first",
       "type" : "playlist"
     },
     {
       "promotion" : {
-        "badgeText" : "New",
+        "badgeText" : "Extraordinary!",
         "body" : "Added this week",
         "eligible" : true,
-        "headline" : "Fresh for class",
+        "headline" : "Chair dance class",
         "maxImpressions" : 5
       },
-      "slug" : "new-ballet-class",
+      "slug" : "dance-with-parkinsons",
       "type" : "playlist_promotion"
     },
     {
       "items" : [
         {
           "addedAt" : "2026-03-15T08:00:00Z",
-          "cloudGlobalId" : "pl.u-GRADE2CENTRE",
+          "cloudGlobalId" : "pl.u-JPAZZN3TlkeeNkL",
           "provider" : "appleMusic",
-          "referenceName" : "Grade 2 Centre",
-          "slug" : "grade-2-centre",
-          "type" : "playlist"
-        },
-        {
-          "addedAt" : "2026-03-20T08:00:00Z",
-          "cloudGlobalId" : "pl.u-GRADE3ALLEGRO",
-          "provider" : "appleMusic",
-          "referenceName" : "Grade 3 Allegro",
-          "slug" : "grade-3-allegro",
+          "referenceName" : "Dance with Parkinsons",
+          "slug" : "dance-with-parkinsons",
           "type" : "playlist"
         }
       ],
-      "slug" : "syllabus",
-      "title" : "Syllabus",
+      "slug" : "extras",
+      "title" : "Extraordinary Groups",
       "type" : "folder"
     },
     {
