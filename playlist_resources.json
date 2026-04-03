@@ -13,6 +13,18 @@
       "type" : "message"
     },
     {
+      "addedAt" : "2026-04-03T05:00:00Z",
+      "body" : "### Cadance 4 is Native<br>line one<br>line two<br>line three",
+      "ctaLabel" : "Learn more",
+      "ctaUrl" : "https://cadance.music",
+      "eligibleFrom" : "2026-04-03T00:00:00Z",
+      "eligibleUntil" : "2026-04-30T23:59:59Z",
+      "id" : "version4-intro",
+      "priority" : 1,
+      "title" : "Hello!",
+      "type" : "message"
+    },
+    {
       "addedAt" : "2026-04-02T10:00:00Z",
       "cloudGlobalId" : "pl.6be6015d6aa641feb548995ad8cdcdb9",
       "provider" : "appleMusic",
