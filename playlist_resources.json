@@ -14,7 +14,7 @@
     },
     {
       "addedAt" : "2026-04-03T05:00:00Z",
-      "body" : "### Cadance 4 is Native<br>line one<br>line two<br>line three",
+      "body" : "### Cadance 4 is Native\nline one\nline two\nline three",
       "ctaLabel" : "Learn more",
       "ctaUrl" : "https://cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
