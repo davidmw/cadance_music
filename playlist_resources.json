@@ -15,7 +15,12 @@
     {
       "addedAt" : "2026-04-02T10:00:00Z",
       "cloudGlobalId" : "pl.u-NEWBALLETCLASS",
-      "expectedCloudName" : "New Ballet Class",
+      "provider" : "appleMusic",
+      "referenceName" : "New Ballet Class",
+      "slug" : "new-ballet-class",
+      "type" : "playlist"
+    },
+    {
       "promotion" : {
         "badgeText" : "New",
         "body" : "Added this week",
@@ -23,24 +28,22 @@
         "headline" : "Fresh for class",
         "maxImpressions" : 5
       },
-      "provider" : "appleMusic",
-      "referenceName" : "New Ballet Class",
       "slug" : "new-ballet-class",
-      "type" : "playlist"
+      "type" : "playlist_promotion"
     },
     {
       "items" : [
         {
+          "addedAt" : "2026-03-15T08:00:00Z",
           "cloudGlobalId" : "pl.u-GRADE2CENTRE",
-          "expectedCloudName" : "Grade 2 Centre",
           "provider" : "appleMusic",
           "referenceName" : "Grade 2 Centre",
           "slug" : "grade-2-centre",
           "type" : "playlist"
         },
         {
+          "addedAt" : "2026-03-20T08:00:00Z",
           "cloudGlobalId" : "pl.u-GRADE3ALLEGRO",
-          "expectedCloudName" : "Grade 3 Allegro",
           "provider" : "appleMusic",
           "referenceName" : "Grade 3 Allegro",
           "slug" : "grade-3-allegro",
@@ -50,10 +53,21 @@
       "slug" : "syllabus",
       "title" : "Syllabus",
       "type" : "folder"
+    },
+    {
+      "id" : "april-hello",
+      "promotion" : {
+        "badgeText" : "Special Offer",
+        "body" : "Hosted promo messages now support dismissible overlays.",
+        "eligible" : true,
+        "headline" : "What’s new in Favorites",
+        "maxImpressions" : 5
+      },
+      "type" : "special_offer"
     }
   ],
   "revision" : "2026-04-03-admin-seed",
-  "schemaVersion" : 2,
+  "schemaVersion" : 1,
   "ttlSeconds" : 21600,
   "updatedAt" : "2026-04-03T04:00:00Z"
 }
