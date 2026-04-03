@@ -1,16 +1,59 @@
 {
-  "schemaVersion": 1,
-  "revision": "2026-04-02-a",
-  "updatedAt": "2026-04-02T04:00:00Z",
-  "ttlSeconds": 21600,
-  "items": [
+  "items" : [
     {
-      "type": "playlist",
-      "slug": "parkinsons",
-      "provider": "appleMusic",
-      "cloudGlobalId": "pl.u-JPAZZN3TlkeeNkL",
-      "referenceName": "Parkinson's",
-      "expectedCloudName": "Parkinson's"
+      "addedAt" : "2026-04-03T05:00:00Z",
+      "body" : "**Hello teachers**\n\nCadance Resources now supports hosted promo messages in Favorites.",
+      "ctaLabel" : "Learn more",
+      "ctaUrl" : "https://cadance.music/promotions/april",
+      "eligibleFrom" : "2026-04-03T00:00:00Z",
+      "eligibleUntil" : "2026-04-30T23:59:59Z",
+      "id" : "april-hello",
+      "priority" : 10,
+      "title" : "Welcome",
+      "type" : "message"
+    },
+    {
+      "addedAt" : "2026-04-02T10:00:00Z",
+      "cloudGlobalId" : "pl.u-NEWBALLETCLASS",
+      "expectedCloudName" : "New Ballet Class",
+      "promotion" : {
+        "badgeText" : "New",
+        "body" : "Added this week",
+        "eligible" : true,
+        "headline" : "Fresh for class",
+        "maxImpressions" : 5
+      },
+      "provider" : "appleMusic",
+      "referenceName" : "New Ballet Class",
+      "slug" : "new-ballet-class",
+      "type" : "playlist"
+    },
+    {
+      "items" : [
+        {
+          "cloudGlobalId" : "pl.u-GRADE2CENTRE",
+          "expectedCloudName" : "Grade 2 Centre",
+          "provider" : "appleMusic",
+          "referenceName" : "Grade 2 Centre",
+          "slug" : "grade-2-centre",
+          "type" : "playlist"
+        },
+        {
+          "cloudGlobalId" : "pl.u-GRADE3ALLEGRO",
+          "expectedCloudName" : "Grade 3 Allegro",
+          "provider" : "appleMusic",
+          "referenceName" : "Grade 3 Allegro",
+          "slug" : "grade-3-allegro",
+          "type" : "playlist"
+        }
+      ],
+      "slug" : "syllabus",
+      "title" : "Syllabus",
+      "type" : "folder"
     }
-  ]
+  ],
+  "revision" : "2026-04-03-admin-seed",
+  "schemaVersion" : 2,
+  "ttlSeconds" : 21600,
+  "updatedAt" : "2026-04-03T04:00:00Z"
 }
