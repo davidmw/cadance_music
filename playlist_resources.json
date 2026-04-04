@@ -31,8 +31,9 @@
     {
       "promotion" : {
         "badgeBackgroundColor" : "cadanceTeal",
-        "badgeFontScale" : 1,
+        "badgeFontScale" : 1.4,
         "badgeFontWeight" : "bold",
+        "badgeRotationDegrees" : -2,
         "badgeText" : "Extraordinary!",
         "badgeTextColor" : "black",
         "body" : "Added this week",
