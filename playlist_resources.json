@@ -32,7 +32,11 @@
     },
     {
       "promotion" : {
+        "badgeBackgroundColor" : "cadanceTeal",
+        "badgeFontScale" : 1,
+        "badgeFontWeight" : "bold",
         "badgeText" : "Extraordinary!",
+        "badgeTextColor" : "black",
         "body" : "Added this week",
         "eligible" : true,
         "headline" : "Chair dance class",
@@ -59,7 +63,12 @@
     {
       "id" : "april-hello",
       "promotion" : {
+        "badgeBackgroundColor" : "yellow",
+        "badgeFontScale" : 1,
+        "badgeFontWeight" : "semibold",
+        "badgeRotationDegrees" : 3,
         "badgeText" : "Special Offer",
+        "badgeTextColor" : "black",
         "body" : "Hosted promo messages now support dismissible overlays.",
         "eligible" : true,
         "headline" : "What’s new in Favorites",
