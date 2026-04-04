@@ -2,24 +2,24 @@
   "items" : [
     {
       "addedAt" : "2026-04-03T05:00:00Z",
-      "body" : "***Welcome teachers*** keep an eye out for Cadance Resources to be highlighted here",
+      "body" : "## Welcome teachers\nKeep an eye out for Cadance Resources to be highlighted here!",
       "ctaLabel" : "Learn more",
       "ctaUrl" : "https://cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
       "eligibleUntil" : "2026-04-30T23:59:59Z",
       "id" : "april-hello",
-      "priority" : 10,
+      "priority" : 5,
       "type" : "message"
     },
     {
       "addedAt" : "2026-04-04T05:00:00Z",
-      "body" : "### Cadance 4 is Native!\n#### Goals:\n- More responsive to your touch\n- Simplifies new feature development\n- Leverage Apple technologies\n#### Caution\nYou might encounter new behaviors and bug. Let us know about issues you need to have fixed.",
+      "body" : "## Cadance 4 is Native!\n### Goals\n- More responsive to your touch\n- Simplifies new feature development\n- Leverage Apple technologies\n### Caution\nYou might encounter new behaviors and bug. Let us know about issues you need to have fixed.",
       "ctaLabel" : "Learn more",
       "ctaUrl" : "https://cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
       "eligibleUntil" : "2026-05-30T23:59:59Z",
       "id" : "version4-intro",
-      "priority" : 1,
+      "priority" : 5,
       "type" : "message"
     },
     {
