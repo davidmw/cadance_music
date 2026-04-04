@@ -61,12 +61,12 @@
       "type" : "folder"
     },
     {
-      "id" : "april-hello",
+      "id" : "version4-intro",
       "promotion" : {
         "badgeBackgroundColor" : "yellow",
-        "badgeFontScale" : 1,
-        "badgeFontWeight" : "semibold",
-        "badgeRotationDegrees" : 3,
+        "badgeFontScale" : 2,
+        "badgeFontWeight" : "bold",
+        "badgeRotationDegrees" : -3,
         "badgeText" : "Special Offer",
         "badgeTextColor" : "black",
         "body" : "Hosted promo messages now support dismissible overlays.",
