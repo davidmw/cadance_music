@@ -12,12 +12,12 @@
       "type" : "message"
     },
     {
-      "addedAt" : "2026-04-03T05:00:00Z",
+      "addedAt" : "2026-04-04T05:00:00Z",
       "body" : "### Cadance 4 is Native!\n#### Goals:\n- More responsive to your touch\n- Simplifies new feature development\n- Leverage Apple technologies\n#### Caution\nYou might encounter new behaviors and bug. Let us know about issues you need to have fixed.",
       "ctaLabel" : "Learn more",
       "ctaUrl" : "https://cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
-      "eligibleUntil" : "2026-04-30T23:59:59Z",
+      "eligibleUntil" : "2026-05-30T23:59:59Z",
       "id" : "version4-intro",
       "priority" : 1,
       "type" : "message"
