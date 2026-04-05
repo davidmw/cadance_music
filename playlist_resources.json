@@ -41,25 +41,41 @@
         "headline" : "Chair dance class",
         "maxImpressions" : 5
       },
-      "slug" : "dance-with-parkinsons",
+      "slug" : "pd-modern-pop-anthems",
       "type" : "playlist_promotion"
     },
     {
       "items" : [
-        {
-          "addedAt" : "2026-03-15T08:00:00Z",
-          "cloudGlobalId" : "pl.u-JPAZZN3TlkeeNkL",
-          "provider" : "appleMusic",
-          "referenceName" : "Dance with Parkinsons",
-          "slug" : "dance-with-parkinsons",
-          "type" : "playlist"
-        },
         {
           "addedAt" : "2026-04-05T05:00:00Z",
           "cloudGlobalId" : "pl.u-d2b005WTG566a5L",
           "provider" : "appleMusic",
           "referenceName" : "DP: Big Band Jazz Era",
           "slug" : "pd-big-band-jazz-era",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-05T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb00N5IR588p51",
+          "provider" : "appleMusic",
+          "referenceName" : "DP: Classic Rock & Soul",
+          "slug" : "pd-rock-soul",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-05T05:00:00Z",
+          "cloudGlobalId" : "pl.u-JPAZZ9NtlkeeNkL",
+          "provider" : "appleMusic",
+          "referenceName" : "DP: Modern Pop Anthems",
+          "slug" : "pd-modern-pop-anthems",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-05T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb00D7tR588p51",
+          "provider" : "appleMusic",
+          "referenceName" : "DP: Honky Tonk",
+          "slug" : "pd-honky-tonk",
           "type" : "playlist"
         }
       ],
