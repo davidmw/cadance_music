@@ -10,8 +10,8 @@
       "type" : "message"
     },
     {
-      "addedAt" : "2026-04-04T05:00:00Z",
-      "body" : "## Cadance 4 is now Native!\n### Why?\n- More responsive to your touch\n- Simplifies new feature development\n- Leverage Apple technologies\n### Caution\nYou might encounter new behaviors and bugs. Let us know about issues you need to have fixed.",
+      "addedAt" : "2026-04-06T05:00:00Z",
+      "body" : "## Cadance 4 is here!\n### Why?\n- More responsive to your touch\n- Shortens new feature releases\n- Looking forward to enhanced Search\n### Contact us\nLet us know about issues you need to have fixed.",
       "ctaLabel" : "Contact David",
       "ctaUrl" : "mailto:david@cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
@@ -31,14 +31,14 @@
     {
       "promotion" : {
         "badgeBackgroundColor" : "cadanceTeal",
-        "badgeFontScale" : 1.4,
+        "badgeFontScale" : 1.5,
         "badgeFontWeight" : "bold",
         "badgeRotationDegrees" : -2,
-        "badgeText" : "Extraordinary!",
+        "badgeText" : "Go Beyond!",
         "badgeTextColor" : "black",
-        "body" : "Added this week",
+        "body" : "One of 4 Parkinson's playlists",
         "eligible" : true,
-        "headline" : "Chair dance class",
+        "headline" : "Dance with Parkinson's",
         "maxImpressions" : 5
       },
       "slug" : "pd-modern-pop-anthems",
