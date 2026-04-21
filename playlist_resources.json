@@ -21,11 +21,27 @@
       "type" : "message"
     },
     {
-      "addedAt" : "2026-04-02T10:00:00Z",
-      "cloudGlobalId" : "pl.6be6015d6aa641feb548995ad8cdcdb9",
+      "addedAt" : "2026-04-22T10:00:00Z",
+      "cloudGlobalId" : "pl.u-DdANN5duN2bbP20",
       "provider" : "appleMusic",
-      "referenceName" : "First",
-      "slug" : "first",
+      "referenceName" : "Hip-Hop Kids",
+      "slug" : "hip-hop-kids",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-22T10:00:00Z",
+      "cloudGlobalId" : "pl.u-38oWW1lsZ477o4Y",
+      "provider" : "appleMusic",
+      "referenceName" : "Hip-Hop Teens",
+      "slug" : "hip-hop-teens",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-22T10:00:00Z",
+      "cloudGlobalId" : "pl.u-d2b00GWuG566a5L",
+      "provider" : "appleMusic",
+      "referenceName" : "Hip-Hop",
+      "slug" : "hip-hop",
       "type" : "playlist"
     },
     {
@@ -79,8 +95,55 @@
           "type" : "playlist"
         }
       ],
-      "slug" : "extras",
+      "slug" : "extras-folder",
       "title" : "Extraordinary Groups",
+      "type" : "folder"
+    },
+    {
+      "items" : [
+        {
+          "addedAt" : "2026-04-02T10:00:00Z",
+          "cloudGlobalId" : "pl.6be6015d6aa641feb548995ad8cdcdb9",
+          "provider" : "appleMusic",
+          "referenceName" : "First",
+          "slug" : "first",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T10:00:00Z",
+          "cloudGlobalId" : "pl.351c85541ea843eeb9b9a814bf210b03",
+          "provider" : "appleMusic",
+          "referenceName" : "Classical Motivation",
+          "slug" : "classical-motivation",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T10:00:00Z",
+          "cloudGlobalId" : "pl.bb5b34f808f04cf6bdc57d9f1a98c918",
+          "provider" : "appleMusic",
+          "referenceName" : "Dance Workout",
+          "slug" : "dance-workout",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T10:00:00Z",
+          "cloudGlobalId" : "pl.588ea217ec3c42e08d49cd13237958d4",
+          "provider" : "appleMusic",
+          "referenceName" : "Latin Pop Workout",
+          "slug" : "latin-pop-workout",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T10:00:00Z",
+          "cloudGlobalId" : "pl.7a1d8bd609c44c318d71bf1a0a1e89b5",
+          "provider" : "appleMusic",
+          "referenceName" : "Everyday Hits",
+          "slug" : "everyday-hits",
+          "type" : "playlist"
+        }
+      ],
+      "slug" : "apple-folder",
+      "title" : "Exciting options from Apple Music",
       "type" : "folder"
     },
     {
