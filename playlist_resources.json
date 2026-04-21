@@ -58,7 +58,7 @@
           "addedAt" : "2026-04-05T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb00N5IR588p51",
           "provider" : "appleMusic",
-          "referenceName" : "DP: Classic Rock & Soul",
+          "referenceName" : "Parkinson's: Classic Rock & Soul (1960s - 70s)",
           "slug" : "pd-rock-soul",
           "type" : "playlist"
         },
@@ -66,7 +66,7 @@
           "addedAt" : "2026-04-05T05:00:00Z",
           "cloudGlobalId" : "pl.u-JPAZZ9NtlkeeNkL",
           "provider" : "appleMusic",
-          "referenceName" : "DP: Modern Pop Anthems",
+          "referenceName" : "Parkinson's: Modern & Pop Anthems",
           "slug" : "pd-modern-pop-anthems",
           "type" : "playlist"
         },
@@ -74,7 +74,7 @@
           "addedAt" : "2026-04-05T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb00D7tR588p51",
           "provider" : "appleMusic",
-          "referenceName" : "DP: Honky Tonk",
+          "referenceName" : "Parkinson's: The Honky Tonk Stride (Country & Western)",
           "slug" : "pd-honky-tonk",
           "type" : "playlist"
         }
