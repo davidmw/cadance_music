@@ -63,10 +63,138 @@
     {
       "items" : [
         {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-DdANvp6FN2bbP20",
+          "provider" : "appleMusic",
+          "referenceName" : "Alzheimer's & Dementia: The Grande Ole Memories",
+          "slug" : "ad-grande-ole-memories",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-DdANvp6FN2bbP20",
+          "provider" : "appleMusic",
+          "referenceName" : "Alzheimer's & Dementia: The Golden Era (1940s-1950s)",
+          "slug" : "ad-golden-era",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "https://music.apple.com/au/playlist/the-silver-screen-soul-1960s-1970s/pl.u-9N9LvDLFyJbblJ1",
+          "provider" : "appleMusic",
+          "referenceName" : "Alzheimer's & Dementia: The Silver Screen & Soul (1960s-1970s)",
+          "slug" : "ad-silver-screen-soul",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-mJy836DtYdJJLdN",
+          "provider" : "appleMusic",
+          "referenceName" : "Alzheimer's & Dementia: The Folk & Country Revival",
+          "slug" : "ad-folk-country-revival",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gG0tR588p51",
+          "provider" : "appleMusic",
+          "referenceName" : "Autism Spectrum: Junior Explorers",
+          "slug" : "as-junior-explorers",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gG0tR588p51",
+          "provider" : "appleMusic",
+          "referenceName" : "Autism Spectrum: Teen & Adult Groove",
+          "slug" : "as-teen-adult-groove",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-V9D7g7aujDZZGD3",
+          "provider" : "appleMusic",
+          "referenceName" : "Autism Spectrum: Cinematic & World Rhythms",
+          "slug" : "as-cinematic-world-rhythms",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-76oNPNmFqjrrdjv",
+          "provider" : "appleMusic",
+          "referenceName" : "Autism Spectrum: The Bluegrass Social",
+          "slug" : "as-bluegrass-social",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-JPAZDDPIlkeeNkL",
+          "provider" : "appleMusic",
+          "referenceName" : "Heart Health: The Classical Waltz",
+          "slug" : "hh-classical-waltz",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gg9tR588p51",
+          "provider" : "appleMusic",
+          "referenceName" : "Heart Health: The Modern Ballroom",
+          "slug" : "hh-modern-ballroom",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-11zBPPmiKgVV6gN",
+          "provider" : "appleMusic",
+          "referenceName" : "Heart Health: Soft Rock & Easy Listening",
+          "slug" : "hh-soft-rock",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gB5uR588p51",
+          "provider" : "appleMusic",
+          "referenceName" : "Heart Health: The Country Heartbeat",
+          "slug" : "hh-country-heartbeat",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-76oNPjbTqjrrdjv",
+          "provider" : "appleMusic",
+          "referenceName" : "MS & Stroke: Classic Grooves (1970s-1980s)",
+          "slug" : "mss-classic-grooves",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-V9D7gq9ujDZZGD3",
+          "provider" : "appleMusic",
+          "referenceName" : "MS & Stroke: Modern Momentum (1990s-Present)",
+          "slug" : "mss-modern-momentum",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-76oNP27Fqjrrdjv",
+          "provider" : "appleMusic",
+          "referenceName" : "MS & Stroke: Global & Electronic Beats",
+          "slug" : "mss-global-ebeats",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-JPAZD7GslkeeNkL",
+          "provider" : "appleMusic",
+          "referenceName" : "MS & Stroke: Red Dirt Recovery",
+          "slug" : "mss-red-dirt-recovery",
+          "type" : "playlist"
+        },
+        {
           "addedAt" : "2026-04-05T05:00:00Z",
           "cloudGlobalId" : "pl.u-d2b005WTG566a5L",
           "provider" : "appleMusic",
-          "referenceName" : "DP: Big Band Jazz Era",
+          "referenceName" : "Parkinson: Big Band Jazz Era",
           "slug" : "pd-big-band-jazz-era",
           "type" : "playlist"
         },
@@ -92,6 +220,38 @@
           "provider" : "appleMusic",
           "referenceName" : "Parkinson's: The Honky Tonk Stride (Country & Western)",
           "slug" : "pd-honky-tonk",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-11zBP53CKgVV6gN",
+          "provider" : "appleMusic",
+          "referenceName" : "Proactive Aging: Global Groove (Cultural Dance)",
+          "slug" : "pa-global-groove-cultural-dance",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gB6tR588p51",
+          "provider" : "appleMusic",
+          "referenceName" : "Proactive Aging: The Retro Revival",
+          "slug" : "pa-retro-revival",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-11zBPD1tKgVV6gN",
+          "provider" : "appleMusic",
+          "referenceName" : "Proactive Aging: The Modern Momentum (2010s-Present)",
+          "slug" : "pa-modern-momentum",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gv4uR588p51",
+          "provider" : "appleMusic",
+          "referenceName" : "Proactive Aging: Silver Spurs",
+          "slug" : "pa-silver-spurs",
           "type" : "playlist"
         }
       ],
