@@ -64,7 +64,7 @@
       "items" : [
         {
           "addedAt" : "2026-04-22T05:00:00Z",
-          "cloudGlobalId" : "pl.u-DdANvp6FN2bbP20",
+          "cloudGlobalId" : "pl.u-V9D7g5JFjDZZGD3",
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Grande Ole Memories",
           "slug" : "ad-grande-ole-memories",
@@ -80,7 +80,7 @@
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
-          "cloudGlobalId" : "https://music.apple.com/au/playlist/the-silver-screen-soul-1960s-1970s/pl.u-9N9LvDLFyJbblJ1",
+          "cloudGlobalId" : "pl.u-9N9LvDLFyJbblJ1",
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Silver Screen & Soul (1960s-1970s)",
           "slug" : "ad-silver-screen-soul",
