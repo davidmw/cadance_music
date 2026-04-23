@@ -2,7 +2,7 @@
   "items" : [
     {
       "addedAt" : "2026-04-03T05:00:00Z",
-      "body" : "## Welcome teachers\nKeep an eye out for Cadance Resources to be highlighted here!",
+      "body" : "## Welcome!\nKeep an eye out for new playlists to be highlighted here!\n\n### Where do the playlists live?\nYou can find them on the Music Playlists tab under Cadance Resources.",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
       "eligibleUntil" : "2026-04-30T23:59:59Z",
       "id" : "april-hello",
@@ -11,7 +11,7 @@
     },
     {
       "addedAt" : "2026-04-06T05:00:00Z",
-      "body" : "## Cadance 4 is here!\n### Why?\n- More responsive to your touch\n- Shortens new feature releases\n- Looking forward to enhanced Search\n### Contact us\nLet us know about issues you need to have fixed.",
+      "body" : "## Cadance 4 is here!\n\n- More responsive to your touch\n- Shortens new feature releases\n- Enhanced access to deep music catalogs\n\n### Contact us\nLet us know about issues you need to have fixed.",
       "ctaLabel" : "Contact David",
       "ctaUrl" : "mailto:david@cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
@@ -50,7 +50,7 @@
         "badgeFontScale" : 1.5,
         "badgeFontWeight" : "bold",
         "badgeRotationDegrees" : -2,
-        "badgeText" : "Go Beyond!",
+        "badgeText" : "Extraordinary Groups!",
         "badgeTextColor" : "black",
         "body" : "One of 4 Parkinson's playlists",
         "eligible" : true,
