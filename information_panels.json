@@ -5,44 +5,65 @@
   "ttlSeconds": 21600,
   "panels": {
     "music_playlists": {
-      "revision": "2026-04-21a",
+      "revision": "2026-04-24",
       "buttonLabel": "About Music Playlists",
       "buttonIcon": "info.circle",
       "header": "Music Playlists",
       "body": "Music Playlists are <b>read-only</b> views of the playlists and folders in your Apple Music library. Please note that they appear with a <b>black</b> background.<br><br>Toggle to <b>Custom Playlists</b> by tapping again on the playlist tab.<br><br>You can browse and play any track directly from here. Tempo changes work on tracks stored on your device; cloud-only tracks play through Apple Music at their original tempo.<br><br><b>Want to edit a playlist?</b><br>Long-press any playlist to import it as a Cadance Custom Playlist. Your imported copy is fully editable and remembers per-track tempo, but future changes in Apple Music will not sync back.<br><br><b>Tip:</b> Tap the heart on any playlist to add it to your Favorites for quick access."
     },
     "cadance_resources": {
-      "revision": "2026-04-21a",
+      "revision": "2026-04-24",
       "buttonLabel": "About Cadance Resources",
       "buttonIcon": "info.circle",
       "header": "Cadance Resources",
       "body": "Cadance Resources are <b>curated playlists for dance teachers</b>.<br><br>Each playlist is built around a teaching theme or style. New playlists are added regularly.<br><br>Toggle to <b>Custom Playlists</b> by tapping again on the playlist tab.<br><br>These playlists stream through Apple Music. You need an Apple Music subscription for full playback.<br><br><b>Make it your own</b><br>Long-press any Cadance Resources playlist to import it as a Custom Playlist. Your copy will remember per-track tempo and will not change when we update the source.<br><br><b>Tip:</b> Check the Favorites tab for highlighted new and seasonal Cadance Resources playlists."
     },
     "custom_playlists": {
-      "revision": "2026-04-21a",
+      "revision": "2026-04-24",
       "buttonLabel": "About Custom Playlists",
       "buttonIcon": "info.circle",
       "header": "Custom Playlists",
       "body": "Custom Playlists are <b>your personal playlists</b> inside Cadance, with features designed for teaching.<br><br>Toggle to <b>Music Playlists</b> which includes your <b>Cadance Resources</b> by tapping again on the playlist tab.<br><br><b>Per-track tempo memory</b><br>Every track remembers the last tempo you used. When you return to a playlist, each exercise picks up right where you left off.<br><br><b>Organize with folders</b><br>Create folders up to four levels deep to match your teaching schedule: by day, level, syllabus section, or however you think about your classes.<br><br><b>Build playlists your way</b><br>Create from scratch, or import from Apple Music or Cadance Resources. Add individual tracks from any album or playlist using the menu on each track row.<br><br><b>Tip:</b> Tap the ellipsis button on any playlist to edit tracks inline, regenerate the artwork collage, or fetch updated library artwork."
     },
     "filesystem_playlists": {
-      "revision": "2026-04-21a",
+      "revision": "2026-04-24",
       "buttonLabel": "About FileSystem Playlists",
       "buttonIcon": "info.circle",
       "header": "FileSystem Playlists",
       "body": "FileSystem Playlists are <b>M3U playlist files</b> found in your Cadance documents folder.<br><br>These files typically reference Apple Music catalog tracks by URL. Playback routes through MusicKit, so you need an Apple Music subscription for full access.<br><br><b>How they get here</b><br>M3U files arrive via AirDrop, the Files app, or the Import Music screen in Settings. Cadance automatically places them in the <i>Music/Playlists</i> folder.<br><br><b>Want full editing?</b><br>Long-press any FileSystem Playlist to import it as a Custom Playlist. Your imported copy gains per-track tempo memory, folder organization, and all the editing tools.<br><br><b>Tip:</b> If an AirDrop playlist does not appear automatically, use Complete the Installation in the Import Music screen to find files in your Downloads folder."
     },
-    "favorites": {
-      "revision": "2026-04-22",
-      "buttonLabel": "About your favorites...",
-      "buttonIcon": "rectangle.badge.sparkles.fill",
-      "header": "Favorites & Tips",
-      "body": "<b>Your Favorites</b><br>Albums and playlists you play regularly appear here, ranked by a daily popularity score. The more you play something, the higher it rises. Scores decay gently each day so your current teaching repertoire stays at the top.<br><br><b>Adding Favorites</b><br>Tap the heart icon on any album or playlist detail screen to add it instantly.<br><br><b>Long-press for options</b><br>Long-press any Favorites card to remove it. For albums, switch between your local library copy and the Apple Music catalog version.<br><br><b>Cadance Resources highlights</b><br>Look for promoted Cadance Resources playlists at the top of your Favorites. These are seasonal or newly added playlists we think you will find useful for class.<br><br><b>Tip:</b> Favorites cards show a play count and popularity score. Use these to track which playlists get the most use across your teaching week."
+    "library_albums": {
+      "revision": "2026-04-24",
+      "buttonLabel": "About Albums Library",
+      "buttonIcon": "info.circle",
+      "header": "Device Music Library Albums mode",
+      "body": "This tab shows <b>Albums</b> in your library, which might be a mix of owned and rented music.<br><br>Tapping the tab again will toggle to show the Artists in your library."
+    },
+    "library_artists": {
+      "revision": "2026-04-24",
+      "buttonLabel": "About Artists Library",
+      "buttonIcon": "info.circle",
+      "header": "Device Music Library Artists mode",
+      "body": "This tab shows <b>Artists</b> in your library, which might be a mix of owned and rented music.<br><br>Scroll to see the <b>Also on Apple Music section</b> to discover more albums by the same artist.<br><br>Tapping the tab again will toggle to show the Albums in your library."
+    },
+     "filesystem_albums": {
+      "revision": "2026-04-24",
+      "buttonLabel": "About Albums in Files",
+      "buttonIcon": "info.circle",
+      "header": "Local Filesystem Albums mode",
+      "body": "This tab shows <b>Albums</b> in your Cadance documents folder, after import from multiple external sources.<br><br>Tapping the tab again will toggle to show the Artists."
+    },
+    "filesystem_artists": {
+      "revision": "2026-04-24",
+      "buttonLabel": "About Artists in Files",
+      "buttonIcon": "info.circle",
+      "header": "Local Filesystem Artists mode",
+      "body": "This tab shows <b>Artists</b> in your Cadance documents folder, after import from multiple external sources.<br><br>Scroll to see the <b>Also on Apple Music section</b> to discover more albums by the same artist.<br><br>Tapping the tab again will toggle to show the Albums."
     },
     "favorites": {
-      "revision": "2026-04-23",
-      "buttonLabel": "More on your favorites...",
-      "buttonIcon": "rectangle.badge.sparkles.fill",
+      "revision": "2026-04-24",
+      "buttonLabel": "About your favorites...",
+      "buttonIcon": "sparkles",
       "header": "Favorites & Tips",
       "body": "<b>Your Favorites</b><br>Albums and playlists you play regularly appear here, ranked by a daily popularity score. The more you play something, the higher it rises. Scores decay gently each day so your current teaching repertoire stays at the top.<br><br><b>Adding Favorites</b><br>Tap the heart icon on any album or playlist detail screen to add it instantly.<br><br><b>Long-press for options</b><br>Long-press any Favorites card to remove it. For albums, switch between your local library copy and the Apple Music catalog version.<br><br><b>Cadance Resources highlights</b><br>Look for promoted Cadance Resources playlists at the top of your Favorites. These are seasonal or newly added playlists we think you will find useful for class.<br><br><b>Tip:</b> Favorites cards show a play count and popularity score. Use these to track which playlists get the most use across your teaching week."
     }
