@@ -33,8 +33,15 @@
       "body": "FileSystem Playlists are <b>M3U playlist files</b> found in your Cadance documents folder.<br><br>These files typically reference Apple Music catalog tracks by URL. Playback routes through MusicKit, so you need an Apple Music subscription for full access.<br><br><b>How they get here</b><br>M3U files arrive via AirDrop, the Files app, or the Import Music screen in Settings. Cadance automatically places them in the <i>Music/Playlists</i> folder.<br><br><b>Want full editing?</b><br>Long-press any FileSystem Playlist to import it as a Custom Playlist. Your imported copy gains per-track tempo memory, folder organization, and all the editing tools.<br><br><b>Tip:</b> If an AirDrop playlist does not appear automatically, use Complete the Installation in the Import Music screen to find files in your Downloads folder."
     },
     "favorites": {
-      "revision": "2026-04-21a",
+      "revision": "2026-04-22",
       "buttonLabel": "About your favorites...",
+      "buttonIcon": "rectangle.badge.sparkles.fill",
+      "header": "Favorites & Tips",
+      "body": "<b>Your Favorites</b><br>Albums and playlists you play regularly appear here, ranked by a daily popularity score. The more you play something, the higher it rises. Scores decay gently each day so your current teaching repertoire stays at the top.<br><br><b>Adding Favorites</b><br>Tap the heart icon on any album or playlist detail screen to add it instantly.<br><br><b>Long-press for options</b><br>Long-press any Favorites card to remove it. For albums, switch between your local library copy and the Apple Music catalog version.<br><br><b>Cadance Resources highlights</b><br>Look for promoted Cadance Resources playlists at the top of your Favorites. These are seasonal or newly added playlists we think you will find useful for class.<br><br><b>Tip:</b> Favorites cards show a play count and popularity score. Use these to track which playlists get the most use across your teaching week."
+    },
+    "favorites": {
+      "revision": "2026-04-23",
+      "buttonLabel": "More on your favorites...",
       "buttonIcon": "rectangle.badge.sparkles.fill",
       "header": "Favorites & Tips",
       "body": "<b>Your Favorites</b><br>Albums and playlists you play regularly appear here, ranked by a daily popularity score. The more you play something, the higher it rises. Scores decay gently each day so your current teaching repertoire stays at the top.<br><br><b>Adding Favorites</b><br>Tap the heart icon on any album or playlist detail screen to add it instantly.<br><br><b>Long-press for options</b><br>Long-press any Favorites card to remove it. For albums, switch between your local library copy and the Apple Music catalog version.<br><br><b>Cadance Resources highlights</b><br>Look for promoted Cadance Resources playlists at the top of your Favorites. These are seasonal or newly added playlists we think you will find useful for class.<br><br><b>Tip:</b> Favorites cards show a play count and popularity score. Use these to track which playlists get the most use across your teaching week."
