@@ -9,7 +9,7 @@
       "buttonLabel": "About Music Playlists",
       "buttonIcon": "info.circle",
       "header": "Music Playlists",
-      "body": "Music Playlists are <b>read-only</b> views of the playlists and folders in your Apple Music library.<br><br>You can browse and play any track directly from here. Tempo changes work on tracks stored on your device; cloud-only tracks play through Apple Music at their original tempo.<br><br><b>Want to edit a playlist?</b><br>Long-press any playlist to import it as a Cadance Custom Playlist. Your imported copy is fully editable and remembers per-track tempo, but future changes in Apple Music will not sync back.<br><br><b>Tip:</b> Tap the heart on any playlist to add it to your Favorites for quick access."
+      "body": "Music Playlists are <b>read-only</b> views of the playlists and folders in your Apple Music library. Please note that they appear with a <b>black</b> background.<br><br>You can browse and play any track directly from here. Tempo changes work on tracks stored on your device; cloud-only tracks play through Apple Music at their original tempo.<br><br><b>Want to edit a playlist?</b><br>Long-press any playlist to import it as a Cadance Custom Playlist. Your imported copy is fully editable and remembers per-track tempo, but future changes in Apple Music will not sync back.<br><br><b>Tip:</b> Tap the heart on any playlist to add it to your Favorites for quick access."
     },
     "cadance_resources": {
       "revision": "2026-04-21a",
