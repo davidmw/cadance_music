@@ -45,6 +45,54 @@
       "type" : "playlist"
     },
     {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-d2b0MWZCG566a5L",
+      "provider" : "appleMusic",
+      "referenceName" : "Caleb Fawcett Sampler",
+      "slug" : "caleb-fawcett-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-e98lMmETZ3YYX3a",
+      "provider" : "appleMusic",
+      "referenceName" : "David Plumpton Sampler",
+      "slug" : "david-plumpton-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-38oW9bETZ477o4Y",
+      "provider" : "appleMusic",
+      "referenceName" : "Lisa Harris Sampler",
+      "slug" : "lisa-harris-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-aZb0gP0uR588p51",
+      "provider" : "appleMusic",
+      "referenceName" : "Nate Fifield Sampler",
+      "slug" : "nate-fifield-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-11zBPxVsKgVV6gN",
+      "provider" : "appleMusic",
+      "referenceName" : "Rob Thaller Sampler",
+      "slug" : "rob-thaller-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-d2b0MaLuG566a5L",
+      "provider" : "appleMusic",
+      "referenceName" : "Søren Bebe Sampler",
+      "slug" : "soren-bebe-sampler",
+      "type" : "playlist"
+    },
+    {
       "promotion" : {
         "badgeBackgroundColor" : "cadanceTeal",
         "badgeFontScale" : 1.5,
