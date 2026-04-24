@@ -116,6 +116,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Grande Ole Memories",
           "slug" : "ad-grande-ole-memories",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -124,6 +125,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Golden Era (1940s-1950s)",
           "slug" : "ad-golden-era",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -140,6 +142,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Folk & Country Revival",
           "slug" : "ad-folk-country-revival",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -148,6 +151,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Autism Spectrum: Junior Explorers",
           "slug" : "as-junior-explorers",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -164,6 +168,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Autism Spectrum: Cinematic & World Rhythms",
           "slug" : "as-cinematic-world-rhythms",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -172,6 +177,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Autism Spectrum: The Bluegrass Social",
           "slug" : "as-bluegrass-social",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -180,6 +186,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: The Classical Waltz",
           "slug" : "hh-classical-waltz",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -188,6 +195,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: The Modern Ballroom",
           "slug" : "hh-modern-ballroom",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -204,6 +212,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: The Country Heartbeat",
           "slug" : "hh-country-heartbeat",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -220,6 +229,7 @@
           "provider" : "appleMusic",
           "referenceName" : "MS & Stroke: Modern Momentum (1990s-Present)",
           "slug" : "mss-modern-momentum",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -228,6 +238,7 @@
           "provider" : "appleMusic",
           "referenceName" : "MS & Stroke: Global & Electronic Beats",
           "slug" : "mss-global-ebeats",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -236,6 +247,7 @@
           "provider" : "appleMusic",
           "referenceName" : "MS & Stroke: Red Dirt Recovery",
           "slug" : "mss-red-dirt-recovery",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -244,6 +256,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Parkinson: Big Band Jazz Era",
           "slug" : "pd-big-band-jazz-era",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -252,6 +265,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Parkinson's: Classic Rock & Soul (1960s - 70s)",
           "slug" : "pd-rock-soul",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -268,6 +282,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Parkinson's: The Honky Tonk Stride (Country & Western)",
           "slug" : "pd-honky-tonk",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -276,6 +291,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Proactive Aging: Global Groove (Cultural Dance)",
           "slug" : "pa-global-groove-cultural-dance",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -284,6 +300,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Proactive Aging: The Retro Revival",
           "slug" : "pa-retro-revival",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -292,6 +309,7 @@
           "provider" : "appleMusic",
           "referenceName" : "Proactive Aging: The Modern Momentum (2010s-Present)",
           "slug" : "pa-modern-momentum",
+          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
@@ -371,8 +389,8 @@
       "type" : "special_offer"
     }
   ],
-  "revision" : "2026-04-03-admin-seed",
+  "revision" : "2026-04-24-suppress-flag",
   "schemaVersion" : 1,
   "ttlSeconds" : 21600,
-  "updatedAt" : "2026-04-03T04:00:00Z"
+  "updatedAt" : "2026-04-24T04:00:00Z"
 }
