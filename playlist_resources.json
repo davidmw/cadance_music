@@ -390,7 +390,23 @@
         "badgeFontScale" : 2,
         "badgeFontWeight" : "bold",
         "badgeRotationDegrees" : -3,
-        "badgeText" : "Wow!",
+        "badgeText" : "New!",
+        "badgeTextColor" : "black",
+        "body" : "Hosted promo messages now support dismissible overlays.",
+        "eligible" : true,
+        "headline" : "What’s new in Favorites",
+        "maxImpressions" : 5
+      },
+      "type" : "special_offer"
+    },
+    {
+      "id" : "start-daypass",
+      "promotion" : {
+        "badgeBackgroundColor" : "green",
+        "badgeFontScale" : 2,
+        "badgeFontWeight" : "bold",
+        "badgeRotationDegrees" : -2,
+        "badgeText" : "How To!",
         "badgeTextColor" : "black",
         "body" : "Hosted promo messages now support dismissible overlays.",
         "eligible" : true,
