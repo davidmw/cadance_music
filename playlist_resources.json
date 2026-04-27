@@ -402,15 +402,15 @@
     {
       "id" : "start-daypass",
       "promotion" : {
-        "badgeBackgroundColor" : "green",
+        "badgeBackgroundColor" : "yellow",
         "badgeFontScale" : 2,
         "badgeFontWeight" : "bold",
         "badgeRotationDegrees" : -2,
         "badgeText" : "How To!",
         "badgeTextColor" : "black",
-        "body" : "Hosted promo messages now support dismissible overlays.",
+        "body" : "How to start a day pass.",
         "eligible" : true,
-        "headline" : "What’s new in Favorites",
+        "headline" : "Starting a Day Pass",
         "maxImpressions" : 5
       },
       "type" : "special_offer"
