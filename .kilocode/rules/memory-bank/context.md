@@ -1,7 +1,7 @@
 # Current Context: Cadance Marketing Site
 
 ## Current State
-Static, multi-page marketing site (GitHub Pages) with shared design system and progressive enhancement JavaScript.
+Static, multi-page marketing site (GitHub Pages) with shared design system and progressive enhancement JavaScript. Updated for Cadance 4 release with Day Passes, curated playlists, and Patron Directory removal.
 
 Primary pages:
 - Teacher homepage: [`index.html`](index.html:1)
@@ -11,8 +11,11 @@ Primary pages:
 - How-to videos: [`how-to.html`](how-to.html:1)
 - Music training resources: [`music-training.html`](music-training.html:1)
 - Partners: [`partners.html`](partners.html:1)
-- Patron directory: [`patrons/index.html`](patrons/index.html:1)
-- Blog: [`blog/index.html`](blog/index.html:1)
+- Blog: [`blog/index.html`](blog/index.html:1) with new posts:
+  - [`blog/introducing-day-passes/index.html`](blog/introducing-day-passes/index.html:1)
+  - [`blog/whats-new-in-cadance-4/index.html`](blog/whats-new-in-cadance-4/index.html:1)
+  - [`blog/dance-for-every-community/index.html`](blog/dance-for-every-community/index.html:1)
+  - [`blog/class-planning-mode/index.html`](blog/class-planning-mode/index.html:1)
 - Support: [`faq.html`](faq.html:1), [`privacy.html`](privacy.html:1)
 
 Private / internal pages (no links in):
@@ -53,6 +56,36 @@ Private / internal pages (no links in):
   - `noindex,nofollow` meta.
   - Cards are sorted by `data-post-date` newest→oldest and laid out in two columns (fill left column first, then right).
   - Crawlers discouraged via `Disallow: /barrenotes/BarreNotesPosts/` in [`robots.txt`](robots.txt:1).
+
+## v4 Release Updates (April 2026)
+
+### Major Changes
+- **Patron Directory removed**: Deleted `/patrons/` directory entirely. Removed all navigation links from footer and header across all pages.
+- **Day Passes introduced**: New pricing model with 14 free passes on signup, never-expire model, and flexible pay-per-day pricing.
+- **Free tier renamed**: "Free tier" → "Class Planning mode" to better reflect the product (unlimited browsing, playlist creation, 15-second previews).
+- **Homepage hero updated**: New messaging emphasizing Day Passes and curated playlists instead of free trial.
+- **Pricing page restructured**: Updated hero copy, FAQ questions, and tier descriptions to reflect Day Pass model and new tier positioning.
+- **FAQ completely rewritten**: Added Day Pass questions, Class Planning mode details, removed Patron Directory references.
+- **Four new blog posts created**:
+  - [`blog/introducing-day-passes/index.html`](blog/introducing-day-passes/index.html:1) — Day Pass model explanation
+  - [`blog/whats-new-in-cadance-4/index.html`](blog/whats-new-in-cadance-4/index.html:1) — v4 feature overview
+  - [`blog/dance-for-every-community/index.html`](blog/dance-for-every-community/index.html:1) — Extraordinary Groups collection
+  - [`blog/class-planning-mode/index.html`](blog/class-planning-mode/index.html:1) — Free tier usage guide
+
+### Files Modified
+- [`index.html`](index.html:1) — Hero messaging, removed Patron Directory footer link
+- [`pricing/index.html`](pricing/index.html:1) — Hero copy, Patron tier description, FAQ questions, removed Patron Directory footer link
+- [`reddit/index.html`](reddit/index.html:1) — Removed Patron Directory footer link
+- [`barrenotes/index.html`](barrenotes/index.html:1) — Removed Patron Directory footer link
+- [`faq.html`](faq.html:1) — Complete rewrite with Day Pass and Class Planning mode content
+
+### Key Messaging Updates
+- "Pay only for the days you teach" (primary CTA)
+- "Day Passes never expire"
+- "14 free passes to get started"
+- "Class Planning mode" (for Free tier)
+- "33 curated playlists" (Cadance Resources)
+- "Extraordinary Groups" (therapeutic/adaptive dance collections)
 
 ## Next Steps
 - None.

@@ -1440,6 +1440,11 @@
   text-align: center;
 }
 
+/* BarreNotes landing: center the pricing intro lines */
+.barrenotes-landing #plans > .container > p {
+  text-align: center;
+}
+
 /* BarreNotes landing: match Pricing page grid behavior (stack on mobile → row on desktop) */
 .barrenotes-landing #plans .features-grid {
   display: flex;
@@ -1662,6 +1667,11 @@ a.secondary-cta:focus-visible {
 /* Pricing page: give the plan cards some breathing room under the heading */
 .pricing-page #plans h2 {
   margin-bottom: var(--space-4);
+}
+
+/* Pricing page: add spacing above the pricing cards grid */
+.pricing-page #plans .features-grid {
+  margin-top: var(--space-4);
 }
 
 .pricing-page .section .subhead,
