@@ -11,7 +11,7 @@
     },
     {
       "addedAt" : "2026-04-06T05:00:00Z",
-      "body" : "## Cadance 4: Completely Rebuilt for iOS\n\nYou have 14 free Day Passes waiting for you. Each one gives you full, unrestricted access until midnight on the day you activate it — use them only on the days you teach. They never expire.\n\n### What is new:\n- 33 curated playlists pre-installed, including music for Extraordinary Groups and kids' Hip-hop\n- Explore any artist or album catalog instantly from within the app\n- iPad Bluetooth remote with large studio-scale overlay\n- Teacher Lock to prevent accidental screen taps during class\n- Enhanced Apple Watch control\n\n### What has changed:\nThe free tier is now Class Planning mode — unlimited playlist editing with 15-second previews of any track, including Apple Music. Activate a Day Pass or subscribe when it is time to teach.\n\nNeed more Day Passes? They are now available for purchase in-app.",
+      "body" : "## Cadance 4: What's new:\n- Day Passes are here, great alternative to subscriptions\n- 33 curated playlists pre-installed, including music for Extraordinary Groups and kids' Hip-hop\n- Explore any artist or album catalog instantly from within the app\n- iPad Bluetooth remote with large studio-scale overlay\n- Teacher Lock to prevent accidental screen taps during class\n- Enhanced Apple Watch control\n\n### What has changed:\nThe free tier is now Class Planning mode — unlimited playlist editing with 15-second previews of any track, including Apple Music. Activate a Day Pass or subscribe when it is time to teach.\n\nNeed more Day Passes? They are now available for purchase in-app.",
       "ctaLabel" : "Contact David",
       "ctaUrl" : "mailto:david@cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
@@ -22,12 +22,21 @@
     },
     {
       "addedAt" : "2026-05-02T05:00:00Z",
-      "body" : "## Day Pass: What is it?\n\nThe perfect alternative to subscriptions, each one gives you full, unrestricted access until midnight on the day you activate it.\n\n## They never expire\n\nUse them only on the days you teach. Also works as a temporary upgrade to your subscription!\n\n## Need more Day Passes?\nThey are available for purchase in-app.",
-      "ctaLabel" : "Contact David",
-      "ctaUrl" : "mailto:david@cadance.music",
+      "body" : "## Day Pass: What is it?\nThe perfect alternative to subscriptions, each one gives you full, unrestricted access until midnight on the day you activate it.\n\n## They never expire\nUse them only on the days you teach. Also works as a temporary upgrade to your subscription!\n\n## Need more Day Passes?\nThey are available for purchase in-app.",
       "eligibleFrom" : "2026-05-02T00:00:00Z",
       "eligibleUntil" : "2027-05-30T23:59:59Z",
       "id" : "daypass-explained",
+      "priority" : 1,
+      "type" : "message"
+    },
+    {
+      "addedAt" : "2026-05-02T05:00:00Z",
+      "body" : "## Need Help?\nFor quick feature demos see the focused tips at the link below.",
+      "ctaLabel" : "Video Tips",
+      "ctaUrl" : "https://cadance.music/how-to.html",
+      "eligibleFrom" : "2026-05-02T00:00:00Z",
+      "eligibleUntil" : "2027-05-30T23:59:59Z",
+      "id" : "get-help",
       "priority" : 1,
       "type" : "message"
     },
@@ -393,6 +402,22 @@
       "slug" : "apple-folder",
       "title" : "Exciting options from Apple Music",
       "type" : "folder"
+    },
+    {
+      "id" : "get-help",
+      "promotion" : {
+        "badgeBackgroundColor" : "red",
+        "badgeFontScale" : 2,
+        "badgeFontWeight" : "bold",
+        "badgeRotationDegrees" : -3,
+        "badgeText" : "Help!",
+        "badgeTextColor" : "white",
+        "body" : "Feature help here.",
+        "eligible" : true,
+        "headline" : "Feature help",
+        "maxImpressions" : 5
+      },
+      "type" : "special_offer"
     },
     {
       "id" : "version4-intro",
