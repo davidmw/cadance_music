@@ -4,7 +4,7 @@
       "addedAt" : "2026-04-03T05:00:00Z",
       "body" : "## Welcome!\nKeep an eye out for new playlists to be highlighted here!\n\n### Where do the playlists live?\nYou can find them on the Music Playlists tab under Cadance Resources.",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
-      "eligibleUntil" : "2026-04-30T23:59:59Z",
+      "eligibleUntil" : "2027-04-30T23:59:59Z",
       "id" : "april-hello",
       "priority" : 5,
       "type" : "message"
@@ -15,9 +15,20 @@
       "ctaLabel" : "Contact David",
       "ctaUrl" : "mailto:david@cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
-      "eligibleUntil" : "2026-05-30T23:59:59Z",
+      "eligibleUntil" : "2027-05-30T23:59:59Z",
       "id" : "version4-intro",
       "priority" : 2,
+      "type" : "message"
+    },
+    {
+      "addedAt" : "2026-05-02T05:00:00Z",
+      "body" : "## Day Pass: What is it?\n\nThe perfect alternative to subscriptions, each one gives you full, unrestricted access until midnight on the day you activate it.\n\n## They never expire\n\nUse them only on the days you teach. Also works as a temporary upgrade to your subscription!\n\n## Need more Day Passes?\nThey are available for purchase in-app.",
+      "ctaLabel" : "Contact David",
+      "ctaUrl" : "mailto:david@cadance.music",
+      "eligibleFrom" : "2026-05-02T00:00:00Z",
+      "eligibleUntil" : "2027-05-30T23:59:59Z",
+      "id" : "daypass-explained",
+      "priority" : 1,
       "type" : "message"
     },
     {
@@ -26,7 +37,7 @@
       "ctaLabel" : "Contact David",
       "ctaUrl" : "mailto:david@cadance.music",
       "eligibleFrom" : "2026-04-03T00:00:00Z",
-      "eligibleUntil" : "2026-05-30T23:59:59Z",
+      "eligibleUntil" : "2027-05-30T23:59:59Z",
       "id" : "start-daypass",
       "priority" : 3,
       "type" : "message"
@@ -407,6 +418,22 @@
         "badgeFontWeight" : "bold",
         "badgeRotationDegrees" : -2,
         "badgeText" : "How To!",
+        "badgeTextColor" : "black",
+        "body" : "How to start a day pass.",
+        "eligible" : true,
+        "headline" : "Starting a Day Pass",
+        "maxImpressions" : 5
+      },
+      "type" : "special_offer"
+    },
+    {
+      "id" : "daypass-explained",
+      "promotion" : {
+        "badgeBackgroundColor" : "yellow",
+        "badgeFontScale" : 2,
+        "badgeFontWeight" : "heavy",
+        "badgeRotationDegrees" : 3,
+        "badgeText" : "What?",
         "badgeTextColor" : "black",
         "body" : "How to start a day pass.",
         "eligible" : true,
