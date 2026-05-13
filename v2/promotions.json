@@ -5,7 +5,7 @@
       "body" : "## Welcome!\nKeep an eye out for new playlists to be highlighted here!\n\n### Where do the playlists live?\nYou can find them on the Music Playlists tab under Cadance Resources.",
       "id" : "april-hello",
       "presentation" : {
-        "maxImpressions" : 5,
+        "maxImpressions" : 1,
         "priority" : 5
       },
       "type" : "message",
@@ -29,7 +29,7 @@
       "headline" : "What’s new in Favorites",
       "id" : "version4-intro",
       "presentation" : {
-        "maxImpressions" : 5,
+        "maxImpressions" : 3,
         "priority" : 2
       },
       "type" : "message",
@@ -79,7 +79,7 @@
       "headline" : "Feature help",
       "id" : "get-help",
       "presentation" : {
-        "maxImpressions" : 5,
+        "maxImpressions" : 2,
         "priority" : 1
       },
       "type" : "message",
