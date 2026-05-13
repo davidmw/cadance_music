@@ -14,7 +14,7 @@
     {
       "addedAt" : "2026-04-22T10:00:00Z",
       "cloudGlobalId" : "pl.u-38oWW1lsZ477o4Y",
-      "favoritesPolicy" : "rotate",
+      "favoritesPolicy" : "feature",
       "provider" : "appleMusic",
       "referenceName" : "Hip-Hop Teens",
       "slug" : "hip-hop-teens",
@@ -23,7 +23,7 @@
     {
       "addedAt" : "2026-04-22T10:00:00Z",
       "cloudGlobalId" : "pl.u-d2b00GWuG566a5L",
-      "favoritesPolicy" : "rotate",
+      "favoritesPolicy" : "exclude",
       "provider" : "appleMusic",
       "referenceName" : "Hip-Hop",
       "slug" : "hip-hop",
@@ -32,7 +32,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-d2b0MWZCG566a5L",
-      "favoritesPolicy" : "rotate",
+      "favoritesPolicy" : "exclude",
       "provider" : "appleMusic",
       "referenceName" : "Caleb Fawcett Sampler",
       "slug" : "caleb-fawcett-sampler",
@@ -50,7 +50,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-38oW9bETZ477o4Y",
-      "favoritesPolicy" : "rotate",
+      "favoritesPolicy" : "exclude",
       "provider" : "appleMusic",
       "referenceName" : "Lisa Harris Sampler",
       "slug" : "lisa-harris-sampler",
@@ -77,7 +77,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-d2b0MaLuG566a5L",
-      "favoritesPolicy" : "rotate",
+      "favoritesPolicy" : "feature",
       "provider" : "appleMusic",
       "referenceName" : "Søren Bebe Sampler",
       "slug" : "soren-bebe-sampler",
@@ -178,7 +178,7 @@
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-11zBPPmiKgVV6gN",
-          "favoritesPolicy" : "rotate",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: Soft Rock & Easy Listening",
           "slug" : "hh-soft-rock",
@@ -187,7 +187,7 @@
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb0gB5uR588p51",
-          "favoritesPolicy" : "exclude",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: The Country Heartbeat",
           "slug" : "hh-country-heartbeat",
@@ -258,7 +258,7 @@
             "text" : "Extraordinary Groups!"
           },
           "cloudGlobalId" : "pl.u-JPAZZ9NtlkeeNkL",
-          "favoritesPolicy" : "rotate",
+          "favoritesPolicy" : "feature",
           "provider" : "appleMusic",
           "referenceName" : "Parkinson's: Modern & Pop Anthems",
           "slug" : "pd-modern-pop-anthems",
@@ -337,7 +337,7 @@
         {
           "addedAt" : "2026-04-22T10:00:00Z",
           "cloudGlobalId" : "pl.bb5b34f808f04cf6bdc57d9f1a98c918",
-          "favoritesPolicy" : "rotate",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Dance Workout",
           "slug" : "dance-workout",
@@ -355,7 +355,7 @@
         {
           "addedAt" : "2026-04-22T10:00:00Z",
           "cloudGlobalId" : "pl.7a1d8bd609c44c318d71bf1a0a1e89b5",
-          "favoritesPolicy" : "rotate",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Everyday Hits",
           "slug" : "everyday-hits",
