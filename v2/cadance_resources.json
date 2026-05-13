@@ -1,59 +1,11 @@
 {
-  "items" : [
-    {
-      "addedAt" : "2026-04-03T05:00:00Z",
-      "body" : "## Welcome!\nKeep an eye out for new playlists to be highlighted here!\n\n### Where do the playlists live?\nYou can find them on the Music Playlists tab under Cadance Resources.",
-      "eligibleFrom" : "2026-04-03T00:00:00Z",
-      "eligibleUntil" : "2027-04-30T23:59:59Z",
-      "id" : "april-hello",
-      "priority" : 5,
-      "type" : "message"
-    },
-    {
-      "addedAt" : "2026-04-06T05:00:00Z",
-      "body" : "## Cadance 4: What's new:\n- Day Passes are here, great alternative to subscriptions\n- 33 curated playlists pre-installed, including music for Extraordinary Groups and kids' Hip-hop\n- Explore any artist or album catalog instantly from within the app\n- iPad Bluetooth remote with large studio-scale overlay\n- Teacher Lock to prevent accidental screen taps during class\n- Enhanced Apple Watch control\n\n### What has changed:\nThe free tier is now Class Planning mode — unlimited playlist editing with 15-second previews of any track, including Apple Music. Activate a Day Pass or subscribe when it is time to teach.\n\nNeed more Day Passes? They are now available for purchase in-app.",
-      "ctaLabel" : "Contact David",
-      "ctaUrl" : "mailto:david@cadance.music",
-      "eligibleFrom" : "2026-04-03T00:00:00Z",
-      "eligibleUntil" : "2027-05-30T23:59:59Z",
-      "id" : "version4-intro",
-      "priority" : 2,
-      "type" : "message"
-    },
-    {
-      "addedAt" : "2026-05-02T05:00:00Z",
-      "body" : "## Day Pass: What is it?\nThe perfect alternative to subscriptions, each one gives you full, unrestricted access until midnight on the day you activate it.\n\n## They never expire\nUse them only on the days you teach. Also works as a temporary upgrade to your subscription!\n\n## Need more Day Passes?\nThey are available for purchase in-app.",
-      "eligibleFrom" : "2026-05-02T00:00:00Z",
-      "eligibleUntil" : "2027-05-30T23:59:59Z",
-      "id" : "daypass-explained",
-      "priority" : 1,
-      "type" : "message"
-    },
-    {
-      "addedAt" : "2026-05-02T05:00:00Z",
-      "body" : "## Need Help?\nFor quick feature demos see the focused tips at the link below.",
-      "ctaLabel" : "Video Tips",
-      "ctaUrl" : "https://cadance.music/how-to.html",
-      "eligibleFrom" : "2026-05-02T00:00:00Z",
-      "eligibleUntil" : "2027-05-30T23:59:59Z",
-      "id" : "get-help",
-      "priority" : 1,
-      "type" : "message"
-    },
-    {
-      "addedAt" : "2026-04-06T05:00:00Z",
-      "body" : "## Start your Day Pass on your terms\nLook for the banner 'Activate your Day Pass' on your first track play - you'll have 10 seconds to stop activation.\n\nIf you stop activation, all tracks played after that will be in Preview mode and reset after 15 seconds.\n\n## Ready to teach?\nGo to Settings (gear icon at the top of the app), scroll to the Day Passes section, and select Activate a Day Pass Now.\n\n## Need more Day Passes?\nThey are now available for purchase from the Day Passes section on our Settings screen.",
-      "ctaLabel" : "Contact David",
-      "ctaUrl" : "mailto:david@cadance.music",
-      "eligibleFrom" : "2026-04-03T00:00:00Z",
-      "eligibleUntil" : "2027-05-30T23:59:59Z",
-      "id" : "start-daypass",
-      "priority" : 3,
-      "type" : "message"
-    },
+  "revision" : "2026-05-13-stage-b-resources",
+  "schemaVersion" : 2,
+  "tree" : [
     {
       "addedAt" : "2026-04-22T10:00:00Z",
       "cloudGlobalId" : "pl.u-DdANN5duN2bbP20",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Hip-Hop Kids",
       "slug" : "hip-hop-kids",
@@ -62,6 +14,7 @@
     {
       "addedAt" : "2026-04-22T10:00:00Z",
       "cloudGlobalId" : "pl.u-38oWW1lsZ477o4Y",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Hip-Hop Teens",
       "slug" : "hip-hop-teens",
@@ -70,6 +23,7 @@
     {
       "addedAt" : "2026-04-22T10:00:00Z",
       "cloudGlobalId" : "pl.u-d2b00GWuG566a5L",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Hip-Hop",
       "slug" : "hip-hop",
@@ -78,6 +32,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-d2b0MWZCG566a5L",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Caleb Fawcett Sampler",
       "slug" : "caleb-fawcett-sampler",
@@ -86,6 +41,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-e98lMmETZ3YYX3a",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "David Plumpton Sampler",
       "slug" : "david-plumpton-sampler",
@@ -94,6 +50,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-38oW9bETZ477o4Y",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Lisa Harris Sampler",
       "slug" : "lisa-harris-sampler",
@@ -102,6 +59,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-aZb0gP0uR588p51",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Nate Fifield Sampler",
       "slug" : "nate-fifield-sampler",
@@ -110,6 +68,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-11zBPxVsKgVV6gN",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Rob Thaller Sampler",
       "slug" : "rob-thaller-sampler",
@@ -118,50 +77,36 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-d2b0MaLuG566a5L",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Søren Bebe Sampler",
       "slug" : "soren-bebe-sampler",
       "type" : "playlist"
     },
     {
-      "promotion" : {
-        "badgeBackgroundColor" : "cadanceTeal",
-        "badgeFontScale" : 1.5,
-        "badgeFontWeight" : "bold",
-        "badgeRotationDegrees" : -2,
-        "badgeText" : "Extraordinary Groups!",
-        "badgeTextColor" : "black",
-        "body" : "One of 4 Parkinson's playlists",
-        "eligible" : true,
-        "headline" : "Dance with Parkinson's",
-        "maxImpressions" : 5
-      },
-      "slug" : "pd-modern-pop-anthems",
-      "type" : "playlist_promotion"
-    },
-    {
       "items" : [
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-V9D7g5JFjDZZGD3",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Grande Ole Memories",
           "slug" : "ad-grande-ole-memories",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-DdANvp6FN2bbP20",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Golden Era (1940s-1950s)",
           "slug" : "ad-golden-era",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-9N9LvDLFyJbblJ1",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Silver Screen & Soul (1960s-1970s)",
           "slug" : "ad-silver-screen-soul",
@@ -170,24 +115,25 @@
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-mJy836DtYdJJLdN",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Alzheimer's & Dementia: The Folk & Country Revival",
           "slug" : "ad-folk-country-revival",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb0gG0tR588p51",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Autism Spectrum: Junior Explorers",
           "slug" : "as-junior-explorers",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-11zBP8VhKgVV6gN",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Autism Spectrum: Teen & Adult Groove",
           "slug" : "as-teen-adult-groove",
@@ -196,42 +142,43 @@
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-V9D7g7aujDZZGD3",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Autism Spectrum: Cinematic & World Rhythms",
           "slug" : "as-cinematic-world-rhythms",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-76oNPNmFqjrrdjv",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Autism Spectrum: The Bluegrass Social",
           "slug" : "as-bluegrass-social",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-JPAZDDPIlkeeNkL",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: The Classical Waltz",
           "slug" : "hh-classical-waltz",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb0gg9tR588p51",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: The Modern Ballroom",
           "slug" : "hh-modern-ballroom",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-11zBPPmiKgVV6gN",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: Soft Rock & Easy Listening",
           "slug" : "hh-soft-rock",
@@ -240,15 +187,16 @@
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb0gB5uR588p51",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Heart Health: The Country Heartbeat",
           "slug" : "hh-country-heartbeat",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-76oNPjbTqjrrdjv",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "MS & Stroke: Classic Grooves (1970s-1980s)",
           "slug" : "mss-classic-grooves",
@@ -257,51 +205,60 @@
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-V9D7gq9ujDZZGD3",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "MS & Stroke: Modern Momentum (1990s-Present)",
           "slug" : "mss-modern-momentum",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-76oNP27Fqjrrdjv",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "MS & Stroke: Global & Electronic Beats",
           "slug" : "mss-global-ebeats",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-JPAZD7GslkeeNkL",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "MS & Stroke: The Red Dirt Recovery",
           "slug" : "mss-red-dirt-recovery",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-05T05:00:00Z",
           "cloudGlobalId" : "pl.u-d2b005WTG566a5L",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Parkinson's: The Big Band & Jazz Era",
           "slug" : "pd-big-band-jazz-era",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-05T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb00N5IR588p51",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Parkinson's: Classic Rock & Soul (1960s - 70s)",
           "slug" : "pd-rock-soul",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-05T05:00:00Z",
+          "badge" : {
+            "background" : "cadanceTeal",
+            "fontScale" : 1.5,
+            "fontWeight" : "bold",
+            "foreground" : "black",
+            "rotationDegrees" : -2,
+            "text" : "Extraordinary Groups!"
+          },
           "cloudGlobalId" : "pl.u-JPAZZ9NtlkeeNkL",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Parkinson's: Modern & Pop Anthems",
           "slug" : "pd-modern-pop-anthems",
@@ -310,42 +267,43 @@
         {
           "addedAt" : "2026-04-05T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb00D7tR588p51",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Parkinson's: The Honky Tonk Stride (Country & Western)",
           "slug" : "pd-honky-tonk",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-11zBP53CKgVV6gN",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Proactive Aging: Global Groove (Cultural Dance)",
           "slug" : "pa-global-groove-cultural-dance",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb0gB6tR588p51",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Proactive Aging: The Retro Revival",
           "slug" : "pa-retro-revival",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-11zBPD1tKgVV6gN",
+          "favoritesPolicy" : "exclude",
           "provider" : "appleMusic",
           "referenceName" : "Proactive Aging: The Modern Momentum (2010s-Present)",
           "slug" : "pa-modern-momentum",
-          "suppressFromFavoritesPromotion" : true,
           "type" : "playlist"
         },
         {
           "addedAt" : "2026-04-22T05:00:00Z",
           "cloudGlobalId" : "pl.u-aZb0gv4uR588p51",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Proactive Aging: Silver Spurs",
           "slug" : "pa-silver-spurs",
@@ -361,6 +319,7 @@
         {
           "addedAt" : "2026-04-02T10:00:00Z",
           "cloudGlobalId" : "pl.6be6015d6aa641feb548995ad8cdcdb9",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "First",
           "slug" : "first",
@@ -369,6 +328,7 @@
         {
           "addedAt" : "2026-04-22T10:00:00Z",
           "cloudGlobalId" : "pl.351c85541ea843eeb9b9a814bf210b03",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Classical Motivation",
           "slug" : "classical-motivation",
@@ -377,6 +337,7 @@
         {
           "addedAt" : "2026-04-22T10:00:00Z",
           "cloudGlobalId" : "pl.bb5b34f808f04cf6bdc57d9f1a98c918",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Dance Workout",
           "slug" : "dance-workout",
@@ -385,6 +346,7 @@
         {
           "addedAt" : "2026-04-22T10:00:00Z",
           "cloudGlobalId" : "pl.588ea217ec3c42e08d49cd13237958d4",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Latin Pop Workout",
           "slug" : "latin-pop-workout",
@@ -393,6 +355,7 @@
         {
           "addedAt" : "2026-04-22T10:00:00Z",
           "cloudGlobalId" : "pl.7a1d8bd609c44c318d71bf1a0a1e89b5",
+          "favoritesPolicy" : "rotate",
           "provider" : "appleMusic",
           "referenceName" : "Everyday Hits",
           "slug" : "everyday-hits",
@@ -402,74 +365,8 @@
       "slug" : "apple-folder",
       "title" : "Exciting options from Apple Music",
       "type" : "folder"
-    },
-    {
-      "id" : "get-help",
-      "promotion" : {
-        "badgeBackgroundColor" : "red",
-        "badgeFontScale" : 2,
-        "badgeFontWeight" : "bold",
-        "badgeRotationDegrees" : -3,
-        "badgeText" : "Help!",
-        "badgeTextColor" : "white",
-        "body" : "Feature help here.",
-        "eligible" : true,
-        "headline" : "Feature help",
-        "maxImpressions" : 5
-      },
-      "type" : "special_offer"
-    },
-    {
-      "id" : "version4-intro",
-      "promotion" : {
-        "badgeBackgroundColor" : "yellow",
-        "badgeFontScale" : 2,
-        "badgeFontWeight" : "bold",
-        "badgeRotationDegrees" : -3,
-        "badgeText" : "New!",
-        "badgeTextColor" : "black",
-        "body" : "Hosted promo messages now support dismissible overlays.",
-        "eligible" : true,
-        "headline" : "What’s new in Favorites",
-        "maxImpressions" : 5
-      },
-      "type" : "special_offer"
-    },
-    {
-      "id" : "start-daypass",
-      "promotion" : {
-        "badgeBackgroundColor" : "yellow",
-        "badgeFontScale" : 2,
-        "badgeFontWeight" : "bold",
-        "badgeRotationDegrees" : -2,
-        "badgeText" : "How To!",
-        "badgeTextColor" : "black",
-        "body" : "How to start a day pass.",
-        "eligible" : true,
-        "headline" : "Starting a Day Pass",
-        "maxImpressions" : 5
-      },
-      "type" : "special_offer"
-    },
-    {
-      "id" : "daypass-explained",
-      "promotion" : {
-        "badgeBackgroundColor" : "yellow",
-        "badgeFontScale" : 2,
-        "badgeFontWeight" : "heavy",
-        "badgeRotationDegrees" : 3,
-        "badgeText" : "What?",
-        "badgeTextColor" : "black",
-        "body" : "How to start a day pass.",
-        "eligible" : true,
-        "headline" : "Starting a Day Pass",
-        "maxImpressions" : 5
-      },
-      "type" : "special_offer"
     }
   ],
-  "revision" : "2026-04-24-suppress-flag",
-  "schemaVersion" : 1,
   "ttlSeconds" : 21600,
-  "updatedAt" : "2026-04-24T04:00:00Z"
+  "updatedAt" : "2026-05-13T00:00:00Z"
 }
