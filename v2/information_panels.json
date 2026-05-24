@@ -13,10 +13,10 @@
       "revision" : "2026-04-21a"
     },
     "custom_playlists" : {
-      "body" : "Custom Playlists are <b>your personal playlists</b> inside Cadance, with features designed for teaching.<br><br><b>Per-track tempo memory</b><br>Every track remembers the last tempo you used. When you return to a playlist, each exercise picks up right where you left off.<br><br><b>Organize with folders</b><br>Create folders up to four levels deep to match your teaching schedule: by day, level, syllabus section, or however you think about your classes.<br><br><b>Build playlists your way</b><br>Create from scratch, or import from Apple Music or Cadance Resources. Add individual tracks from any album or playlist using the menu on each track row.<br><br><b>Tip:</b> Tap the ellipsis button on any playlist to edit tracks inline, regenerate the artwork collage, or fetch updated library artwork.",
+      "body" : "My Cadance Playlists are <b>your personal playlists</b> inside Cadance, with features designed for teaching.<br><br><b>Per-track tempo memory</b><br>Every track remembers the last tempo you used. When you return to a playlist, each exercise picks up right where you left off.<br><br><b>Organize with folders</b><br>Create folders up to four levels deep to match your teaching schedule: by day, level, syllabus section, or however you think about your classes.<br><br><b>Build playlists your way</b><br>Create from scratch, or import from Apple Music or Cadance Resources. Add individual tracks from any album or playlist using the menu on each track row.<br><br>Note that the background of My Cadance Playlists is dark blue.<br><br><b>Tip:</b> Tap the ellipsis button on any playlist to edit tracks inline, regenerate the artwork collage, or fetch updated library artwork.",
       "buttonIcon" : "info.circle",
-      "buttonLabel" : "About Custom Playlists",
-      "header" : "Custom Playlists",
+      "buttonLabel" : "About My Cadance Playlists",
+      "header" : "My Cadance Playlists",
       "revision" : "2026-04-21a"
     },
     "favorites" : {
@@ -67,10 +67,10 @@
       "revision" : "2026-04-23a"
     },
     "music_playlists" : {
-      "body" : "Music Playlists are <b>read-only</b> views of the playlists and folders in your Apple Music library.<br><br>You can browse and play any track directly from here. Tempo changes work just like they do on album tracks.<br><br><b>Want to edit a playlist?</b><br>Long-press any playlist to import it as a Cadance Custom Playlist. Your imported copy is fully editable and remembers per-track tempo, but future changes in Apple Music will not sync back.<br><br><b>Tip:</b> Tap the heart on any playlist to add it to your Favorites for quick access.",
+      "body" : "Playlists are <b>read-only</b> views of the playlists and folders in your Apple Music library.<br><br>You can browse and play any track directly from here. Tempo changes work just like they do on album tracks.<br><br>Note that the background color of these playlists is set to black.<br><br><b>Want to edit a playlist?</b><br>Long-press any playlist to import it as a Cadance Custom Playlist. Your imported copy is fully editable and remembers per-track tempo, but future changes in Apple Music will not sync back.<br><br><b>Tip:</b> Tap the heart on any playlist to add it to your Favorites for quick access.",
       "buttonIcon" : "info.circle",
-      "buttonLabel" : "About Music Playlists",
-      "header" : "Music Playlists",
+      "buttonLabel" : "About Playlists",
+      "header" : "Playlists",
       "revision" : "2026-04-21a"
     }
   },
