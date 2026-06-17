@@ -1,0 +1,86 @@
+{
+  "panels" : {
+    "cadance_resources" : {
+      "badgeWindow" : {
+        "from" : 1,
+        "kind" : "absolute",
+        "through" : 6
+      },
+      "body" : "Cadance Resources are <b>curated playlists for dance teachers</b>, provided and updated by the Cadance team.<br><br>Each playlist is built around a teaching theme: ballet class exercises, dance for Parkinson's programs, creative movement, and more. New playlists are added regularly.<br><br>These playlists stream through Apple Music. You need an Apple Music subscription for full playback.<br><br><b>Make it your own</b><br>Long-press any Cadance Resources playlist to import it as a Custom Playlist. Your copy will remember per-track tempo and will not change when we update the source.<br><br><b>Tip:</b> Check the Favorites tab for highlighted new and seasonal Cadance Resources playlists.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About Cadance Resources",
+      "header" : "Cadance Resources"
+    },
+    "custom_playlists" : {
+      "body" : "My Cadance Playlists are <b>your personal playlists</b> inside Cadance, with features designed for teaching.<br><br><b>Per-track tempo memory</b><br>Every track remembers the last tempo you used. When you return to a playlist, each exercise picks up right where you left off.<br><br><b>Organize with folders</b><br>Create folders up to four levels deep to match your teaching schedule: by day, level, syllabus section, or however you think about your classes.<br><br><b>Build playlists your way</b><br>Create from scratch, or import from Apple Music or Cadance Resources. Add individual tracks from any album or playlist using the menu on each track row.<br><br>Note that the background of My Cadance Playlists is dark blue.<br><br><b>Tip:</b> Tap the ellipsis button on any playlist to edit tracks inline, regenerate the artwork collage, or fetch updated library artwork.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About My Cadance Playlists",
+      "header" : "My Cadance Playlists"
+    },
+    "favorites" : {
+      "badgeWindow" : {
+        "from" : 1,
+        "kind" : "absolute",
+        "through" : 6
+      },
+      "body" : "<b>Upgrade Cadance</b><br>To see this feature tour you'll need to update Cadance on your devices.",
+      "buttonIcon" : "sunglasses.fill",
+      "buttonLabel" : "Visual Tour",
+      "header" : "Visual Tour of Cadance",
+      "pdf" : {
+        "revision" : "2026-06-16a",
+        "url" : "https://cadance.music/v3/panels/favorites-2026-06-16a.pdf"
+      }
+    },
+    "filesystem_albums" : {
+      "body" : "These are albums stored <b>directly on your device</b> as audio files inside Cadance's Documents folder.<br><br>Cadance organizes files using a simple <i>Artist/Album/Track</i> folder structure. Supported formats include MP3, M4A, WAV, FLAC, AIFF, and ALAC.<br><br><b>Adding local music</b><br>Open the Import Music screen in Settings to bring audio files or entire album folders into Cadance. You can also AirDrop audio files, use the Share sheet from other apps, or copy files in via Finder / iTunes file sharing.<br><br><b>Tempo control</b><br>Most local track plays through Cadance's tempo engine with full tempo control and no Apple Music subscription required. Upscaled and DRM burdened tracks will need to play through Apple's MusicKit (this is automatic).<br><br><b>Tip:</b> Use <b>Complete the Installation</b> in the Import Music screen to tidy up files that land in the Cadance root folder, moving them into the correct Artist/Album structure automatically.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About Local Albums",
+      "header" : "Local Albums"
+    },
+    "filesystem_artists" : {
+      "body" : "Browse your <b>local files</b> grouped by artist.<br><br>Each artist shown here has at least one folder inside Cadance's Documents area. Tap an artist to see all of their locally-stored albums.<br><br><b>Organization</b><br>Cadance reads the folder structure directly: the top-level folder is the artist, the next level is the album, and audio files inside are the tracks. Keeping this structure tidy keeps browsing fast.<br><br><b>Tempo control</b><br>Most local tracks play through Cadance's tempo engine with full tempo control and no Apple Music subscription required. Upscaled and DRM burdened tracks will need to play through Apple's MusicKit (this is automatic).<br><br><b>Tip:</b> Add or remove folders using the Import Music screen in Settings, or through Finder / iTunes file sharing, the Files app, or AirDrop.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About Local Artists",
+      "header" : "Local Artists"
+    },
+    "filesystem_playlists" : {
+      "body" : "FileSystem Playlists are <b>M3U playlist files</b> found in your Cadance documents folder.<br><br>These files typically reference Apple Music catalog tracks by URL. Playback routes through MusicKit, so you need an Apple Music subscription for full access.<br><br><b>How they get here</b><br>M3U files arrive via AirDrop, the Files app, or the Import Music screen in Settings. Cadance automatically places them in the <i>Music/Playlists</i> folder.<br><br><b>Want full editing?</b><br>Long-press any FileSystem Playlist to import it as a Custom Playlist. Your imported copy gains per-track tempo memory, folder organization, and all the editing tools.<br><br><b>Tip:</b> If an AirDrop playlist does not appear automatically, use Complete the Installation in the Import Music screen to find files in your Downloads folder.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About FileSystem Playlists",
+      "header" : "FileSystem Playlists"
+    },
+    "library_albums" : {
+      "body" : "This is your <b>complete album library</b> on this device, sourced from Apple Music.<br><br>Every album you have added to your library appears here in alphabetical order. Tap any album to view its tracks and start playback with tempo control.<br><br><b>Tempo control</b><br>Tracks stored locally on your device play through Cadance's tempo engine. Cloud-only and DRM tracks stream through Apple's MusicKit, also with tempo control. You may notice that local track sound better with tempo adjustments applied and they don't pause while you are making adjustments.<br><br><b>Search across your library</b><br>Use the search field at the top to find any album, artist, or track. Results are grouped hierarchically: Artist → Album → Track.<br><br><b>Tip:</b> Use the alphabetic index bar along the right edge to jump quickly to a specific letter in a large library.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About Your Albums",
+      "header" : "Albums"
+    },
+    "library_artists" : {
+      "body" : "Browse your library <b>by artist</b> instead of by album.<br><br>Every artist in your Apple Music library appears here in alphabetical order, with the album and track counts for each. Tap an artist to see all of their albums in your library, plus any other albums they have on Apple Music that you haven't added yet.<br><br><b>Search across your library</b><br>Use the search field at the top to find any artist, album, or track. Results are grouped hierarchically so you can drill down quickly.<br><br><b>Tip:</b> From an album's detail screen, tap <b>Artist's Catalog</b> to jump straight to that artist's full catalog in this tab.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About Your Artists",
+      "header" : "Artists"
+    },
+    "music_playlists" : {
+      "body" : "Playlists are <b>read-only</b> views of the playlists and folders in your Apple Music library.<br><br>You can browse and play any track directly from here. Tempo changes work just like they do on album tracks.<br><br>Note that the background color of these playlists is set to black.<br><br><b>Want to edit a playlist?</b><br>Long-press any playlist to import it as a Cadance Custom Playlist. Your imported copy is fully editable and remembers per-track tempo, but future changes in Apple Music will not sync back.<br><br><b>Tip:</b> Tap the heart on any playlist to add it to your Favorites for quick access.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About Playlists",
+      "header" : "Playlists"
+    },
+    "syllabus" : {
+      "badgeWindow" : {
+        "from" : 1,
+        "kind" : "absolute",
+        "through" : 6
+      },
+      "body" : "The Syllabus is a <b>read-only file browser</b> over the Cadance <i>Syllabus</i> folder — built for working through structured class material like graded ballet syllabi.<br><br><b>Re-tap Favorites to get here</b><br>The Syllabus lives on the back of the Favorites tab. Tap the Favorites tab again to flip between your Favorites grid and the Syllabus browser.<br><br><b>Adding content</b><br>Drop folders or <b>.zip</b> archives into the Cadance “Syllabus” folder using the Files app or Finder file sharing, then pull down to refresh. Tap any .zip to unpack it in place.<br><br><b>Folders and tracks</b><br>Folders of individual exercises are grouped together so a whole barre or section reads as one list. Tap a folder to open it, then tap any track to play it with full tempo control.<br><br><b>Practice tools</b><br>Use the menu on any track for More Like This, Add to Playlist, or — with a Practice Pass, Patron membership, or active Day Pass — to open it in the Focus Player.<br><br><b>Tip:</b> Syllabus tracks play through Cadance's tempo engine, so you can adjust tempo for any exercise without changing pitch.",
+      "buttonIcon" : "info.circle",
+      "buttonLabel" : "About the Syllabus",
+      "header" : "Syllabus"
+    }
+  },
+  "revision" : 1,
+  "schemaVersion" : 3,
+  "ttlSeconds" : 21600
+}

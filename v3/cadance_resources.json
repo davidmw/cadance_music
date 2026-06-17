@@ -1,0 +1,371 @@
+{
+  "revision" : 1,
+  "schemaVersion" : 3,
+  "tree" : [
+    {
+      "addedAt" : "2026-04-22T10:00:00Z",
+      "cloudGlobalId" : "pl.u-DdANN5duN2bbP20",
+      "favoritesPolicy" : "rotate",
+      "provider" : "appleMusic",
+      "referenceName" : "Hip-Hop Kids",
+      "slug" : "hip-hop-kids",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-22T10:00:00Z",
+      "cloudGlobalId" : "pl.u-38oWW1lsZ477o4Y",
+      "favoritesPolicy" : "feature",
+      "provider" : "appleMusic",
+      "referenceName" : "Hip-Hop Teens",
+      "slug" : "hip-hop-teens",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-22T10:00:00Z",
+      "cloudGlobalId" : "pl.u-d2b00GWuG566a5L",
+      "favoritesPolicy" : "exclude",
+      "provider" : "appleMusic",
+      "referenceName" : "Hip-Hop",
+      "slug" : "hip-hop",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-d2b0MWZCG566a5L",
+      "favoritesPolicy" : "exclude",
+      "provider" : "appleMusic",
+      "referenceName" : "Caleb Fawcett Sampler",
+      "slug" : "caleb-fawcett-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-e98lMmETZ3YYX3a",
+      "favoritesPolicy" : "rotate",
+      "provider" : "appleMusic",
+      "referenceName" : "David Plumpton Sampler",
+      "slug" : "david-plumpton-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-38oW9bETZ477o4Y",
+      "favoritesPolicy" : "exclude",
+      "provider" : "appleMusic",
+      "referenceName" : "Lisa Harris Sampler",
+      "slug" : "lisa-harris-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-aZb0gP0uR588p51",
+      "favoritesPolicy" : "rotate",
+      "provider" : "appleMusic",
+      "referenceName" : "Nate Fifield Sampler",
+      "slug" : "nate-fifield-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-11zBPxVsKgVV6gN",
+      "favoritesPolicy" : "rotate",
+      "provider" : "appleMusic",
+      "referenceName" : "Rob Thaller Sampler",
+      "slug" : "rob-thaller-sampler",
+      "type" : "playlist"
+    },
+    {
+      "addedAt" : "2026-04-24T10:00:00Z",
+      "cloudGlobalId" : "pl.u-d2b0MaLuG566a5L",
+      "favoritesPolicy" : "feature",
+      "provider" : "appleMusic",
+      "referenceName" : "Søren Bebe Sampler",
+      "slug" : "soren-bebe-sampler",
+      "type" : "playlist"
+    },
+    {
+      "items" : [
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-V9D7g5JFjDZZGD3",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Alzheimer's & Dementia: The Grande Ole Memories",
+          "slug" : "ad-grande-ole-memories",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-DdANvp6FN2bbP20",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Alzheimer's & Dementia: The Golden Era (1940s-1950s)",
+          "slug" : "ad-golden-era",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-9N9LvDLFyJbblJ1",
+          "favoritesPolicy" : "rotate",
+          "provider" : "appleMusic",
+          "referenceName" : "Alzheimer's & Dementia: The Silver Screen & Soul (1960s-1970s)",
+          "slug" : "ad-silver-screen-soul",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-mJy836DtYdJJLdN",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Alzheimer's & Dementia: The Folk & Country Revival",
+          "slug" : "ad-folk-country-revival",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gG0tR588p51",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Autism Spectrum: Junior Explorers",
+          "slug" : "as-junior-explorers",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-11zBP8VhKgVV6gN",
+          "favoritesPolicy" : "rotate",
+          "provider" : "appleMusic",
+          "referenceName" : "Autism Spectrum: Teen & Adult Groove",
+          "slug" : "as-teen-adult-groove",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-V9D7g7aujDZZGD3",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Autism Spectrum: Cinematic & World Rhythms",
+          "slug" : "as-cinematic-world-rhythms",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-76oNPNmFqjrrdjv",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Autism Spectrum: The Bluegrass Social",
+          "slug" : "as-bluegrass-social",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-JPAZDDPIlkeeNkL",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Heart Health: The Classical Waltz",
+          "slug" : "hh-classical-waltz",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gg9tR588p51",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Heart Health: The Modern Ballroom",
+          "slug" : "hh-modern-ballroom",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-11zBPPmiKgVV6gN",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Heart Health: Soft Rock & Easy Listening",
+          "slug" : "hh-soft-rock",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gB5uR588p51",
+          "favoritesPolicy" : "rotate",
+          "provider" : "appleMusic",
+          "referenceName" : "Heart Health: The Country Heartbeat",
+          "slug" : "hh-country-heartbeat",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-76oNPjbTqjrrdjv",
+          "favoritesPolicy" : "rotate",
+          "provider" : "appleMusic",
+          "referenceName" : "MS & Stroke: Classic Grooves (1970s-1980s)",
+          "slug" : "mss-classic-grooves",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-V9D7gq9ujDZZGD3",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "MS & Stroke: Modern Momentum (1990s-Present)",
+          "slug" : "mss-modern-momentum",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-76oNP27Fqjrrdjv",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "MS & Stroke: Global & Electronic Beats",
+          "slug" : "mss-global-ebeats",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-JPAZD7GslkeeNkL",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "MS & Stroke: The Red Dirt Recovery",
+          "slug" : "mss-red-dirt-recovery",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-05T05:00:00Z",
+          "cloudGlobalId" : "pl.u-d2b005WTG566a5L",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Parkinson's: The Big Band & Jazz Era",
+          "slug" : "pd-big-band-jazz-era",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-05T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb00N5IR588p51",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Parkinson's: Classic Rock & Soul (1960s - 70s)",
+          "slug" : "pd-rock-soul",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-05T05:00:00Z",
+          "badge" : {
+            "background" : "cadanceTeal",
+            "fontScale" : 1.5,
+            "fontWeight" : "bold",
+            "foreground" : "black",
+            "rotationDegrees" : -2,
+            "text" : "Extraordinary Groups!"
+          },
+          "cloudGlobalId" : "pl.u-JPAZZ9NtlkeeNkL",
+          "favoritesPolicy" : "feature",
+          "provider" : "appleMusic",
+          "referenceName" : "Parkinson's: Modern & Pop Anthems",
+          "slug" : "pd-modern-pop-anthems",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-05T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb00D7tR588p51",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Parkinson's: The Honky Tonk Stride (Country & Western)",
+          "slug" : "pd-honky-tonk",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-11zBP53CKgVV6gN",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Proactive Aging: Global Groove (Cultural Dance)",
+          "slug" : "pa-global-groove-cultural-dance",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gB6tR588p51",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Proactive Aging: The Retro Revival",
+          "slug" : "pa-retro-revival",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-11zBPD1tKgVV6gN",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Proactive Aging: The Modern Momentum (2010s-Present)",
+          "slug" : "pa-modern-momentum",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T05:00:00Z",
+          "cloudGlobalId" : "pl.u-aZb0gv4uR588p51",
+          "favoritesPolicy" : "rotate",
+          "provider" : "appleMusic",
+          "referenceName" : "Proactive Aging: Silver Spurs",
+          "slug" : "pa-silver-spurs",
+          "type" : "playlist"
+        }
+      ],
+      "slug" : "extras-folder",
+      "title" : "Extraordinary Groups",
+      "type" : "folder"
+    },
+    {
+      "items" : [
+        {
+          "addedAt" : "2026-04-02T10:00:00Z",
+          "cloudGlobalId" : "pl.6be6015d6aa641feb548995ad8cdcdb9",
+          "favoritesPolicy" : "rotate",
+          "provider" : "appleMusic",
+          "referenceName" : "First",
+          "slug" : "first",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T10:00:00Z",
+          "cloudGlobalId" : "pl.351c85541ea843eeb9b9a814bf210b03",
+          "favoritesPolicy" : "rotate",
+          "provider" : "appleMusic",
+          "referenceName" : "Classical Motivation",
+          "slug" : "classical-motivation",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T10:00:00Z",
+          "cloudGlobalId" : "pl.bb5b34f808f04cf6bdc57d9f1a98c918",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Dance Workout",
+          "slug" : "dance-workout",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T10:00:00Z",
+          "cloudGlobalId" : "pl.588ea217ec3c42e08d49cd13237958d4",
+          "favoritesPolicy" : "rotate",
+          "provider" : "appleMusic",
+          "referenceName" : "Latin Pop Workout",
+          "slug" : "latin-pop-workout",
+          "type" : "playlist"
+        },
+        {
+          "addedAt" : "2026-04-22T10:00:00Z",
+          "cloudGlobalId" : "pl.7a1d8bd609c44c318d71bf1a0a1e89b5",
+          "favoritesPolicy" : "exclude",
+          "provider" : "appleMusic",
+          "referenceName" : "Everyday Hits",
+          "slug" : "everyday-hits",
+          "type" : "playlist"
+        }
+      ],
+      "slug" : "apple-folder",
+      "title" : "Exciting options from Apple Music",
+      "type" : "folder"
+    }
+  ],
+  "ttlSeconds" : 21600
+}
