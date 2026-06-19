@@ -1,12 +1,12 @@
 {
-  "revision" : 4,
+  "revision" : 5,
   "schemaVersion" : 3,
   "topics" : [
     {
       "iconName" : "sparkles",
       "id" : "intro",
       "pdf" : {
-        "revision" : "2026-06-18a",
+        "revision" : "2026-06-19a",
         "url" : "https://cadance.music/v3/tour/visual_tour_intro-2026-06-19a.pdf"
       },
       "section" : "Getting Started",
@@ -17,7 +17,7 @@
       "iconName" : "trophy.circle",
       "id" : "spotify-challenge",
       "pdf" : {
-        "revision" : "2026-06-18a",
+        "revision" : "2026-06-19a",
         "url" : "https://cadance.music/v3/tour/spotify_challenge-2026-06-19a.pdf"
       },
       "section" : "Getting Started",
@@ -28,12 +28,23 @@
       "iconName" : "music.note.square.stack",
       "id" : "load-music",
       "pdf" : {
-        "revision" : "2026-06-18a",
+        "revision" : "2026-06-19a",
         "url" : "https://cadance.music/v3/tour/load_music-2026-06-19a.pdf"
       },
       "section" : "Getting Started",
       "subtitle" : "How to load or find your music",
       "title" : "Where's my music?"
+    },
+    {
+      "iconName" : "stopwatch",
+      "id" : "delay-start",
+      "pdf" : {
+        "revision" : "2026-06-19a",
+        "url" : "https://cadance.music/v3/tour/delay_start-2026-06-19a.pdf"
+      },
+      "section" : "Features",
+      "subtitle" : "Get out in front",
+      "title" : "Delay Start"
     }
   ],
   "ttlSeconds" : 21600
