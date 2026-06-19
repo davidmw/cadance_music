@@ -17,21 +17,6 @@
       "buttonLabel" : "About My Cadance Playlists",
       "header" : "My Cadance Playlists"
     },
-    "favorites" : {
-      "badgeWindow" : {
-        "from" : 1,
-        "kind" : "absolute",
-        "through" : 6
-      },
-      "body" : "<b>Upgrade Cadance</b><br>To see this feature tour you'll need to update Cadance on your devices.",
-      "buttonIcon" : "sunglasses.fill",
-      "buttonLabel" : "Visual Tour",
-      "header" : "Visual Tour of Cadance",
-      "pdf" : {
-        "revision" : "2026-06-16a",
-        "url" : "https://cadance.music/v3/panels/favorites-2026-06-16a.pdf"
-      }
-    },
     "filesystem_albums" : {
       "body" : "These are albums stored <b>directly on your device</b> as audio files inside Cadance's Documents folder.<br><br>Cadance organizes files using a simple <i>Artist/Album/Track</i> folder structure. Supported formats include MP3, M4A, WAV, FLAC, AIFF, and ALAC.<br><br><b>Adding local music</b><br>Open the Import Music screen in Settings to bring audio files or entire album folders into Cadance. You can also AirDrop audio files, use the Share sheet from other apps, or copy files in via Finder / iTunes file sharing.<br><br><b>Tempo control</b><br>Most local track plays through Cadance's tempo engine with full tempo control and no Apple Music subscription required. Upscaled and DRM burdened tracks will need to play through Apple's MusicKit (this is automatic).<br><br><b>Tip:</b> Use <b>Complete the Installation</b> in the Import Music screen to tidy up files that land in the Cadance root folder, moving them into the correct Artist/Album structure automatically.",
       "buttonIcon" : "info.circle",
@@ -80,7 +65,7 @@
       "header" : "Syllabus"
     }
   },
-  "revision" : 1,
+  "revision" : 2,
   "schemaVersion" : 3,
   "ttlSeconds" : 21600
 }

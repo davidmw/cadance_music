@@ -1,0 +1,40 @@
+{
+  "revision" : 3,
+  "schemaVersion" : 3,
+  "topics" : [
+    {
+      "iconName" : "sparkles",
+      "id" : "intro",
+      "pdf" : {
+        "revision" : "2026-06-18a",
+        "url" : "https://cadance.music/v3/tour/Welcome-2026-06-19a.pdf"
+      },
+      "section" : "Getting Started",
+      "subtitle" : "Start here — a quick visual tour",
+      "title" : "Welcome to Cadance's Tour"
+    },
+    {
+      "iconName" : "trophy.circle",
+      "id" : "spotify-challenge",
+      "pdf" : {
+        "revision" : "2026-06-18a",
+        "url" : "https://cadance.music/v3/tour/SpotifyChallenge-2026-06-19a.pdf"
+      },
+      "section" : "Getting Started",
+      "subtitle" : "Rent or buy, how to play it all with Cadance",
+      "title" : "Spotify Challenge"
+    },
+    {
+      "iconName" : "music.note.square.stack",
+      "id" : "load-music",
+      "pdf" : {
+        "revision" : "2026-06-18a",
+        "url" : "https://cadance.music/v3/tour/LoadYourMusic-2026-06-19a.pdf"
+      },
+      "section" : "Getting Started",
+      "subtitle" : "How to load or find your music",
+      "title" : "Where's my music?"
+    }
+  ],
+  "ttlSeconds" : 21600
+}
