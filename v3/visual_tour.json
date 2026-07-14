@@ -1,13 +1,13 @@
 {
-  "revision" : 6,
+  "revision" : 7,
   "schemaVersion" : 3,
   "topics" : [
     {
       "iconName" : "sparkles",
       "id" : "intro",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/visual_tour_intro-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/visual_tour_intro-2026-07-14a.pdf"
       },
       "section" : "Getting Started",
       "subtitle" : "Start here — a quick visual tour",
@@ -17,8 +17,8 @@
       "iconName" : "trophy.circle",
       "id" : "spotify-challenge",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/spotify_challenge-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/spotify_challenge-2026-07-14a.pdf"
       },
       "section" : "Getting Started",
       "subtitle" : "Earn free Day Passes",
@@ -28,8 +28,8 @@
       "iconName" : "music.note.square.stack",
       "id" : "load-music",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/load_music-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/load_music-2026-07-14a.pdf"
       },
       "section" : "Getting Started",
       "subtitle" : "Load or find your music",
@@ -39,8 +39,8 @@
       "iconName" : "c.circle",
       "id" : "cadance-logo",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/cadance_logo-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/cadance_logo-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Cadance Logo"
@@ -49,8 +49,8 @@
       "iconName" : "airplayaudio",
       "id" : "bluetooth-speaker-airplay",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/bluetooth_speaker_airplay-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/bluetooth_speaker_airplay-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Bluetooth Speaker / AirPlay"
@@ -59,8 +59,8 @@
       "iconName" : "metronome",
       "id" : "metronome",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/metronome-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/metronome-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Metronome"
@@ -69,8 +69,8 @@
       "iconName" : "square.and.arrow.down",
       "id" : "import-music",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/import_music-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/import_music-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Import Music"
@@ -79,8 +79,8 @@
       "iconName" : "gearshape",
       "id" : "settings",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/settings-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/settings-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Settings"
@@ -89,8 +89,8 @@
       "iconName" : "heart",
       "id" : "favorites-tab",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/favorites_tab-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/favorites_tab-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Favorites Tab"
@@ -99,8 +99,8 @@
       "iconName" : "books.vertical",
       "id" : "syllabus-tab",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/syllabus_tab-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/syllabus_tab-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Syllabus Tab"
@@ -109,8 +109,8 @@
       "iconName" : "square.stack",
       "id" : "albums-artists-tab",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/albums_artists_tab-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/albums_artists_tab-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Albums & Artists Tab"
@@ -119,8 +119,8 @@
       "iconName" : "music.note.list",
       "id" : "playlists-tab",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/playlists_tab-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/playlists_tab-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "Playlists Tab"
@@ -129,8 +129,8 @@
       "iconName" : "music.note.list",
       "id" : "my-cadance-playlists-tab",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/my_cadance_playlists_tab-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/my_cadance_playlists_tab-2026-07-14a.pdf"
       },
       "section" : "Getting Around Cadance",
       "title" : "My Cadance Playlists Tab"
@@ -139,8 +139,8 @@
       "iconName" : "clock",
       "id" : "clock-battery-display",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/clock_battery_display-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/clock_battery_display-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Clock & Battery Display"
@@ -149,8 +149,8 @@
       "iconName" : "speaker.wave.1",
       "id" : "duck",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/duck-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/duck-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Duck"
@@ -159,8 +159,8 @@
       "iconName" : "scope",
       "id" : "focus-player",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/focus_player-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/focus_player-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Focus Player"
@@ -169,8 +169,8 @@
       "iconName" : "play.rectangle",
       "id" : "inline-player",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/inline_player-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/inline_player-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Inline Player"
@@ -179,8 +179,8 @@
       "iconName" : "backward.end",
       "id" : "auto-rewind-on-pause",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/auto_rewind_on_pause-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/auto_rewind_on_pause-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Auto-rewind on Pause"
@@ -189,8 +189,8 @@
       "iconName" : "stopwatch",
       "id" : "delay-start",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/delay_start-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/delay_start-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "subtitle" : "Get out in front",
@@ -200,8 +200,8 @@
       "iconName" : "metronome.fill",
       "id" : "tempo-change",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/tempo_change-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/tempo_change-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Tempo change"
@@ -210,8 +210,8 @@
       "iconName" : "textformat",
       "id" : "track-title-icons",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/track_title_icons-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/track_title_icons-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Track Title Icons"
@@ -220,8 +220,8 @@
       "iconName" : "repeat",
       "id" : "repeat-menu",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/repeat_menu-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/repeat_menu-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Repeat Menu"
@@ -230,8 +230,8 @@
       "iconName" : "lock",
       "id" : "teaching-lock",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/teaching_lock-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/teaching_lock-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Teaching Lock"
@@ -240,8 +240,8 @@
       "iconName" : "lock.rotation",
       "id" : "tilt-lock",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/tilt_lock-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/tilt_lock-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Tilt Lock"
@@ -250,8 +250,8 @@
       "iconName" : "dial.medium",
       "id" : "volume-spinner",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/volume_spinner-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/volume_spinner-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "title" : "Volume Spinner"
@@ -260,8 +260,8 @@
       "iconName" : "square.and.arrow.down.on.square",
       "id" : "import-your-music",
       "pdf" : {
-        "revision" : "2026-06-22a",
-        "url" : "https://cadance.music/v3/tour/import_your_music-2026-06-22a.pdf"
+        "revision" : "2026-07-14a",
+        "url" : "https://cadance.music/v3/tour/import_your_music-2026-07-14a.pdf"
       },
       "section" : "Basic Features",
       "subtitle" : "AirDrop, Finder, and Files",
