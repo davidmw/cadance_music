@@ -1,5 +1,5 @@
 {
-  "revision" : 1,
+  "revision" : 2,
   "schemaVersion" : 3,
   "tree" : [
     {
@@ -66,6 +66,15 @@
       "type" : "playlist"
     },
     {
+      "addedAt" : "2026-07-27T10:00:00Z",
+      "cloudGlobalId" : "pl.u-11zB6JmuKgVV6gN",
+      "favoritesPolicy" : "feature",
+      "provider" : "appleMusic",
+      "referenceName" : "Ran Bagno Sampler",
+      "slug" : "ran-bagno-sampler",
+      "type" : "playlist"
+    },
+    {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-11zBPxVsKgVV6gN",
       "favoritesPolicy" : "rotate",
@@ -77,7 +86,7 @@
     {
       "addedAt" : "2026-04-24T10:00:00Z",
       "cloudGlobalId" : "pl.u-d2b0MaLuG566a5L",
-      "favoritesPolicy" : "feature",
+      "favoritesPolicy" : "rotate",
       "provider" : "appleMusic",
       "referenceName" : "Søren Bebe Sampler",
       "slug" : "soren-bebe-sampler",
