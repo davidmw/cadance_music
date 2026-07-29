@@ -13,8 +13,6 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 ├── how-to.html                # How-to video demos
 ├── music-training.html        # Music training resources
 ├── partners.html              # Partners page
-├── patrons/
-│   └── index.html             # Patron directory
 ├── tempo-notes.html           # Tempo Notes: resources and Cadance features guide
 ├── pricing/
 │   └── index.html             # Pricing & plans (subscription tiers + FAQs)
@@ -26,8 +24,10 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 │       └── index.html         # Private: BarreNotes social proof screenshots gallery
 ├── blog/
 │   ├── index.html             # Blog index
-│   └── why-cadance-is-a-subscription/
-│       └── index.html         # Subscription narrative post
+│   ├── whats-new-in-cadance-6/
+│   ├── teacher-notebook/
+│   ├── perfect-practice-passes/
+│   └── meet-ran-bagno/
 ├── privacy.html               # Privacy policy
 ├── faq.html                   # Frequently asked questions
 ├── styles.base.css            # Tokens, reset, typography, utilities
@@ -90,6 +90,7 @@ Header (sticky)
 
 Home (index.html)
 ├── Hero (headline, subhead, CTA)
+├── Cadance v6 workflow (Teacher Notebook, linked music, Focus Player screenshot)
 ├── Features grid (cards)
 ├── Personas grid (who it’s for)
 ├── Interludes (parallax panels)
@@ -107,9 +108,9 @@ Reddit Landing (reddit/index.html)
 
 Pricing (pricing/index.html)
 ├── Hero (overview)
-├── Plans (3 tiers)
+├── Access options (Day Passes, Perfect Practice Passes, Spark, Artist, Patron)
 ├── Clarifying boxes (all-features-included + business expense note)
-└── Pricing FAQ + App Store CTA
+└── Access FAQ + App Store CTA (no displayed monetary amounts)
 
 Tempo Notes (tempo-notes.html)
 ├── Hero (parallax)
@@ -127,7 +128,7 @@ Publishers (publishers/index.html)
 └── Contact (permissions mailto)
 
 Footer (all pages)
-└── Footer navigation (Home → Musicians → How To → Music Training → Partners → FAQ → Privacy) + copyright
+└── Footer navigation (Teachers → Features → BarreNotes → Musicians → How To → Music Training → Partners → Pricing → Blog → FAQ → Privacy) + copyright
 ```
 
 ## Critical Implementation Paths

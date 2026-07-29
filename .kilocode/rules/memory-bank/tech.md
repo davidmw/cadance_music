@@ -69,7 +69,7 @@
 - CTA centering: hero and bottom interlude headings/subheads and actions centered via CSS overrides
 - Smooth scrolling and anchor offset: CSS scroll-behavior + scroll-margin-top
 - Header stabilization (mobile): lock header height to var(--header-h); .primary-nav min-width: 0 with overflow-y: hidden and overscroll-behavior: contain; touch-action: pan-y to prevent horizontal drift; .header-inner overflow-x: hidden; tighter mobile gaps and reduced link padding/font-size.
-- Footer navigation: consistent footer nav across all pages (Teachers, BarreNotes, Musicians, How To, Music Training, Partners, Pricing, Patron Directory, Blog, FAQ, Privacy).
+- Footer navigation: consistent footer nav across all pages (Teachers, Features, BarreNotes, Musicians, How To, Music Training, Partners, Pricing, Blog, FAQ, Privacy).
 - Top navigation: pages only (no in‑page anchors); consistent across pages; brand wordmark links to the page URL.
 - Testimonials: modal title class .testimonial-title uses var(--brand) teal; modal star color matches cards (#FBBF24).
 
@@ -114,7 +114,7 @@
 - partners.html — Partners page
 - music-training.html — Music training resources
 - how-to.html — How-to demos
-- patrons/index.html — Patron directory
+- v6 product images — optimized local WebP screenshots (`cadance-v6-*.webp`) used on the homepage and Features page; source PNG screenshots remain in the root asset directory.
 - styles.base.css — Tokens, reset, typography, utilities
 - styles.layout.css — Header/nav, sections, hero, footer, breakpoints, themed backgrounds
 - styles.components.css — Buttons, grids/cards, personas, folds, testimonials, modals, resource cards

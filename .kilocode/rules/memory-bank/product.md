@@ -20,10 +20,10 @@ Cadance is a dance class music app built to keep classes moving with fast access
 The site operates as a multi‑page marketing funnel:
 
 1) Home (Teacher‑focused)
-   - Hero: clear benefit (keep the class moving)
-   - Features: speed, class control, reliability, organization, focus, heritage
+    - Hero: clear v6 benefit (plan the work, focus on the music)
+    - Features: Teacher Notebook, linked music, Syllabus, flexible passes, Focus Player, tempo control, and class tools
    - Personas: freelancers, studio staff, company instructors, competition teams, online instructors
-   - Screenshots: in‑context visuals with correct dimensions, lazy loading, async decoding; collapsible presentation
+    - Screenshots: real app screenshots with correct dimensions, lazy loading, and async decoding
    - CTA: Download on the App Store → https://apps.apple.com/us/app/cadance/id6748429968
 
 2) Publishers (Rights Holders)
@@ -48,7 +48,8 @@ The site operates as a multi‑page marketing funnel:
 
 ## Success Criteria
 - Teachers initiate contact (join waitlist) from the homepage
-- Patrons discover the Patron Directory and/or subscribe at a higher tier to support the mission
+- Teachers understand the difference between free Class Planning Mode, flexible passes, and subscriptions
+- Patrons discover Focus Player and Syllabus as the full teaching workspace
 - Rights holders understand scope and grant permissions via partnerships mailto
 - Site remains static, fast, and accessible with no external requests
 - OG/Twitter cards render correctly per page

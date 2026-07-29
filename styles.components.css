@@ -108,6 +108,24 @@
 .feature-card h3 { margin: 0 0 var(--space-1); }
 .feature-card p { margin: 0; color: var(--muted); }
 
+.eyebrow {
+  margin: 0 0 var(--space-1);
+  color: var(--brand);
+  font-size: var(--step--1);
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.blog-artist-portrait {
+  display: block;
+  width: min(100%, 27rem);
+  height: auto;
+  margin: 0 auto var(--space-3);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-2);
+}
+
 /* Benefits list */
 .benefits-list {
   list-style: none;
@@ -141,6 +159,43 @@
   height: auto;
   border-radius: var(--radius);
   box-shadow: var(--shadow-2);
+}
+
+.product-showcase {
+  display: grid;
+  gap: var(--space-2);
+  margin: var(--space-4) auto 0;
+}
+
+.product-showcase--featured {
+  max-width: 70rem;
+}
+
+.product-showcase figure {
+  margin: 0;
+}
+
+.product-showcase img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-2);
+}
+
+.product-showcase figcaption {
+  margin-top: var(--space-1);
+  color: var(--muted);
+  font-size: var(--step--1);
+  text-align: center;
+}
+
+@media (min-width: 600px) {
+  .product-showcase--notebook {
+    grid-template-columns: minmax(0, 1.5fr) repeat(2, minmax(0, 0.75fr));
+    align-items: start;
+  }
 }
 
 /* Contact notes */
@@ -1736,11 +1791,12 @@ a.secondary-cta:focus-visible {
   .pricing-page #plans .features-grid {
     flex-direction: row;
     align-items: flex-start; /* avoid equal-height stretching */
+    flex-wrap: wrap;
   }
 }
 
 .pricing-page #plans .features-grid > .feature-card {
-  flex: 1 1 0;
+  flex: 1 1 20rem;
 }
 
 .pricing-page .pricing-tier {

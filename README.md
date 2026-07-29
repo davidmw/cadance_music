@@ -18,8 +18,7 @@ A fast, static, mobile‑first site for the Cadance app.
   - `how-to.html` (how-to videos)
   - `music-training.html` (music training resources)
   - `partners.html` (partners)
-  - `patrons/index.html` (patron directory)
-  - `blog/index.html` (blog index)
+  - `blog/index.html` (blog index, including Cadance v6, Teacher Notebook, Perfect Practice Pass, and Ran Bagno posts)
   - `tempo-notes.html` (Tempo Notes resources and feature guides)
   - `faq.html` (FAQ)
   - `privacy.html` (privacy)
@@ -32,6 +31,7 @@ A fast, static, mobile‑first site for the Cadance app.
 - Assets: screenshots and brand images in repo root
   - `cadance_Icon.png` (favicon 32×32)
   - `cadance_word_d.svg` (brand wordmark)
+  - `cadance-v6-*.webp` (optimized Teacher Notebook and Syllabus screenshots)
   - App images: `iPhoneLockScreen.png`, `iPhoneFav.png`, `iPhoneDetails.png`, `iPhoneDetails2.png`, `iPadVerticalLibrary.png`
 - GitHub Pages: `CNAME`, `.nojekyll`
 
@@ -45,7 +45,7 @@ Then visit http://localhost:8080 (or your chosen port).
 
 - Home — `index.html` (teacher-focused)
 - Musicians / rights holders — `publishers/index.html` (permissions + partnership messaging)
-- Pricing — `pricing/index.html` (3 tiers + FAQs + App Store CTA)
+- Pricing — `pricing/index.html` (Class Planning Mode, passes, subscription capabilities, access FAQ, and App Store CTA)
 - Campaign landers — `reddit/index.html`, `barrenotes/index.html` (tight funnel pages)
 
 ## Navigation and Linking

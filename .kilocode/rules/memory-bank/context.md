@@ -1,7 +1,7 @@
 # Current Context: Cadance Marketing Site
 
 ## Current State
-Static, multi-page marketing site (GitHub Pages) with shared design system and progressive enhancement JavaScript. Updated for Cadance 4 release with Day Passes, curated playlists, and Patron Directory removal.
+Static, multi-page marketing site (GitHub Pages) with shared design system and progressive enhancement JavaScript. Current public messaging is prepared for Cadance v6, led by Teacher Notebook, Syllabus, flexible passes, and Focus Player.
 
 Primary pages:
 - Teacher homepage: [`index.html`](index.html:1)
@@ -12,6 +12,10 @@ Primary pages:
 - Music training resources: [`music-training.html`](music-training.html:1)
 - Partners: [`partners.html`](partners.html:1)
 - Blog: [`blog/index.html`](blog/index.html:1) with new posts:
+  - [`blog/whats-new-in-cadance-6/index.html`](blog/whats-new-in-cadance-6/index.html:1)
+  - [`blog/teacher-notebook/index.html`](blog/teacher-notebook/index.html:1)
+  - [`blog/perfect-practice-passes/index.html`](blog/perfect-practice-passes/index.html:1)
+  - [`blog/meet-ran-bagno/index.html`](blog/meet-ran-bagno/index.html:1)
   - [`blog/introducing-day-passes/index.html`](blog/introducing-day-passes/index.html:1)
   - [`blog/whats-new-in-cadance-4/index.html`](blog/whats-new-in-cadance-4/index.html:1)
   - [`blog/dance-for-every-community/index.html`](blog/dance-for-every-community/index.html:1)
@@ -87,5 +91,29 @@ Private / internal pages (no links in):
 - "33 curated playlists" (Cadance Resources)
 - "Extraordinary Groups" (therapeutic/adaptive dance collections)
 
+## Cadance v6 Marketing Refresh (July 2026)
+
+- Homepage, Features, Pricing, FAQ, Partners, Blog, and sitemap have been updated for Cadance v6.
+- The v6 message leads with free Teacher Notebook, linked music, Focus Player, Day Passes, Perfect Practice Passes, and Patron Syllabus.
+- Pricing now omits monetary amounts and directs users to App Store-localized pricing. It explicitly retains the 14 free Day Passes and 1 free Perfect Practice Pass for new users.
+- Added four posts: v6 release, Teacher Notebook workflow, Perfect Practice Passes, and Ran Bagno featured artist.
+- Added approved Ran Bagno portrait from Vertigo locally as `ran-bagno-portrait.jpg` and added the artist to `partners.html`.
+- Removed remaining live links to the deleted Patron Directory, updated public footers to 2026, and removed the old Patron Directory sitemap entry.
+- Product screenshot files were supplied in the repository and converted to optimized WebP derivatives (500 KB total). `index.html` uses the handwritten Ran Bagno deep-link and Focus Player workflow; `features.html` uses the typed Notebook and both iPhone Notebook captures; the Patron Syllabus section uses the Syllabus capture.
+- Feature/access messaging now distinguishes free Class Planning Mode from Spark as the BarreNotes-equivalent playback tier. Features use "Countdown to start" wording, document Focus Player repeat options, describe Syllabus as a music source, and no longer mention the removed volume-warning feature.
+- FAQ now explains why Spotify and other streaming services cannot support Cadance's playback model, and clarifies that Apple Music/Cadance subscriptions are playback tools rather than studio-performance licences; any such rights are a publisher or rights-holder issue.
+- The 15-second Day Pass gate only applies when a track is outside the user's current entitlement, including DRM-protected tracks attempted with Spark. If the user cancels the banner, Cadance does not prompt again in that session; those uncovered tracks stop at the preview limit until the user manually activates a pass through Settings > Day Passes > Activate a Day Pass Now.
+- Blog chronology records Perfect Practice Passes as a Cadance v5 feature on June 2, 2026, and the Ran Bagno featured artist post as July 11, 2026.
+
 ## Next Steps
-- None.
+- Capture/finalize App Store preview videos and release-date wording before publishing the external announcement.
+
+## Cadance v6 Visual Inventory (July 2026)
+
+- `IMG_0262.png`: Syllabus screen shot. Use as the primary visual for Patron Syllabus messaging.
+- `IMG_0260.png`: Handwritten Teacher Notebook note with a deep link to a Ran Bagno track and that track active in Focus Player. Use for the handwritten notebook, artist partnership, and linked-music story.
+- `IMG_0259.png`: Typed Teacher Notebook with two visible music links, one active in Focus Player. Use for the typed planning workflow and Focus Player story.
+- `IMG_1137.png`: Handwritten Teacher Notebook as displayed on iPhone. Use to demonstrate the mobile workflow.
+- `IMG_1052.png`: Additional handwritten Teacher Notebook view on iPhone. Use as a supporting mobile notebook visual.
+
+These product screenshots supersede generic imagery for the corresponding Cadance v6 feature stories where layout and resolution permit.
