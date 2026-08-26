@@ -1927,7 +1927,7 @@ a.secondary-cta:focus-visible {
   transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
-/* Landing pages: use the same pricing-page tier styling (full 3-tier grid) */
+/* Landing pages: use the same pricing-page tier styling */
 .reddit-landing #plans .pricing-tier,
 .barrenotes-landing #plans .pricing-tier {
   --tier-accent: rgba(255,255,255,0.18);
@@ -1973,13 +1973,6 @@ a.secondary-cta:focus-visible {
   --tier-glow: rgba(79,209,197,0.22);
 }
 
-.reddit-landing #plans .pricing-tier--patron,
-.barrenotes-landing #plans .pricing-tier--patron {
-  --tier-accent: rgba(167,139,250,0.95);
-  /* Keep the accent, but avoid a “glow” treatment on this tier. */
-  --tier-glow: rgba(255,255,255,0.06);
-}
-
 .reddit-landing #plans .pricing-tier:hover,
 .barrenotes-landing #plans .pricing-tier:hover {
   box-shadow: var(--shadow-2);
@@ -2005,12 +1998,6 @@ a.secondary-cta:focus-visible {
 .pricing-page .pricing-tier--artist {
   --tier-accent: rgba(79,209,197,0.95);
   --tier-glow: rgba(79,209,197,0.22);
-}
-
-.pricing-page .pricing-tier--patron {
-  --tier-accent: rgba(167,139,250,0.95);
-  /* Keep the accent, but avoid a “glow” treatment on this tier. */
-  --tier-glow: rgba(255,255,255,0.06);
 }
 
 .pricing-page .pricing-tier:hover {
@@ -2302,17 +2289,6 @@ a.secondary-cta:focus-visible {
   letter-spacing: 0.04em;
 }
 
-.tier-pill--patron {
-  background: linear-gradient(180deg, rgba(167,139,250,1), rgba(139,92,246,1));
-  border-color: rgba(167,139,250,0.95);
-  color: #12001f;
-  box-shadow:
-    0 0 0 1px rgba(167,139,250,0.22),
-    0 14px 36px rgba(167,139,250,0.20),
-    var(--shadow-2);
-  letter-spacing: 0.04em;
-}
-
 /* Spark: intentionally understated */
 .pricing-page .pricing-tier--spark {
   --tier-accent: rgba(255,255,255,0.16);
@@ -2323,13 +2299,6 @@ a.secondary-cta:focus-visible {
 .barrenotes-landing #plans .pricing-tier--spark {
   --tier-accent: rgba(255,255,255,0.16);
   --tier-glow: rgba(255,255,255,0.05);
-}
-
-/* Patron: keep it calm (no glow/aura and no floating pill treatment) */
-.pricing-page .pricing-tier--patron,
-.reddit-landing #plans .pricing-tier--patron,
-.barrenotes-landing #plans .pricing-tier--patron {
-  background: linear-gradient(180deg, rgba(255,255,255,0.05), rgba(255,255,255,0.02));
 }
 
 .reddit-landing a.secondary-cta:hover,

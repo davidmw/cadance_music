@@ -49,7 +49,7 @@ The site operates as a multi‑page marketing funnel:
 ## Success Criteria
 - Teachers initiate contact (join waitlist) from the homepage
 - Teachers understand the difference between free Class Planning Mode, flexible passes, and subscriptions
-- Patrons discover Focus Player and Syllabus as the full teaching workspace
+- Artist subscribers discover Focus Player and Syllabus as the full teaching workspace
 - Rights holders understand scope and grant permissions via partnerships mailto
 - Site remains static, fast, and accessible with no external requests
 - OG/Twitter cards render correctly per page

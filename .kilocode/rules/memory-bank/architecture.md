@@ -102,13 +102,13 @@ Reddit Landing (reddit/index.html)
 ├── Secondary CTA (Pricing)
 ├── Demo video block
 ├── Icon benefits (4 tiles)
-├── Pricing preview (full 3-tier grid)
+├── Pricing preview (Day Passes, Spark, and Artist grid)
 ├── Social proof (teacher testimonials)
 └── Compact FAQ
 
 Pricing (pricing/index.html)
 ├── Hero (overview)
-├── Access options (Day Passes, Perfect Practice Passes, Spark, Artist, Patron)
+├── Access options (Day Passes, Perfect Practice Passes, Spark, Artist)
 ├── Clarifying boxes (all-features-included + business expense note)
 └── Access FAQ + App Store CTA (no displayed monetary amounts)
 

@@ -26,8 +26,8 @@ Private / internal pages (no links in):
 - BarreNotes social proof screenshots: [`barrenotes/BarreNotesPosts/index.html`](barrenotes/BarreNotesPosts/index.html:1)
 
 ## Current Implementation Notes
-- **Pricing cards** are consistent across the pricing page and both landing pages (Spark / Artist / Patron).
-  - Artist remains the hero tier ("Most Popular"), Patron is now *calm* (no “Supporter” pill / aura glow), and cards size to content (no forced equal heights).
+- **Pricing cards** are consistent across the pricing page and BarreNotes landing page (Spark / Artist).
+  - Artist is the top and hero tier ("Most Popular") and includes Apple Music, Focus Player, and Syllabus; cards size to content (no forced equal heights).
   - Styling lives in [`styles.components.css`](styles.components.css:1736) and markup in [`pricing/index.html`](pricing/index.html:93), [`reddit/index.html`](reddit/index.html:242), [`barrenotes/index.html`](barrenotes/index.html:259).
 - **v3 shipped**: removed the “Coming with v3” release badge from the site (pricing + landing pages) and removed `.tier-pill--v3` styling.
 - **Landing-page App Store CTA**: landing CTA uses the same base button styling as home via `.btn.btn-primary`, with landing-specific sizing/centering.
@@ -46,9 +46,9 @@ Private / internal pages (no links in):
   - New asset: [`videos/BalletTempoDemoV1CroppedComposite_poster.jpg`](videos/BalletTempoDemoV1CroppedComposite_poster.jpg:1)
 
 - **Pricing copy + emphasis tweaks**:
-  - Removed “Supporter” pill + premium aura from Patron tier across pricing + landing pages.
+  - Artist is the most-popular, top subscription tier across pricing and landing-page cards.
+  - Artist includes Apple Music, Focus Player, and Syllabus; the site no longer distinguishes downloaded Apple Music playback.
   - Increased Artist tier title + price typography (scoped to `.pricing-tier--popular`).
-  - Reworded tier perk labels: Artist “Adds:” → “Unlocks:”; Patron “Adds:” → “Gains:”.
   - Markup: [`pricing/index.html`](pricing/index.html:119), [`reddit/index.html`](reddit/index.html:260), [`barrenotes/index.html`](barrenotes/index.html:276)
   - Styling: [`styles.components.css`](styles.components.css:1923)
 - **Pricing hero**: removed the Pricing page hero image; Pricing now uses a text-only hero section.
@@ -94,12 +94,12 @@ Private / internal pages (no links in):
 ## Cadance v6 Marketing Refresh (July 2026)
 
 - Homepage, Features, Pricing, FAQ, Partners, Blog, and sitemap have been updated for Cadance v6.
-- The v6 message leads with free Teacher Notebook, linked music, Focus Player, Day Passes, Perfect Practice Passes, and Patron Syllabus.
+- The v6 message leads with free Teacher Notebook, linked music, Focus Player, Day Passes, Perfect Practice Passes, and Artist Syllabus.
 - Pricing now omits monetary amounts and directs users to App Store-localized pricing. It explicitly retains the 14 free Day Passes and 1 free Perfect Practice Pass for new users.
 - Added four posts: v6 release, Teacher Notebook workflow, Perfect Practice Passes, and Ran Bagno featured artist.
 - Added approved Ran Bagno portrait from Vertigo locally as `ran-bagno-portrait.jpg` and added the artist to `partners.html`.
 - Removed remaining live links to the deleted Patron Directory, updated public footers to 2026, and removed the old Patron Directory sitemap entry.
-- Product screenshot files were supplied in the repository and converted to optimized WebP derivatives (500 KB total). `index.html` uses the handwritten Ran Bagno deep-link and Focus Player workflow; `features.html` uses the typed Notebook and both iPhone Notebook captures; the Patron Syllabus section uses the Syllabus capture.
+- Product screenshot files were supplied in the repository and converted to optimized WebP derivatives (500 KB total). `index.html` uses the handwritten Ran Bagno deep-link and Focus Player workflow; `features.html` uses the typed Notebook and both iPhone Notebook captures; the Artist Syllabus section uses the Syllabus capture.
 - Feature/access messaging now distinguishes free Class Planning Mode from Spark as the BarreNotes-equivalent playback tier. Features use "Countdown to start" wording, document Focus Player repeat options, describe Syllabus as a music source, and no longer mention the removed volume-warning feature.
 - FAQ now explains why Spotify and other streaming services cannot support Cadance's playback model, and clarifies that Apple Music/Cadance subscriptions are playback tools rather than studio-performance licences; any such rights are a publisher or rights-holder issue.
 - The 15-second Day Pass gate only applies when a track is outside the user's current entitlement, including DRM-protected tracks attempted with Spark. If the user cancels the banner, Cadance does not prompt again in that session; those uncovered tracks stop at the preview limit until the user manually activates a pass through Settings > Day Passes > Activate a Day Pass Now.
@@ -111,7 +111,7 @@ Private / internal pages (no links in):
 
 ## Cadance v6 Visual Inventory (July 2026)
 
-- `IMG_0262.png`: Syllabus screen shot. Use as the primary visual for Patron Syllabus messaging.
+- `IMG_0262.png`: Syllabus screen shot. Use as the primary visual for Artist Syllabus messaging.
 - `IMG_0260.png`: Handwritten Teacher Notebook note with a deep link to a Ran Bagno track and that track active in Focus Player. Use for the handwritten notebook, artist partnership, and linked-music story.
 - `IMG_0259.png`: Typed Teacher Notebook with two visible music links, one active in Focus Player. Use for the typed planning workflow and Focus Player story.
 - `IMG_1137.png`: Handwritten Teacher Notebook as displayed on iPhone. Use to demonstrate the mobile workflow.
