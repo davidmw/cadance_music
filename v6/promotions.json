@@ -1,6 +1,30 @@
 {
   "promotions" : [
     {
+      "addedAt" : "2026-08-26T01:00:00Z",
+      "badge" : {
+        "background" : "red",
+        "fontScale" : 1.3,
+        "fontWeight" : "heavy",
+        "foreground" : "white",
+        "rotationDegrees" : 3,
+        "text" : "BIG UPDATE"
+      },
+      "body" : "## More access. Save up to 33%.\n\nDay Passes now offer savings of up to **33%**.\n\nEvery Artist subscriber now has the full Patron level of access, for the Artist price you already pay.\n\nNothing to do. Your expanded access is already active.",
+      "headline" : "More access. Save up to 33%.",
+      "id" : "more-access-save-up-to-33",
+      "presentation" : {
+        "maxImpressions" : 3,
+        "priority" : 100
+      },
+      "type" : "message",
+      "window" : {
+        "duration" : 8,
+        "kind" : "relativeFromFirstSeen",
+        "offset" : 0
+      }
+    },
+    {
       "addedAt" : "2026-08-19T07:00:00Z",
       "badge" : {
         "background" : "yellow",
@@ -58,8 +82,8 @@
         "rotationDegrees" : -2,
         "text" : "How To"
       },
-      "body" : "## Teach today with a Day Pass\nIn Class Planning mode, every track starts with a 15-second planning preview. When it is time to teach, activate a Day Pass for full access until midnight.\n\nDay Passes never expire, so you can use them only on the days you teach.",
-      "headline" : "Starting a Day Pass",
+      "body" : "## Teach today with a Day Pass\nIn Class Planning mode, every track starts with a 15-second planning preview. When it is time to teach, activate a Day Pass for full access until midnight.\n\nYou can activate a Day Pass from Settings > Day Passes while Preview Mode is active, or from an eligible track's action menu. Day Passes never expire, so you can use them only on the days you teach.",
+      "headline" : "Teach today with a Pass",
       "id" : "day-pass-explained-v6",
       "presentation" : {
         "maxImpressions" : 3,
@@ -73,7 +97,7 @@
       }
     }
   ],
-  "revision" : 2,
+  "revision" : 1,
   "schemaVersion" : 6,
   "ttlSeconds" : 3600
 }
