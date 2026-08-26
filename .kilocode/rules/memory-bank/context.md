@@ -107,6 +107,7 @@ Private / internal pages (no links in):
 
 ## Next Steps
 - Capture/finalize App Store preview videos and release-date wording before publishing the external announcement.
+- The app can link users to `/forms/request-art/` for the Rinat Zaripov dance-art note request. The route is a static, noindex UI draft: it displays contact fields and the planned dual SMS/email delivery of two `.cadnote` files or file links, but does not submit or retain data until fulfillment is implemented.
 
 ## Cadance v6 Visual Inventory (July 2026)
 
