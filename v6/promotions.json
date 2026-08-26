@@ -4,14 +4,14 @@
       "addedAt" : "2026-08-26T01:00:00Z",
       "badge" : {
         "background" : "red",
-        "fontScale" : 1.3,
+        "fontScale" : 2.2,
         "fontWeight" : "heavy",
         "foreground" : "white",
         "rotationDegrees" : 3,
         "text" : "BIG UPDATE"
       },
-      "body" : "## More access. Save up to 33%.\n\nDay Passes now offer savings of up to **33%**.\n\nEvery Artist subscriber now has the full Patron level of access, for the Artist price you already pay.\n\nNothing to do. Your expanded access is already active.",
-      "headline" : "More access. Save up to 33%.",
+      "body" : "## More access. Save up to 33%.\n\nDay Passes and Practice Passes now offer savings of up to **33%**.\n\nEvery Artist subscriber now has complete access to features and Apple Music, for the Artist price you already pay. The Patron tier has been retired.\n\nNothing to do. Your expanded access is already active.",
+      "headline" : "More access. Save 33%.",
       "id" : "more-access-save-up-to-33",
       "presentation" : {
         "maxImpressions" : 3,
