@@ -8,9 +8,9 @@
         "fontWeight" : "heavy",
         "foreground" : "white",
         "rotationDegrees" : 3,
-        "text" : "BIG UPDATE"
+        "text" : "Big Update"
       },
-      "body" : "## More access -- Save 33%\n\nDay Passes and Practice Passes now offer savings of up to **33%**.\n\nEvery Artist subscriber now has complete access to features and Apple Music, for the Artist price you already pay. The Patron tier has been retired.\n\nNothing to do. Your expanded access is already active.",
+      "body" : "## More access - Save 33%\n\nDay Passes and Practice Passes now offer savings of up to **33%**.\n\nEvery Artist subscriber now has full access to features and Apple Music, for the price you already pay. The Patron tier has been retired.\n\nNothing to do. Your expanded access is already active.",
       "id" : "more-access-save-up-to-33",
       "presentation" : {
         "maxImpressions" : 3,
@@ -93,7 +93,7 @@
       }
     }
   ],
-  "revision" : 2,
+  "revision" : 3,
   "schemaVersion" : 6,
   "ttlSeconds" : 3600
 }
