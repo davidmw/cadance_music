@@ -16,6 +16,7 @@
   <link rel="stylesheet" href="../../styles.layout.css">
   <link rel="stylesheet" href="../../styles.components.css">
   <link rel="stylesheet" href="../../styles.parallax.css">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
   <script type="module" src="../../script.js" defer></script>
 </head>
 <body>
@@ -89,29 +90,42 @@
 
         <section class="request-art__panel" aria-labelledby="request-heading">
           <h2 id="request-heading">Request the note files</h2>
-          <p>Enter the details for the two delivery channels. Your phone number must include its country code, for example <strong>+61 412 345 678</strong>.</p>
+          <p>We email you two of the notes straight away. Add your phone number if you'd also like the other two by text message when that option launches. Your phone number must include its country code, for example <strong>+61 412 345 678</strong>.</p>
 
-          <form class="request-art__form" aria-describedby="delivery-note">
+          <form class="request-art__form" id="request-art-form" aria-describedby="delivery-note" novalidate>
             <div class="form-field">
               <label for="full-name">Full name</label>
               <input id="full-name" name="full-name" type="text" autocomplete="name" placeholder="Your full name" required>
             </div>
             <div class="form-field">
-              <label for="phone">Phone number with country code</label>
-              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+61 412 345 678" required>
-            </div>
-            <div class="form-field">
               <label for="email">Email address</label>
               <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </div>
+            <div class="form-field">
+              <label for="phone">Phone number with country code <span class="optional">(optional)</span></label>
+              <input id="phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="+61 412 345 678" aria-describedby="sms-consent-label">
+            </div>
+
+            <div class="form-field form-field--checkbox">
+              <input id="sms-consent" name="sms-consent" type="checkbox">
+              <label for="sms-consent" id="sms-consent-label">Text me the other two notes when SMS delivery is available. One message only — no marketing.</label>
+            </div>
+
+            <!-- Honeypot: hidden from real users; bots that fill it are dropped. -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="company">Company</label>
+              <input id="company" name="company" type="text" tabindex="-1" autocomplete="off">
             </div>
 
             <div class="delivery-note" id="delivery-note">
               <strong>Delivery plan</strong>
-              <span>The <code>.cadnote</code> files, or links to the files, will be sent by SMS and email.</span>
+              <span>Two <code>.cadnote</code> files (Jazz Dancer and Prodigal Son) arrive by email. Ballet 5th and Ballet pair follow by text message if you opt in.</span>
             </div>
 
-            <button class="btn btn-primary" type="submit" disabled>Request delivery coming soon</button>
-            <p class="form-status">This is a draft request form only. It does not collect or send your details yet.</p>
+            <div class="cf-turnstile" data-sitekey="0x4AAAAAAEh_snURMtSAW87m"></div>
+
+            <button class="btn btn-primary" type="submit">Request the notes</button>
+            <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
           </form>
         </section>
       </div>

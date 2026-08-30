@@ -121,6 +121,41 @@
 .request-art__form .btn { justify-self: start; margin-top: var(--space-1); }
 .form-status { margin: 0; }
 
+/* Request-art form extras */
+.form-field .optional { color: var(--muted); font-weight: 400; }
+
+.form-field--checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.6rem;
+}
+.form-field--checkbox input[type="checkbox"] {
+  width: 1.15rem;
+  height: 1.15rem;
+  min-height: 0;
+  margin-top: 0.15rem;
+  accent-color: var(--brand);
+  flex: none;
+}
+.form-field--checkbox label {
+  font-size: var(--step--1);
+  font-weight: 400;
+  color: var(--muted);
+  line-height: 1.45;
+}
+
+/* Honeypot: visually hidden but present in the DOM for bots. */
+.hp-field {
+  position: absolute;
+  left: -9999px;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+.form-status.is-error { color: #ff9a9a; }
+.form-status.is-success { color: var(--brand); }
+
 @media (min-width: 760px) {
   .request-art__layout { grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr); }
   .art-card__figure { min-height: 10rem; }

@@ -107,7 +107,23 @@ Private / internal pages (no links in):
 
 ## Next Steps
 - Capture/finalize App Store preview videos and release-date wording before publishing the external announcement.
-- The app can link users to `/forms/request-art/` for the Rinat Zaripov dance-art note request. The route is a static, noindex UI draft: it displays contact fields and the planned dual SMS/email delivery of two `.cadnote` files or file links, but does not submit or retain data until fulfillment is implemented.
+- The app can link users to `/forms/request-art/` for the Rinat Zaripov dance-art note request. The route is now backed by a live Cloudflare Worker (`worker/`, `cadance-art-request`) that captures requests to KV and emails two `.cadnote` files. See "Request-art fulfilment (Aug 2026)" below for status and remaining setup.
+
+## Request-art fulfilment (Aug 2026)
+
+- **Purpose**: capture name/email/(optional)phone from `/forms/request-art/` and deliver the Rinat Zaripov `.cadnote` art notes.
+- **Delivery split** (decided by owner): the two SMALLER notes go by EMAIL now; the two LARGER are reserved for a future SMS channel.
+  - Email attachments: `Jazz Dancer With Links.cadnote` (327 KB), `Prodigal Son With Links.cadnote` (1.20 MB) → ~2.0 MB base64, under the Cloudflare Email 5 MiB cap.
+  - Reserved for SMS (as links): `Ballet 5th With Links.cadnote` (1.28 MB), `Ballet pair With Links.cadnote` (1.25 MB).
+  - All four committed to `forms/request-art/notes/` (public GitHub Pages).
+- **Backend**: `worker/` dir in THIS repo → Worker `cadance-art-request` at `https://cadance-art-request.davidaus.workers.dev`. `POST /request-art`: honeypot → validate → Turnstile verify → store KV (`ART_REQUESTS`, 90-day TTL) → email via `[[send_email]]` binding. Mirrors cadance-init conventions. Source of truth for setup is `worker/README.md`.
+- **Phone**: kept OPTIONAL on the form, with an unticked SMS-consent checkbox; stored for the future SMS send.
+- **Privacy**: `privacy.html` now documents form-data collection, Cloudflare processing, and retention.
+- **Remaining manual setup (owner, in dashboards)**:
+  1. Cloudflare Turnstile: create widget → put site key in `forms/request-art/index.html` (`data-sitekey="TURNSTILE_SITE_KEY_PLACEHOLDER"`) → `wrangler secret put TURNSTILE_SECRET` in `worker/`.
+  2. Cloudflare Email Service: onboard/verify sender domain `cadance.music` (Email → Email Service) + add its DNS records at Hover. Until then `env.EMAIL.send` returns `E_SENDER_NOT_VERIFIED` and requests are stored but not emailed.
+  3. Confirm `EMAIL_FROM` (currently `notes@cadance.music`) — change in `worker/wrangler.toml` `[vars]` if a different sender is wanted.
+- **End-to-end test** after setup: submit the live form, confirm email arrives with two attachments, open one on iPhone → "Open in Cadance" imports to Teacher Notebook.
 
 ## Cadance v6 Visual Inventory (July 2026)
 

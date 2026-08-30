@@ -1,0 +1,4 @@
+// node_modules, wrangler state, and local dev secrets are never committed.
+node_modules/
+.wrangler/
+.dev.vars

@@ -1,0 +1,63 @@
+# Cloudflare Worker config for the Cadance "Request dance-art notes" form.
+#
+# Standalone backend for the static marketing site's /forms/request-art/ page.
+# Receives the form POST, verifies Turnstile, stores the request in KV, and
+# emails the two email-channel .cadnote files via Cloudflare Email Service.
+#
+# Secrets (NOT stored here — set via `wrangler secret put`):
+#   TURNSTILE_SECRET   — Turnstile widget secret key (server-side verification)
+#
+# The Turnstile *site key* is public and lives in the page markup, not here.
+
+name = "cadance-art-request"
+main = "src/index.js"
+compatibility_date = "2024-09-25"
+workers_dev = true
+
+preview_urls = false
+
+# ---- Public (non-secret) config -------------------------------------------
+[vars]
+# Only accept form posts from the live site origin (CORS allowlist).
+ALLOWED_ORIGIN = "https://cadance.music"
+# Verified sender for the fulfilment email (domain must be onboarded to
+# Cloudflare Email Service). 
+EMAIL_FROM = "Cadance <notes@cadance.music>"
+# Public URLs of the two .cadnote files delivered by EMAIL. The other two art
+# notes are reserved for the future SMS channel (see forms/request-art/).
+ART_EMAIL_URL_1 = "https://cadance.music/forms/request-art/notes/Jazz%20Dancer%20With%20Links.cadnote"
+ART_EMAIL_URL_2 = "https://cadance.music/forms/request-art/notes/Prodigal%20Son%20With%20Links.cadnote"
+
+# ---- Observability ---------------------------------------------------------
+# Mirror the cadance-init worker: keep logs + traces in source so a plain
+# `wrangler deploy` is the full source of truth and forensics stay complete.
+[observability]
+enabled = true
+
+[observability.logs]
+enabled = true
+head_sampling_rate = 1.0
+invocation_logs = true
+
+[observability.traces]
+enabled = true
+head_sampling_rate = 1.0
+
+# ---- Email sending binding (Cloudflare Email Service) ----------------------
+# Requires the account to have Email Service enabled and the sender domain
+# onboarded. See README §Setup.
+[[send_email]]
+name = "EMAIL"
+
+# ---- KV namespace ----------------------------------------------------------
+# Stores each captured request for later transactional purposes. Records carry
+# a TTL so they self-delete after the retention window (see src/store.js).
+#
+# Create once with:
+#   wrangler kv namespace create ART_REQUESTS
+#   wrangler kv namespace create ART_REQUESTS --preview
+# Then paste the returned `id` / `preview_id` below.
+[[kv_namespaces]]
+binding = "ART_REQUESTS"
+id = "012149f25197492a9dcf60a059535086"
+preview_id = "65081c5c24274c6993b01f4ae13cdc92"

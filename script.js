@@ -3,6 +3,9 @@
 
 // If loaded as a module with defer, DOM is parsed already
 
+// Request-art form backend endpoint (Cloudflare Worker).
+const REQUEST_ART_ENDPOINT = 'https://cadance-art-request.davidaus.workers.dev/request-art';
+
 const mqlReduced = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 function clamp(n, min, max) { return Math.min(max, Math.max(min, n)); }
@@ -397,3 +400,69 @@ function initVideoPlayers() {
 
 // Auto-init video players
 initVideoPlayers();
+
+/**
+ * Request-art form (progressive enhancement)
+ * Posts the form to the Cloudflare Worker and shows inline status. Without JS
+ * the form simply doesn't submit (the Worker is the only receiver), so this
+ * only ever runs when JS is available.
+ */
+function initRequestArtForm() {
+  try {
+    const form = document.getElementById('request-art-form');
+    if (!form) return;
+
+    const status = document.getElementById('form-status');
+    const button = form.querySelector('button[type="submit"]');
+
+    function setStatus(message, kind) {
+      if (!status) return;
+      status.textContent = message;
+      status.classList.remove('is-error', 'is-success');
+      if (kind) status.classList.add(kind);
+    }
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      if (button) button.disabled = true;
+      setStatus('Sending your request…', null);
+
+      try {
+        const payload = {
+          'full-name': form.elements['full-name'].value.trim(),
+          'email': form.elements['email'].value.trim(),
+          'phone': form.elements['phone'].value.trim(),
+          'sms-consent': form.elements['sms-consent'].checked,
+          'company': form.elements['company'] ? form.elements['company'].value : '',
+          'cf-turnstile-response': form.elements['cf-turnstile-response'] ? form.elements['cf-turnstile-response'].value : ''
+        };
+
+        const res = await fetch(REQUEST_ART_ENDPOINT, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+
+        const data = await res.json().catch(() => ({}));
+
+        if (res.ok && data.ok) {
+          form.reset();
+          if (window.turnstile) window.turnstile.reset();
+          setStatus(data.message || 'Thanks — your request is in. Watch your inbox for the note files.', 'is-success');
+        } else {
+          setStatus(data.error || 'Something went wrong. Please try again.', 'is-error');
+          if (button) button.disabled = false;
+          if (window.turnstile) window.turnstile.reset();
+        }
+      } catch (_) {
+        setStatus('Network error. Please check your connection and try again.', 'is-error');
+        if (button) button.disabled = false;
+      }
+    });
+  } catch (_) {
+    // Fail silently to preserve no-JS baseline
+  }
+}
+
+// Auto-init request-art form
+initRequestArtForm();

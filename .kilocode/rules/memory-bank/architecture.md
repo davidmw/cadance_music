@@ -30,6 +30,19 @@ Static multi-page website with no backend dependencies, optimized for GitHub Pag
 │   └── meet-ran-bagno/
 ├── privacy.html               # Privacy policy
 ├── faq.html                   # Frequently asked questions
+├── forms/
+│   └── request-art/           # Art-note request form (noindex)
+│       ├── index.html         #   Form UI + Turnstile widget + status
+│       ├── images/            #   Art preview PNGs (IMG_0317–0320)
+│       └── notes/             #   The four .cadnote deliverables (public)
+├── worker/                    # Standalone Cloudflare Worker backend for the form
+│   ├── src/index.js           #   routing + CORS
+│   ├── src/requestArt.js      #   POST /request-art pipeline
+│   ├── src/turnstile.js       #   Turnstile server verify
+│   ├── src/email.js           #   fetch + attach .cadnote, send via send_email
+│   ├── src/store.js           #   KV capture (ART_REQUESTS, 90-day TTL)
+│   ├── src/util.js            #   JSON/CORS/validation helpers
+│   └── wrangler.toml          #   KV + send_email bindings, vars, observability
 ├── styles.base.css            # Tokens, reset, typography, utilities
 ├── styles.layout.css          # Header/nav, sections, hero, footer, breakpoints
 ├── styles.components.css      # Buttons, grids/cards, personas, folds, testimonials, modals, resource cards
@@ -170,6 +183,15 @@ Footer (all pages)
 - Email integration: mailto links for CTAs
   - Contact: info@cadance.music
 - Social sharing: per‑page Open Graph and Twitter Card meta tags
+
+### Request-art form backend (Cloudflare Worker)
+The `/forms/request-art/` page is the one interactive feature: it posts to a standalone Worker, `cadance-art-request` (`worker/` in this repo, deployed to `https://cadance-art-request.davidaus.workers.dev`). This is the site's only backend and the only place personal data is submitted.
+
+- **Bindings**: `ART_REQUESTS` (KV, 90-day TTL capture), `EMAIL` (`[[send_email]]` Cloudflare Email Service), `TURNSTILE_SECRET` (secret). Vars hold `ALLOWED_ORIGIN`, `EMAIL_FROM`, and the two email-channel `.cadnote` URLs.
+- **Pipeline**: honeypot → field validation (name, email, optional E.164 phone) → Turnstile verify → KV store → email two attachments via `ctx.waitUntil`.
+- **Channel split**: Jazz Dancer + Prodigal Son by email (small enough for the 5 MiB cap); Ballet 5th + Ballet pair reserved for future SMS.
+- **Not to be confused with** the iOS app's separate `cadance-init` Worker, which lives in the app repo and handles Day/Practice Passes.
+- Setup + DNS steps are in `worker/README.md` and the "Request-art fulfilment" section of `context.md`.
 
 ## Private / Internal Pages
 - [`barrenotes/BarreNotesPosts/index.html`](barrenotes/BarreNotesPosts/index.html:1)

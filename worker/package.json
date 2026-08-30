@@ -1,0 +1,15 @@
+{
+  "name": "cadance-art-request",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backend Worker for the Cadance /forms/request-art/ page. Captures art-note requests and emails the .cadnote files.",
+  "type": "module",
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "tail": "wrangler tail"
+  },
+  "devDependencies": {
+    "wrangler": "^4.98.0"
+  }
+}
