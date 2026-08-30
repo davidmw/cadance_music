@@ -120,10 +120,14 @@ Private / internal pages (no links in):
 - **Phone**: kept OPTIONAL on the form, with an unticked SMS-consent checkbox; stored for the future SMS send.
 - **Privacy**: `privacy.html` now documents form-data collection, Cloudflare processing, and retention.
 - **Remaining manual setup (owner, in dashboards)**:
-  1. Cloudflare Turnstile: create widget → put site key in `forms/request-art/index.html` (`data-sitekey="TURNSTILE_SITE_KEY_PLACEHOLDER"`) → `wrangler secret put TURNSTILE_SECRET` in `worker/`.
-  2. Cloudflare Email Service: onboard/verify sender domain `cadance.music` (Email → Email Service) + add its DNS records at Hover. Until then `env.EMAIL.send` returns `E_SENDER_NOT_VERIFIED` and requests are stored but not emailed.
-  3. Confirm `EMAIL_FROM` (currently `notes@cadance.music`) — change in `worker/wrangler.toml` `[vars]` if a different sender is wanted.
-- **End-to-end test** after setup: submit the live form, confirm email arrives with two attachments, open one on iPhone → "Open in Cadance" imports to Teacher Notebook.
+  1. Cloudflare Turnstile: create widget → put site key in `forms/request-art/index.html` (`data-sitekey`) → `wrangler secret put TURNSTILE_SECRET` in `worker/`. ✅ DONE
+  2. Cloudflare Email Service: sender domain `cadance.music` onboarded via `npx wrangler email sending enable cadance.music` (dashboard "Onboard Domain" dropdown was empty right after zone activation). ✅ DONE — verified a live send (`emailStatus: sent`, message id `...@cadance.music`).
+  3. Sender is `Cadance <notes@cadance.music>` (set in `worker/wrangler.toml` `[vars]`).
+- **Status: LIVE and verified end-to-end (30 Aug 2026).** A real form submission stored to KV and emailed the two notes successfully.
+- **Ops lessons learned**:
+  - Reading captured requests: `wrangler kv key list/get` are LOCAL by default — always pass `--remote`, else they show `[]`/“Value not found” even when the Worker wrote data. (Confirmed via workers-sdk issue #10395.)
+  - Email records live on the `cf-bounce.cadance.music` subdomain (MX/SPF/DKIM) + `_dmarc`. Note: onboarding set `_dmarc` to `p=reject` (was `p=none`) — monitor that this doesn't affect the existing Hover mailbox / MailerLite sending.
+  - `E_SENDER_DOMAIN_NOT_CONFIGURED` = domain not onboarded to Email Service (distinct from DNS existing).
 
 ## Cadance v6 Visual Inventory (July 2026)
 

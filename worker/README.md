@@ -67,6 +67,34 @@ npx wrangler deploy
 
 The Worker publishes to `https://cadance-art-request.<subdomain>.workers.dev`.
 
+### Reading captured requests (KV)
+
+`wrangler kv key` commands operate on **local** storage by default and return
+empty even when the deployed Worker has written data. Always pass `--remote`:
+
+```bash
+# List captured requests (production namespace)
+npx wrangler kv key list --namespace-id=<ART_REQUESTS_id> --remote
+
+# Read one record
+npx wrangler kv key get "request:<uuid>" --namespace-id=<ART_REQUESTS_id> --remote
+```
+
+Each record carries `name`, `email`, `phone`, `smsConsent`, `emailStatus`
+(`pending`/`sent`/`failed`), `emailMessageId` or `emailError`, and `submittedAt`.
+
+### Email sending
+
+Requires the sender domain onboarded to Cloudflare Email Service. If the
+dashboard's "Onboard Domain" dropdown is empty (common right after a zone goes
+active), enable it via the CLI instead:
+
+```bash
+npx wrangler email sending enable cadance.music
+npx wrangler email sending dns get cadance.music   # verify cf-bounce MX/SPF/DKIM
+```
+
+
 ## Local dev
 
 ```bash
