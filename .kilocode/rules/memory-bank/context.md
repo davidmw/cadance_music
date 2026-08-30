@@ -124,6 +124,7 @@ Private / internal pages (no links in):
   2. Cloudflare Email Service: sender domain `cadance.music` onboarded via `npx wrangler email sending enable cadance.music` (dashboard "Onboard Domain" dropdown was empty right after zone activation). ✅ DONE — verified a live send (`emailStatus: sent`, message id `...@cadance.music`).
   3. Sender is `Cadance <notes@cadance.music>` (set in `worker/wrangler.toml` `[vars]`).
 - **Status: LIVE and verified end-to-end (30 Aug 2026).** A real form submission stored to KV and emailed the two notes successfully.
+- **Viewing requests**: `GET https://cadance-art-request.davidaus.workers.dev/admin/requests?token=<ADMIN_TOKEN>` (read-only, newest first). Token is the `ADMIN_TOKEN` secret; rotate with `wrangler secret put ADMIN_TOKEN`.
 - **Ops lessons learned**:
   - Reading captured requests: `wrangler kv key list/get` are LOCAL by default — always pass `--remote`, else they show `[]`/“Value not found” even when the Worker wrote data. (Confirmed via workers-sdk issue #10395.)
   - Email records live on the `cf-bounce.cadance.music` subdomain (MX/SPF/DKIM) + `_dmarc`. Note: onboarding set `_dmarc` to `p=reject` (was `p=none`) — monitor that this doesn't affect the existing Hover mailbox / MailerLite sending.

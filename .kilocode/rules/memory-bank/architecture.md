@@ -187,8 +187,9 @@ Footer (all pages)
 ### Request-art form backend (Cloudflare Worker)
 The `/forms/request-art/` page is the one interactive feature: it posts to a standalone Worker, `cadance-art-request` (`worker/` in this repo, deployed to `https://cadance-art-request.davidaus.workers.dev`). This is the site's only backend and the only place personal data is submitted.
 
-- **Bindings**: `ART_REQUESTS` (KV, 90-day TTL capture), `EMAIL` (`[[send_email]]` Cloudflare Email Service), `TURNSTILE_SECRET` (secret). Vars hold `ALLOWED_ORIGIN`, `EMAIL_FROM`, and the two email-channel `.cadnote` URLs.
+- **Bindings**: `ART_REQUESTS` (KV, 90-day TTL capture), `EMAIL` (`[[send_email]]` Cloudflare Email Service), secrets `TURNSTILE_SECRET` + `ADMIN_TOKEN`. Vars hold `ALLOWED_ORIGIN`, `EMAIL_FROM`, and the two email-channel `.cadnote` URLs.
 - **Pipeline**: honeypot → field validation (name, email, optional E.164 phone) → Turnstile verify → KV store → email two attachments via `ctx.waitUntil`.
+- **Endpoints**: `POST /request-art` (form), `GET /health`, `GET /admin/requests` (read-only list of captured requests, gated by `ADMIN_TOKEN` via `X-Admin-Token` header or `?token=`).
 - **Channel split**: Jazz Dancer + Prodigal Son by email (small enough for the 5 MiB cap); Ballet 5th + Ballet pair reserved for future SMS.
 - **Not to be confused with** the iOS app's separate `cadance-init` Worker, which lives in the app repo and handles Day/Practice Passes.
 - Setup + DNS steps are in `worker/README.md` and the "Request-art fulfilment" section of `context.md`.

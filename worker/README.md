@@ -19,13 +19,29 @@ The other two notes (`Ballet 5th`, `Ballet pair`) are reserved for the future **
 
 ## Endpoints
 
-| Method | Path           | Description                        |
-| ------ | -------------- | ---------------------------------- |
-| POST   | `/request-art` | Handle a form submission.          |
-| GET    | `/health`      | Liveness probe.                    |
-| OPTIONS| `/request-art` | CORS preflight.                    |
+| Method | Path               | Auth          | Description                        |
+| ------ | ------------------ | ------------- | ---------------------------------- |
+| POST   | `/request-art`     | Turnstile     | Handle a form submission.          |
+| GET    | `/health`          | —             | Liveness probe.                    |
+| GET    | `/admin/requests`  | `ADMIN_TOKEN` | List captured requests (newest first). |
+| OPTIONS| `/request-art`     | —             | CORS preflight.                    |
 
 CORS is restricted to `ALLOWED_ORIGIN` (the live site) for browser calls.
+
+### Viewing captured requests (browser/CLI)
+
+`/admin/requests` is read-only and gated by the `ADMIN_TOKEN` secret. Pass the
+token as an `X-Admin-Token` header or a `?token=` query param (handy in a
+browser):
+
+```
+https://cadance-art-request.<subdomain>.workers.dev/admin/requests?token=<ADMIN_TOKEN>
+```
+
+Set/rotate the token with `npx wrangler secret put ADMIN_TOKEN`. Keep it
+private — it is the only gate on this data. This is a single-operator view, not
+multi-user auth.
+
 
 ## Setup (one-time)
 
@@ -57,6 +73,9 @@ domain's DNS provider (Hover) for authentication/deliverability.
 # Turnstile secret key (server-side verification). The matching *site key*
 # is public and goes in the page markup.
 npx wrangler secret put TURNSTILE_SECRET
+
+# Admin token for the read-only /admin/requests endpoint.
+npx wrangler secret put ADMIN_TOKEN
 ```
 
 ### Deploy

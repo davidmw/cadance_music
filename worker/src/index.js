@@ -9,6 +9,7 @@
 // JS, so this endpoint only ever sees genuine, user-initiated submissions.
 
 import { handleRequestArt } from "./requestArt.js";
+import { handleAdmin } from "./admin.js";
 import { corsHeaders, json } from "./util.js";
 
 export default {
@@ -26,6 +27,11 @@ export default {
 
     if (url.pathname === "/health") {
       return json(env, origin, { ok: true, service: "cadance-art-request" });
+    }
+
+    // Token-protected read-only admin views.
+    if (url.pathname.startsWith("/admin/")) {
+      return handleAdmin(request, env, ctx);
     }
 
     if (url.pathname === "/request-art") {
