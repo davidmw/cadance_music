@@ -4,26 +4,19 @@
 // Message size: the two files total ~1.5 MB raw → ~2.0 MB base64, well under
 // the 5 MiB message cap. The two larger notes are reserved for the SMS channel.
 
-// Workers-safe base64 encode for binary content (btoa is byte-oriented and
-// unavailable for ArrayBuffer directly).
-function arrayBufferToBase64(buffer) {
-  const bytes = new Uint8Array(buffer);
-  const CHUNK = 0x8000; // avoid argument-list limits on large files
-  let binary = "";
-  for (let i = 0; i < bytes.length; i += CHUNK) {
-    binary += String.fromCharCode.apply(null, bytes.subarray(i, i + CHUNK));
-  }
-  return btoa(binary);
-}
-
-// Fetch a public .cadnote URL and return a base64 attachment object.
+// Fetch a public .cadnote URL and return it as a binary attachment.
+// Passing the raw ArrayBuffer (NOT a pre-encoded base64 string) lets Cloudflare
+// Email Service base64-encode it correctly; a pre-encoded string gets re-encoded
+// as quoted-printable text, which corrupts the file for the recipient.
 async function fetchAttachment(url) {
   const res = await fetch(url);
   if (!res.ok) throw new Error(`Attachment fetch failed (${res.status}) for ${url}`);
   const filename = decodeURIComponent(url.split("/").pop());
   return {
-    content: arrayBufferToBase64(await res.arrayBuffer()),
+    content: await res.arrayBuffer(),
     filename,
+    // .cadnote is an app-owned data type; octet-stream is the neutral, correct
+    // content type for a binary attachment of this kind.
     type: "application/octet-stream",
     disposition: "attachment",
   };
@@ -33,7 +26,7 @@ function buildHtml(name) {
   const safeName = escapeHtml(name);
   return `
   <div style="font-family:-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:#16181d;max-width:36rem;margin:0 auto;line-height:1.55">
-    <h1 style="font-size:1.35rem;line-height:1.3">Your Cadance dance-art notes</h1>
+    <h1 style="font-size:1.35rem;line-height:1.3">Your Requested Cadance Note Demos with Art and Links</h1>
     <p>Hi ${safeName},</p>
     <p>Thanks for requesting the hand-drawn Cadance notes. Two are attached as
     <code>.cadnote</code> files:</p>
@@ -43,7 +36,7 @@ function buildHtml(name) {
     </ul>
     <p><strong>To add them to your Teacher Notebook:</strong> open this email on your
     iPhone or iPad, tap an attached <code>.cadnote</code> file, then choose
-    <strong>Open in Cadance</strong>. The note imports into your notebook with its
+    <strong>Open in Cadance</strong> or tap the Cadance icon. The note imports into your notebook with its
     themed music links intact.</p>
     <p>Don't have Cadance yet?
       <a href="https://apps.apple.com/us/app/cadance/id6748429968">Download it free on the App Store</a>.</p>
@@ -92,7 +85,7 @@ export async function sendArtEmail(env, { name, email }) {
   const result = await env.EMAIL.send({
     to: { email, name },
     from: env.EMAIL_FROM,
-    subject: "Your Cadance dance-art notes",
+    subject: "Your Requested Cadance Note Demos",
     html: buildHtml(name),
     text: buildText(name),
     attachments: [att1, att2],

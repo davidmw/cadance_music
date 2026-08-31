@@ -21,8 +21,9 @@ preview_urls = false
 # Only accept form posts from the live site origin (CORS allowlist).
 ALLOWED_ORIGIN = "https://cadance.music"
 # Verified sender for the fulfilment email (domain must be onboarded to
-# Cloudflare Email Service). 
-EMAIL_FROM = "Cadance <notes@cadance.music>"
+# Cloudflare Email Service). Uses the real Cadance contact mailbox so replies
+# and deliverability behave like the rest of the site's email.
+EMAIL_FROM = "Cadance <info@cadance.music>"
 # Public URLs of the two .cadnote files delivered by EMAIL. The other two art
 # notes are reserved for the future SMS channel (see forms/request-art/).
 ART_EMAIL_URL_1 = "https://cadance.music/forms/request-art/notes/Jazz%20Dancer%20With%20Links.cadnote"
