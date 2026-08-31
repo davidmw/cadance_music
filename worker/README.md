@@ -42,6 +42,16 @@ Set/rotate the token with `npx wrangler secret put ADMIN_TOKEN`. Keep it
 private — it is the only gate on this data. This is a single-operator view, not
 multi-user auth.
 
+### Attachment encoding gotcha (important)
+
+Pass `.cadnote` attachments as a **raw `ArrayBuffer`** (`content: await res.arrayBuffer()`),
+NOT a pre-encoded base64 string. Cloudflare Email Service re-encodes a base64
+*string* as quoted-printable text, so the recipient receives a file whose content
+is base64 text (~1.6 MB of `d3Jk…`) instead of the real binary — and Cadance
+rejects it on import. With `ArrayBuffer` content, Cloudflare base64-encodes it
+correctly and the file arrives intact (matches the working Apple Mail send).
+
+
 
 ## Setup (one-time)
 
